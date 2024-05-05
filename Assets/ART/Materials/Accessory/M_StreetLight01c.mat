@@ -54,7 +54,7 @@ Material:
   - TransparentBackface
   - RayTracingPrepass
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: Boolean_353edd87f208456eb98d877c64b709c0
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -126,7 +126,7 @@ Material:
     - Boolean_d6564e6d0cbe4e1194d4c4a23260af1f: 0
     - Vector1_119DBA34: 1
     - Vector1_12fe0cb484434e1bb9fbb72624870f7b: 1
-    - Vector1_1ecf8adf107543b697e04962611a6572: 1
+    - Vector1_1ecf8adf107543b697e04962611a6572: 0
     - Vector1_3d93f9a0aa3c4be2ba3dec68934e9a7e: 10
     - Vector1_4B28F8D1: 1
     - Vector1_AF65C65C: 0
