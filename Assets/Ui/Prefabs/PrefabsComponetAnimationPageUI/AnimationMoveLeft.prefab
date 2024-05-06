@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a9a3218cc32c04da94f2fd8062c01a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageStartPosition: 1500
+  pageStartPosition: -1500
   pageEndPosition: 0
   duration: 1
-  animationType: 3
