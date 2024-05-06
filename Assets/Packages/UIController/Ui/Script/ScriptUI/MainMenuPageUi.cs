@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 namespace Script.ScriptUI
 {
-    public class MainMenuPageUi : BasePageUi
+    public class MainMenuPageUi : BasePageUI
     {
         // public event Action OnHidePage;
         public Button gamePage;
         public Button settingPage;
+        public Button exitGameButton;
+
         public GameObject objectPage;
 
 
@@ -17,14 +19,16 @@ namespace Script.ScriptUI
 
         public override PageType Type => PageType.MainMenu;
 
-        public override void Show(BasePageUi page)
+        public override void Show(BasePageUI page)
         {
             page.OpenPage(page);
             Debug.Log("here");
         }
 
-        public override void Hide(BasePageUi page)
+        public override void Hide(BasePageUI page)
         {
+            page.ClosePage(page);
+
         }
 
         private void Awake()
@@ -36,38 +40,44 @@ namespace Script.ScriptUI
         {
             settingPage.onClick.AddListener(OpenSetting);
             gamePage.onClick.AddListener(OpenGamePage);
+            exitGameButton.onClick.AddListener(ExitGame);
         }
 
         private void OpenSetting()
         {
-            var page = UiManager.instance.pages.FirstOrDefault(p => p.Type == PageType.Setting);
+            var page = UIManager.instance.pages.FirstOrDefault(p => p.Type == PageType.Setting);
             if (page != null)
             {
                 Debug.Log("here");
-                var animationType = UiManager.instance.animationUiPages.FirstOrDefault(p => p.Type == AnimationType.MoveLeft);
+                var animationType = UIManager.instance.animationUiPages.FirstOrDefault(p => p.Type == AnimationType.MoveLeft);
                 if (animationType != null)
                 {
                     Show(page);
                     animationType.Show(page);
-                    Debug.Log("here 11");
                 }
             }
         }
         private void OpenGamePage()
         {
 
-            var page = UiManager.instance.pages.FirstOrDefault(p => p.Type == PageType.Game);
+            var page = UIManager.instance.pages.FirstOrDefault(p => p.Type == PageType.Game);
             if (page != null)
             {
                 Debug.Log("here");
-                var animationType = UiManager.instance.animationUiPages.FirstOrDefault(p => p.Type == AnimationType.MoveLeft);
+                var animationType = UIManager.instance.animationUiPages.FirstOrDefault(p => p.Type == AnimationType.MoveLeft);
                 if (animationType != null)
                 {
                     Show(page);
                     animationType.Show(page);
-                    Debug.Log("here 11");
                 }
             }
+        }
+
+        private void ExitGame()
+        {
+            Debug.Log("here 11");
+
+            Application.Quit();
         }
     }
 }

@@ -10,17 +10,17 @@ public class UIPageMover : BaseAnimationUiPage
 
     public override AnimationType Type => AnimationType.MoveLeft;
     
-    public override void Show(BasePageUi page)
+    public override void Show(BasePageUI page)
     {
         AnimationShowPageUI(page);
     }
 
-    public override void Close(BasePageUi page)
+    public override void Close(BasePageUI page)
     {
     }
-    private void AnimationShowPageUI(BasePageUi page )
+    private void AnimationShowPageUI(BasePageUI page )
     {
-        var animType = UiManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.MoveLeft);
+        var animType = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.MoveLeft);
         Debug.Log("here 12");
         if (animType!=null)
         {

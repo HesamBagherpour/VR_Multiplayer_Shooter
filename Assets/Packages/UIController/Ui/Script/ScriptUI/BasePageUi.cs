@@ -9,54 +9,54 @@ using UnityEngine.Assertions;
 
 namespace Script.ScriptUI
 {
-    public abstract class BasePageUi : MonoBehaviour
+    public abstract class BasePageUI : MonoBehaviour
 
     {
         public abstract PageType Type { get; }
 
 
-        public event Action<BasePageUi> OnShow;
-        public event Action<BasePageUi> OnClose;
+        public event Action<BasePageUI> OnShow;
+        public event Action<BasePageUI> OnClose;
 
         void Start()
         {
-            var page = UiManager.instance.pages.FirstOrDefault(p => p.Type == PageType.MainMenu);
+            var page = UIManager.instance.pages.FirstOrDefault(p => p.Type == PageType.MainMenu);
             if (page != null && page.gameObject.transform.GetChild(0).gameObject.activeSelf)
             {
-                UiManager.instance.currentScreen = page;
-                UiManager.instance.currentScreen.transform.SetAsLastSibling();
+                UIManager.instance.currentScreen = page;
+                UIManager.instance.currentScreen.transform.SetAsLastSibling();
             }
         }
 
-        public abstract void Show(BasePageUi page);
+        public abstract void Show(BasePageUI page);
 
-        public abstract void Hide(BasePageUi page);
+        public abstract void Hide(BasePageUI page);
 
-        public void OpenPage(BasePageUi screenToChangeTo)
+        public void OpenPage(BasePageUI screenToChangeTo)
         {
 
-            if (UiManager.instance.currentScreen != null)
+            if (UIManager.instance.currentScreen != null)
             {
-                UiManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
             }
 
             if (screenToChangeTo != null)
             {
-                UiManager.instance.previousScreens = UiManager.instance.currentScreen;
-                UiManager.instance.currentScreen = screenToChangeTo;
-                UiManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                UIManager.instance.previousScreens = UIManager.instance.currentScreen;
+                UIManager.instance.currentScreen = screenToChangeTo;
+                UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                 Debug.Log("here openpage");
 
             }
         }
 
-        public void ClosePage(BasePageUi page)
+        public void ClosePage(BasePageUI page)
         {
             Debug.Log("this0");
 
-            UiManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
-            UiManager.instance.currentScreen = UiManager.instance.previousScreens;
-            UiManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            UIManager.instance.currentScreen = UIManager.instance.previousScreens;
+            UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 
