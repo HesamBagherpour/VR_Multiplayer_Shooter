@@ -11,18 +11,18 @@ public class UIPageScaler : BaseAnimationUiPage
 {
     public override AnimationType Type => AnimationType.ScaleUp;
 
-    public override void Show(BasePageUi page)
+    public override void Show(BasePageUI page)
     {
         
     }
 
-    public override void Close(BasePageUi page)
+    public override void Close(BasePageUI page)
     {
         CLosePageUIScaleY(page);
     }
-    private void CLosePageUIScaleY(BasePageUi page)
+    private void CLosePageUIScaleY(BasePageUI page)
     {
-            var animType = UiManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
+            var animType = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
             if (animType!=null)
             {
                 Sequence mySequence = DOTween.Sequence();
@@ -32,13 +32,13 @@ public class UIPageScaler : BaseAnimationUiPage
                 mySequence.Play();
             }
     }
-    void MyCallback(BasePageUi page)
+    void MyCallback(BasePageUI page)
     {
         page.Hide(page);
     }
    
 
-void AnimationCompleteCallback(BasePageUi page)
+void AnimationCompleteCallback(BasePageUI page)
 {
     Debug.Log("Animation completed!");
     page.Hide(page);

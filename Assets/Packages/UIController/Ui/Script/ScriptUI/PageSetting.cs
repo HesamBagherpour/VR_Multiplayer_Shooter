@@ -1,9 +1,10 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Script.ScriptUI
 {
-    public class PageSetting : BasePageUi
+    public class PageSetting : BasePageUI
     {
         public Button buttonShow;
         public Button buttonBack;
@@ -15,14 +16,14 @@ namespace Script.ScriptUI
 
 
         public override PageType Type => PageType.Setting;
-        public override void Show(BasePageUi page)
+        public override void Show(BasePageUI page)
         {
             throw new System.NotImplementedException();
         }
 
-        public override void Hide(BasePageUi page)
+        public override void Hide(BasePageUI page)
         {
-            throw new System.NotImplementedException();
+            page.ClosePage(page);
         }
 
         private void Awake()
@@ -38,7 +39,16 @@ namespace Script.ScriptUI
 
         private void ClosePage()
         {
-
+            var page = UIManager.instance.pages.FirstOrDefault(p => p.Type == PageType.Setting);
+            if (page != null )
+            {
+                var animType = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
+                if (animType!=null)
+                {
+                    animType.Close(page);
+                }
+             
+            }
         }
     
     }
