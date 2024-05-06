@@ -20,15 +20,11 @@ public class UIPageMover : BaseAnimationUiPage
     }
     private void AnimationShowPageUI(BasePageUi page )
     {
-        Debug.Log("here 11");
-        var animType = UiManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.MoveLeft);
+        var animType = UiManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.MoveRight);
         if (animType!=null)
         {
-           // page.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            Debug.Log("here 11");
             page.gameObject.transform.GetChild(0).gameObject.transform.DOLocalMoveX(animType.pageEndPosition, animType.duration);
-            Debug.Log(page.gameObject.transform.GetChild(0).gameObject.name);
-           // ResetAnimation(page);
-
         }
     }
 }

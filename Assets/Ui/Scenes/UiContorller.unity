@@ -201,7 +201,6 @@ GameObject:
   m_Component:
   - component: {fileID: 81660329}
   - component: {fileID: 81660330}
-  - component: {fileID: 81660331}
   m_Layer: 0
   m_Name: UI_Manager
   m_TagString: Untagged
@@ -239,28 +238,10 @@ MonoBehaviour:
   currentScreen: {fileID: 0}
   pageContainer: {fileID: 11400000, guid: 20ff93d9036513148a6095acd026f1ed, type: 2}
   animationData: {fileID: 11400000, guid: e5fa75180e1ab9e4aa6ce09752ea2562, type: 2}
-  uiPageScaler: {fileID: 0}
-  uiPageMover: {fileID: 0}
-  basePageUi: {fileID: 0}
   pages: []
   animationUiPages: []
   previousScreens: {fileID: 0}
   subAnimationObject: {fileID: 130303918}
---- !u!114 &81660331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81660327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c09a119de0f03642a9b07b19eef0e7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pageStartPosition: 0
-  pageEndPosition: 0
-  duration: 0
 --- !u!1 &130303918
 GameObject:
   m_ObjectHideFlags: 0
