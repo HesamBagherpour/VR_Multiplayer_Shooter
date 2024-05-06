@@ -1,0 +1,21 @@
+﻿{
+  "name": "ae.infinite8.input-controller-utility",
+  "displayName": "Input Controller Utility",
+  "version": "1.0.0",
+  "refrenceVersion": "1.0.0",
+  "packageType" : "infinite8",
+  "description": "This package is for Input Controller",
+  "hideInEditor": false,
+  "author": {
+    "name": "Infinite8 General Utility"
+  },
+  "dependencies": {
+    "ae.infinite8.package-manager-extension": "1.1.2",
+    "ae.infinite8.legacy-package-installer": "1.0.2" ,
+    "com.unity.inputsystem": "1.4.4"
+  },
+  "repository": {
+    "type": "gitlab",
+    "url": "http://gitgame.lan/unity/packages/general-utility/-/raw/input-controller/Assets/Infinite8/InputController/package.json"
+  }
+}
