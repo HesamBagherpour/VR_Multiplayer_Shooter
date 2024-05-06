@@ -43,12 +43,13 @@ namespace Script.ScriptUI
             var page = UiManager.instance.pages.FirstOrDefault(p => p.Type == PageType.Setting);
             if (page != null)
             {
-                var animType = UiManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.MoveLeft);
-
-                if (animType != null)
+                Debug.Log("here");
+                var animationType = UiManager.instance.animationUiPages.FirstOrDefault(p => p.Type == AnimationType.MoveLeft);
+                if (animationType != null)
                 {
                     Show(page);
-                    animType.Show(page);
+                    animationType.Show(page);
+                    Debug.Log("here 11");
                 }
             }
         }

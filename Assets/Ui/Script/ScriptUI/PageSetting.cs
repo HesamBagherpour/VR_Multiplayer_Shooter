@@ -38,7 +38,6 @@ namespace Script.ScriptUI
 
         private void ClosePage()
         {
-          //  ManagerPageUi.instance.HideLastPage(PageType.Setting);
 
         }
     
