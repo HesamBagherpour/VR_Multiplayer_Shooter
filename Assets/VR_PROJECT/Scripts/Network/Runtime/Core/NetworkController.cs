@@ -5,12 +5,12 @@ using UnityEngine;
 
 namespace VR_PROJECT.Network.Core
 {
-    public class NetworkController : INetworkController
+    public abstract class NetworkController : INetworkController
     {
         #region Field
 
         private NetworkConfiguration _configuration;
-        private bool _isAvailable;
+        protected bool _isAvailable;
 
         #endregion
 
@@ -20,49 +20,29 @@ namespace VR_PROJECT.Network.Core
 
         #endregion
         
-        #region CTORs
-
-        public NetworkController()
-        {
-            _configuration = Resources.Load<NetworkConfiguration>(nameof(NetworkConfiguration));
-        }
-        
-        #endregion
-        
         #region Initialize
         
-        public void Init()
+        public virtual void Init()
         {
-            if (!IsConfigValid())
+            _configuration = LoadConfiguration();
+            
+            if (!CanInit())
             {
                 _isAvailable = false;
                 return;
             }
-
-            var networkManager = GameObject.Instantiate(_configuration.NetworkManager);
         }
-
-        #endregion
         
-        #region Public Methods
-
-        
-
         #endregion
 
         #region Private Methods
 
-        private bool IsConfigValid()
+        protected abstract NetworkConfiguration LoadConfiguration();
+        protected virtual bool CanInit()
         {
             if (_configuration is null)
             {
                 Debug.LogError("NetworkConfig is not loaded and Network not available");
-                return false;
-            }
-
-            if (_configuration.NetworkManager is null)
-            {
-                Debug.LogError("NetworkManager in NetworkConfig is null pls insure to fill it properly");
                 return false;
             }
 
