@@ -21,24 +21,25 @@ namespace Script.ScriptUI
         public int pageEndPosition;
 
         public float duration;
-             
-        public  void ResetAnimation(BasePageUI page)
+
+        public void ResetAnimation(BasePageUI page)
         {
-            var animType = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
+            var animType = UIManager.Instance.animationUiPages.FirstOrDefault(p => p.Type == AnimationType.ScaleUp);
             if (animType != null)
             {
-                page.gameObject.transform.GetChild(0).gameObject.transform.DOScaleY(animType.pageStartPosition, animType.duration);
+                page.gameObject.transform.GetChild(0).gameObject.transform
+                    .DOScaleY(animType.pageStartPosition, animType.duration);
             }
-            var animationUiPage = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.MoveLeft);
+
+            var animationUiPage =
+                UIManager.Instance.animationUiPages.FirstOrDefault(p => p.Type == AnimationType.MoveLeft);
             if (animationUiPage != null)
             {
-                page.gameObject.transform.GetChild(0).gameObject.transform.DOLocalMoveX(animationUiPage.pageStartPosition, animationUiPage.duration);
+                page.gameObject.transform.GetChild(0).gameObject.transform
+                    .DOLocalMoveX(animationUiPage.pageStartPosition, animationUiPage.duration);
             }
         }
-
     }
-
-   
 }
 
 public enum AnimationType

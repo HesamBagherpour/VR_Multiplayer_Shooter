@@ -14,17 +14,19 @@ namespace Script.ScriptUI
     {
         public abstract PageType Type { get; }
 
-
+        public RectTransform rootObject;
+        public CustomAnimationHandler AnimationHandler;
         public event Action<BasePageUI> OnShow;
         public event Action<BasePageUI> OnClose;
 
+
         void Start()
         {
-            var page = UIManager.instance.pages.FirstOrDefault(p => p.Type == PageType.MainMenu);
+            var page = UIManager.Instance.pages.FirstOrDefault(p => p.Type == PageType.MainMenu);
             if (page != null && page.gameObject.transform.GetChild(0).gameObject.activeSelf)
             {
-                UIManager.instance.currentScreen = page;
-                UIManager.instance.currentScreen.transform.SetAsLastSibling();
+                UIManager.Instance.currentScreen = page;
+                UIManager.Instance.currentScreen.transform.SetAsLastSibling();
             }
         }
 
@@ -34,19 +36,17 @@ namespace Script.ScriptUI
 
         public void OpenPage(BasePageUI screenToChangeTo)
         {
-
-            if (UIManager.instance.currentScreen != null)
+            if (UIManager.Instance.currentScreen != null)
             {
-                UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                UIManager.Instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
             }
 
             if (screenToChangeTo != null)
             {
-                UIManager.instance.previousScreens = UIManager.instance.currentScreen;
-                UIManager.instance.currentScreen = screenToChangeTo;
-                UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                UIManager.Instance.previousScreens = UIManager.Instance.currentScreen;
+                UIManager.Instance.currentScreen = screenToChangeTo;
+                UIManager.Instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                 Debug.Log("here openpage");
-
             }
         }
 
@@ -54,9 +54,9 @@ namespace Script.ScriptUI
         {
             Debug.Log("this0");
 
-            UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
-            UIManager.instance.currentScreen = UIManager.instance.previousScreens;
-            UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            UIManager.Instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            UIManager.Instance.currentScreen = UIManager.Instance.previousScreens;
+            UIManager.Instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 

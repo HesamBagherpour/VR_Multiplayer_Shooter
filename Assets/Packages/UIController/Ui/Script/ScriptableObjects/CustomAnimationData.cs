@@ -37,8 +37,9 @@ namespace Packages.UIController
             MoveRight = 2,
             MoveUp = 3,
             MoveDown = 4,
-            ScaleUp = 5,
-            ScaleDown = 6,
+            MoveCenter = 5,
+            ScaleUp = 6,
+            ScaleDown = 7,
         }
 
         public AnimationType animationType;

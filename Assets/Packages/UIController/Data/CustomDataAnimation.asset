@@ -14,12 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyAnimations:
   - animationType: 1
-    dst: {x: -10, y: 0, z: 0}
+    dst: {x: -100, y: 0, z: -10}
     fadeAmount: 0
     dstScale: 0
     duration: 0.2
   - animationType: 2
     dst: {x: 10, y: 10, z: 0}
+    fadeAmount: 0
+    dstScale: 0
+    duration: 0.2
+  - animationType: 3
+    dst: {x: 10, y: 10, z: 0}
+    fadeAmount: 0
+    dstScale: 0
+    duration: 0.2
+  - animationType: 5
+    dst: {x: 0, y: 0, z: 0}
     fadeAmount: 0
     dstScale: 0
     duration: 0.2

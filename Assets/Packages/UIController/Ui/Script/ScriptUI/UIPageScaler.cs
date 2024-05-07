@@ -13,36 +13,36 @@ public class UIPageScaler : BaseAnimationUiPage
 
     public override void Show(BasePageUI page)
     {
-        
     }
 
     public override void Close(BasePageUI page)
     {
         CLosePageUIScaleY(page);
     }
+
     private void CLosePageUIScaleY(BasePageUI page)
     {
-            var animType = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
-            if (animType!=null)
-            {
-                Sequence mySequence = DOTween.Sequence();
-                mySequence.Append(page.gameObject.transform.GetChild(0).DOScaleY(animType.pageEndPosition, animType.duration));
-                mySequence.OnComplete(() => AnimationCompleteCallback(page));
-                mySequence.AppendCallback(() => ResetAnimation(page));
-                mySequence.Play();
-            }
+        var animType = UIManager.Instance.animationUiPages.FirstOrDefault(p => p.Type == AnimationType.ScaleUp);
+        if (animType != null)
+        {
+            Sequence mySequence = DOTween.Sequence();
+            mySequence.Append(page.gameObject.transform.GetChild(0)
+                .DOScaleY(animType.pageEndPosition, animType.duration));
+            mySequence.OnComplete(() => AnimationCompleteCallback(page));
+            mySequence.AppendCallback(() => ResetAnimation(page));
+            mySequence.Play();
+        }
     }
+
     void MyCallback(BasePageUI page)
     {
         page.Hide(page);
     }
-   
-
-void AnimationCompleteCallback(BasePageUI page)
-{
-    Debug.Log("Animation completed!");
-    page.Hide(page);
-}
 
 
+    void AnimationCompleteCallback(BasePageUI page)
+    {
+        Debug.Log("Animation completed!");
+        page.Hide(page);
+    }
 }
