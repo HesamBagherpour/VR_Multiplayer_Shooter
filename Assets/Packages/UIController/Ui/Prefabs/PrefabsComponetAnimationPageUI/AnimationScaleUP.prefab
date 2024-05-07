@@ -46,5 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageStartPosition: 1
   pageEndPosition: 0
-  duration: 1
-  animationType: 5
+  duration: 0.3

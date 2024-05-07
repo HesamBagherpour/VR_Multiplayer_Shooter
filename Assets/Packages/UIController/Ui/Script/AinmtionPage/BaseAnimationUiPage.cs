@@ -12,8 +12,8 @@ namespace Script.ScriptUI
     public abstract class BaseAnimationUiPage : MonoBehaviour
     {
         public abstract AnimationType Type { get; }
-        public abstract void Show(BasePageUi page);
-        public abstract void Close(BasePageUi page);
+        public abstract void Show(BasePageUI page);
+        public abstract void Close(BasePageUI page);
 
         public int pageStartPosition;
 
@@ -22,14 +22,14 @@ namespace Script.ScriptUI
 
         public float duration;
              
-        public  void ResetAnimation(BasePageUi page)
+        public  void ResetAnimation(BasePageUI page)
         {
-            var animType = UiManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
+            var animType = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
             if (animType != null)
             {
                 page.gameObject.transform.GetChild(0).gameObject.transform.DOScaleY(animType.pageStartPosition, animType.duration);
             }
-            var animationUiPage = UiManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.MoveLeft);
+            var animationUiPage = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.MoveLeft);
             if (animationUiPage != null)
             {
                 page.gameObject.transform.GetChild(0).gameObject.transform.DOLocalMoveX(animationUiPage.pageStartPosition, animationUiPage.duration);

@@ -5,17 +5,17 @@ using UnityEngine;
 
 namespace Script.ScriptUI
 {
-    public class UiManager : MonoBehaviour
+    public class UIManager : MonoBehaviour
     {
-        public static UiManager instance;
-        public BasePageUi currentScreen;
+        public static UIManager instance;
+        public BasePageUI currentScreen;
         public PageContainer pageContainer;
         public AnimationData animationData;
 
-        public List<BasePageUi> pages;
+        public List<BasePageUI> pages;
         public List<BaseAnimationUiPage> animationUiPages;
 
-        public BasePageUi previousScreens;
+        public BasePageUI previousScreens;
         [SerializeField] private GameObject subAnimationObject;
         public void Awake()
         {

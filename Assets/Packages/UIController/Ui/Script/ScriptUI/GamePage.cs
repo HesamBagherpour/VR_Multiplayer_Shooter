@@ -5,10 +5,11 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 namespace Script.ScriptUI
 {
-    public  class GamePage : BasePageUi
+    public  class GamePage : BasePageUI
     {
         [SerializeField]  private Button backButton;
         public override PageType Type => PageType.Game;
+        
         private void Awake()
         {
             Init();
@@ -17,23 +18,21 @@ namespace Script.ScriptUI
         {
             backButton.onClick.AddListener(ClosePage);
         }
-        public override void Show(BasePageUi page)
+        public override void Show(BasePageUI page)
         {
             
         }
 
-        public override void Hide(BasePageUi page)
+        public override void Hide(BasePageUI page)
         {
             page.ClosePage(page);
         }
         private void ClosePage()
         {
-            Debug.Log("this4");
-          
-            var page = UiManager.instance.pages.FirstOrDefault(p => p.Type == PageType.Game);
+            var page = UIManager.instance.pages.FirstOrDefault(p => p.Type == PageType.Game);
             if (page != null )
             {
-                var animType = UiManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
+                var animType = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
                 if (animType!=null)
                 {
                     animType.Close(page);
