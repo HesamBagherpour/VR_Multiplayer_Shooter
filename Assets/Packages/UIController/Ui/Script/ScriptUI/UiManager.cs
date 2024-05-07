@@ -14,7 +14,7 @@ namespace Script.ScriptUI
 
         public List<BasePageUI> pages;
         public List<BaseAnimationUiPage> animationUiPages;
-
+        [SerializeField] private GameObject firstPageUI;
         public BasePageUI previousScreens;
         [SerializeField] private GameObject subAnimationObject;
         public void Awake()
@@ -23,6 +23,7 @@ namespace Script.ScriptUI
             animationUiPages = new List<BaseAnimationUiPage>();
             instance = this;
             GenratePageUi();
+            firstPageUI.transform.SetAsLastSibling();
             // previousScreens = new List<BasePageUi>();
         }
         public void GenratePageUi()

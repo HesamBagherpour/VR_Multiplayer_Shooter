@@ -8,6 +8,7 @@ namespace Script.ScriptUI
     public  class GamePage : BasePageUI
     {
         [SerializeField]  private Button backButton;
+
         public override PageType Type => PageType.Game;
         
         private void Awake()

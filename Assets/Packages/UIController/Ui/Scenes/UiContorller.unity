@@ -240,6 +240,7 @@ MonoBehaviour:
   animationData: {fileID: 11400000, guid: e5fa75180e1ab9e4aa6ce09752ea2562, type: 2}
   pages: []
   animationUiPages: []
+  firstPageUI: {fileID: 81660327}
   previousScreens: {fileID: 0}
   subAnimationObject: {fileID: 130303918}
 --- !u!1 &130303918

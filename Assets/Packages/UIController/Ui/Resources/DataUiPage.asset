@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e3ac54de450b73489fc2bd0b34d8ee9, type: 3}
-  m_Name: DataUiPage
+  m_Name: DataUIPage
   m_EditorClassIdentifier: 
   listPageUi:
   - {fileID: -1767342336871684386, guid: 7baa16ccf1ae8914f8a699814344fbda, type: 3}

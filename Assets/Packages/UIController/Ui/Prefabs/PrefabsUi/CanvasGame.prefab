@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc9c654c0b024f47b9f907068fce5b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationType: 3
+  root: {fileID: 1727332779907950334}
   backButton: {fileID: 933146149793362731}
 --- !u!1 &6222243988162524144
 GameObject:

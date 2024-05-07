@@ -27,12 +27,12 @@ namespace Script.ScriptUI
             var animType = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.ScaleUp);
             if (animType != null)
             {
-                page.gameObject.transform.GetChild(0).gameObject.transform.DOScaleY(animType.pageStartPosition, animType.duration);
+                page.root.transform.DOScaleY(animType.pageStartPosition, animType.duration);
             }
             var animationUiPage = UIManager.instance.animationUiPages.FirstOrDefault( p=> p.Type == AnimationType.MoveLeft);
             if (animationUiPage != null)
             {
-                page.gameObject.transform.GetChild(0).gameObject.transform.DOLocalMoveX(animationUiPage.pageStartPosition, animationUiPage.duration);
+                page.root.transform.DOLocalMoveX(animationUiPage.pageStartPosition, animationUiPage.duration);
             }
         }
 

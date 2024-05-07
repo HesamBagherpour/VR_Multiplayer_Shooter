@@ -6,9 +6,7 @@ namespace Script.ScriptUI
 {
     public class PageSetting : BasePageUI
     {
-        public Button buttonShow;
-        public Button buttonBack;
-
+          [SerializeField]  private Button buttonBack;
         public void ShowPage()
         {
             // LinkerScriptUi.instance.managerPageUi.ChangeToScreen(this.gameObject);

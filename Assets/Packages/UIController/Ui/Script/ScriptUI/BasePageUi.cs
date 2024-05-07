@@ -13,15 +13,12 @@ namespace Script.ScriptUI
 
     {
         public abstract PageType Type { get; }
-
-
-        public event Action<BasePageUI> OnShow;
-        public event Action<BasePageUI> OnClose;
+        public GameObject root;
 
         void Start()
         {
             var page = UIManager.instance.pages.FirstOrDefault(p => p.Type == PageType.MainMenu);
-            if (page != null && page.gameObject.transform.GetChild(0).gameObject.activeSelf)
+            if (page != null && page.root.gameObject.activeSelf)
             {
                 UIManager.instance.currentScreen = page;
                 UIManager.instance.currentScreen.transform.SetAsLastSibling();
@@ -34,29 +31,26 @@ namespace Script.ScriptUI
 
         public void OpenPage(BasePageUI screenToChangeTo)
         {
-
             if (UIManager.instance.currentScreen != null)
             {
-                UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                UIManager.instance.currentScreen.root.SetActive(false);
             }
 
             if (screenToChangeTo != null)
             {
                 UIManager.instance.previousScreens = UIManager.instance.currentScreen;
                 UIManager.instance.currentScreen = screenToChangeTo;
-                UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                UIManager.instance.currentScreen.root.SetActive(true);
                 Debug.Log("here openpage");
-
             }
         }
 
         public void ClosePage(BasePageUI page)
         {
             Debug.Log("this0");
-
-            UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            UIManager.instance.currentScreen.root.SetActive(false);
             UIManager.instance.currentScreen = UIManager.instance.previousScreens;
-            UIManager.instance.currentScreen.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            UIManager.instance.currentScreen.root.SetActive(true);
         }
     }
 
