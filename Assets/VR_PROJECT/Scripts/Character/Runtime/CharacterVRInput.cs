@@ -1,80 +1,64 @@
 using UnityEngine;
-#if ENABLE_INPUT_SYSTEM
-using UnityEngine.InputSystem;
-#endif
+using FishNet.Object;
+using UnityEngine.Animations;
 
 namespace VR_PROJECT.Character
 {
-	public class CharacterVRInput : MonoBehaviour
-	{
-		[Header("Character Input Values")]
-		public Vector2 move;
-		public Vector2 look;
-		public bool jump;
-		public bool sprint;
+    public class CharacterVRInput : MonoBehaviour
+    {
+        [Header("Character Input Values")]
+        public Vector2 move;
+        public Vector2 look;
+        public bool jump;
+        public bool sprint;
 
-		[Header("Movement Settings")]
-		public bool analogMovement;
+        [Header("Movement Settings")]
+        public bool analogMovement;
 
-		[Header("Mouse Cursor Settings")]
-		public bool cursorLocked = true;
-		public bool cursorInputForLook = true;
+        [Header("Mouse Cursor Settings")]
+        public bool cursorLocked = true;
+        public bool cursorInputForLook = true;
 
-#if ENABLE_INPUT_SYSTEM
-		public void OnMove(InputValue value)
-		{
-			MoveInput(value.Get<Vector2>());
-		}
+        private void Update()
+        {
+            Move();
+            Jump();
+            Rotate();
+        }
 
-		public void OnLook(InputValue value)
-		{
-			if(cursorInputForLook)
-			{
-				LookInput(value.Get<Vector2>());
-			}
-		}
+        private void Jump()
+        {
+            bool Jumped = OVRInput.Get(OVRInput.Button.Three);
+            jump = Jumped;
+        }
 
-		public void OnJump(InputValue value)
-		{
-			JumpInput(value.isPressed);
-		}
+        private void Move()
+        {
+            Vector2 leftThumbstick = OVRInput.Get(OVRInput.RawAxis2D.LThumbstick);
+            bool _isRunning = OVRInput.Get(OVRInput.RawButton.LThumbstick);
+            sprint = _isRunning;
+            move = leftThumbstick;
+        }
 
-		public void OnSprint(InputValue value)
-		{
-			SprintInput(value.isPressed);
-		}
-#endif
+        private void Rotate()
+        {
+            Vector2 rightThumbstick = OVRInput.Get(OVRInput.RawAxis2D.RThumbstick);
+            look = rightThumbstick;
+        }
 
+        public Vector3 GetMovementDirection(Vector2 input)
+        {
+            float moveInput = input.y;
+            Vector3 leftRightMovement = transform.right * input.x;
 
-		public void MoveInput(Vector2 newMoveDirection)
-		{
-			move = newMoveDirection;
-		} 
+            Vector3 movement = leftRightMovement + transform.forward * moveInput;
 
-		public void LookInput(Vector2 newLookDirection)
-		{
-			look = newLookDirection;
-		}
+            return movement;
+        }
 
-		public void JumpInput(bool newJumpState)
-		{
-			jump = newJumpState;
-		}
-
-		public void SprintInput(bool newSprintState)
-		{
-			sprint = newSprintState;
-		}
-
-		private void OnApplicationFocus(bool hasFocus)
-		{
-			SetCursorState(cursorLocked);
-		}
-
-		private void SetCursorState(bool newState)
-		{
-			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
-		}
-	}
-	
+        public float GetRotationAngle(Vector2 input)
+        {
+            return input.x;
+        }
+    }
 }
