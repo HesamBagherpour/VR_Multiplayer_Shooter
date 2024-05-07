@@ -5,7 +5,7 @@ using Script.ScriptUI;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "DataAnimation", menuName = "ScriptableObjects/DataAnimation")]
-public class AnimationData : ScriptableObject
+public partial class AnimationData : ScriptableObject
 {
     public List<BaseAnimationUiPage> listAnimationData = new List<BaseAnimationUiPage>();
 
@@ -16,8 +16,7 @@ public class AnimationData : ScriptableObject
         {
             Debug.LogError($"There is no page with name {name}");
         }
+
         return page;
     }
-   
-  
 }
