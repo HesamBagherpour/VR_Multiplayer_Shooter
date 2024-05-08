@@ -1,7 +1,6 @@
 ﻿using FishNet.Managing;
-using FishNet.Transporting;
 using UnityEngine;
-using VR_PROJECT.Common;
+using VR_PROJECT.General;
 using VR_PROJECT.Network.Core;
 
 namespace VR_PROJECT.Network.Modules.FishNet

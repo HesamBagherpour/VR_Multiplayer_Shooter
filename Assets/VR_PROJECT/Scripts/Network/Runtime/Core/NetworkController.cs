@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using FishNet.Managing;
+using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
+using VR_PROJECT.General;
 
 namespace VR_PROJECT.Network.Core
 {
@@ -10,27 +10,28 @@ namespace VR_PROJECT.Network.Core
         #region Field
 
         private NetworkConfiguration _configuration;
-        protected bool _isAvailable;
 
         #endregion
 
         #region Properties
 
-        public bool IsAvailable => _isAvailable;
+        public bool IsAvailable { get; protected set; }
+        public bool IsServerStarted { get; protected set; }
+        public bool IsClientStarted { get; protected set; }
+        public bool IsHostStarted => IsServerStarted && IsClientStarted;
+        public bool IsOffline => !IsServerStarted && !IsClientStarted;
 
         #endregion
         
         #region Initialize
         
-        public virtual void Init()
+        public virtual UniTask<Result<bool>> Init()
         {
-            _configuration = LoadConfiguration();
+            Result<bool> result = null;
             
-            if (!CanInit())
-            {
-                _isAvailable = false;
-                return;
-            }
+            _configuration = LoadConfiguration();
+
+            return CanInit();
         }
         
         #endregion
@@ -38,15 +39,26 @@ namespace VR_PROJECT.Network.Core
         #region Private Methods
 
         protected abstract NetworkConfiguration LoadConfiguration();
-        protected virtual bool CanInit()
+        protected virtual UniTask<Result<bool>> CanInit()
         {
+            Result<bool> result = null;
+
             if (_configuration is null)
             {
-                Debug.LogError("NetworkConfig is not loaded and Network not available");
-                return false;
+                string errorMessage = "NetworkConfig is not loaded and Network not available";
+                
+                Debug.LogError(errorMessage);
+                IsAvailable = false;
+                
+                result = new Result<bool>()
+                {
+                    IsSuccess = false,
+                    Data = false,
+                    ErrorMessage = errorMessage
+                };
             }
 
-            return true;
+            return UniTask.FromResult(result);
         }
 
         #endregion

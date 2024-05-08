@@ -1,5 +1,8 @@
+using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using FishNet.Managing;
 using UnityEngine;
+using VR_PROJECT.General;
 using VR_PROJECT.Network.Core;
 
 namespace VR_PROJECT.Network.Modules.FishNet
@@ -11,20 +14,42 @@ namespace VR_PROJECT.Network.Modules.FishNet
 
         #region Initialize
 
-        public override void Init()
+        public override async UniTask<Result<bool>> Init()
         {
-            base.Init();
+            var result = await base.Init();
 
-            var networkManager = GameObject.Instantiate(_fishNetConfiguration.NetworkManager);
+            if (result != null)
+                return result;
 
-            if (!networkManager.Initialized)
+            _networkManager = GameObject.Instantiate(_fishNetConfiguration.NetworkManager);
+
+            if (!_networkManager.Initialized)
             {
-                _isAvailable = false;
-                Debug.LogError("FishNet NetworkManager Not Initialized!!!");
-                return;
+                string errorMessage = "FishNet NetworkManager Not Initialized!!!";
+                
+                IsAvailable = false;
+                
+                Debug.LogError(errorMessage);
+                
+                result = new Result<bool>()
+                {
+                    IsSuccess = false,
+                    Data = false,
+                    ErrorMessage = errorMessage
+                };
+                
+                return await UniTask.FromResult(result);
             }
+
+            _networkManager.TransportManager.Transport.SetClientAddress(_fishNetConfiguration.Address);
+
+            result = new Result<bool>() 
+            {
+                IsSuccess = true,
+                Data = true 
+            };
             
-            networkManager.TransportManager.Transport.SetClientAddress(_fishNetConfiguration.Address);
+            return await UniTask.FromResult(result);
         }
 
         #endregion
@@ -37,18 +62,29 @@ namespace VR_PROJECT.Network.Modules.FishNet
             return _fishNetConfiguration;
         }
 
-        protected override bool CanInit()
+        protected override async UniTask<Result<bool>> CanInit()
         {
-            if (!base.CanInit())
-                return false;
+            var result = await base.CanInit();
+
+            if (result != null)
+                return result;
 
             if (_fishNetConfiguration.NetworkManager is null)
             {
-                Debug.LogError("FishNet NetworkManager is null in FishNetConfiguration!!!");
-                return false;
+                string errorMessage = "FishNet NetworkManager is null in FishNetConfiguration!!!";
+
+                Debug.LogError(errorMessage);
+                IsAvailable = false;
+
+                result = new Result<bool>()
+                {
+                    IsSuccess = false,
+                    Data = false,
+                    ErrorMessage = errorMessage
+                };
             }
 
-            return true;
+            return await UniTask.FromResult(result);
         }
 
         #endregion
