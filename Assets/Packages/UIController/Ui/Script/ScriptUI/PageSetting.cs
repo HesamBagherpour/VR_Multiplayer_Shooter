@@ -41,13 +41,9 @@ namespace Script.ScriptUI
 
         private void ClosePage()
         {
-            var page = UIManager.Instance.pages.FirstOrDefault(p => p.Type == PageType.Setting);
-            var pageRoot = page.rootObject;
             var prvScreen = UIManager.Instance.previousScreens;
-            if (page == null)
-                return;
             Hide(this);
-            pageRoot.DOLocalMoveX(-1900, 0.2f);
+            rootObject.DOLocalMoveX(-1900, 0.2f);
             prvScreen.rootObject.DOScaleY(1, 0.2f);
         }
     }
