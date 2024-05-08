@@ -10,8 +10,6 @@ namespace Script.ScriptUI
 {
     public class MainMenuPageUi : BasePageUI
     {
-        // public event Action OnHidePage;
-
         public Button gamePage;
         public Button settingPage;
         public Button exitGameButton;
@@ -54,10 +52,8 @@ namespace Script.ScriptUI
             var pageRoot = page.rootObject;
             Debug.Log("Opening Settings");
             Show(page);
-            //page.AnimationHandler.DoMove();
-            pageRoot.transform.DoCustomMove(
-                CustomAnimationData.Instance.MyAnimations.Find(t =>
-                    t.animationType == MyAnimation.AnimationType.MoveLeft), false);
+            pageRoot.DOLocalMove(Vector3.zero, 0.2f);
+            rootObject.DOScaleY(0, 0.2f);
         }
 
         private void OpenGamePage()
@@ -68,9 +64,8 @@ namespace Script.ScriptUI
                 return;
             Debug.Log("Opening Game");
             Show(page);
-
-            pageRoot.DoCustomMove(CustomAnimationData.Instance.MyAnimations.Find(t =>
-                t.animationType == MyAnimation.AnimationType.MoveCenter));
+            rootObject.DOScaleY(0, 0.2f);
+            pageRoot.DOLocalMove(Vector3.zero, 0.2f);
         }
 
         private void ExitGame()

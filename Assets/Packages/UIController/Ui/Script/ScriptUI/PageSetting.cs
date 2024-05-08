@@ -1,4 +1,5 @@
 using System.Linq;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,14 +42,13 @@ namespace Script.ScriptUI
         private void ClosePage()
         {
             var page = UIManager.Instance.pages.FirstOrDefault(p => p.Type == PageType.Setting);
-            if (page != null)
-            {
-                var animType = UIManager.Instance.animationUiPages.FirstOrDefault(p => p.Type == AnimationType.ScaleUp);
-                if (animType != null)
-                {
-                    animType.Close(page);
-                }
-            }
+            var pageRoot = page.rootObject;
+            var prvScreen = UIManager.Instance.previousScreens;
+            if (page == null)
+                return;
+            Hide(this);
+            pageRoot.DOLocalMoveX(-1900, 0.2f);
+            prvScreen.rootObject.DOScaleY(1, 0.2f);
         }
     }
 }

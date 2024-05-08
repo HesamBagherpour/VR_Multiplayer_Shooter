@@ -15,7 +15,6 @@ namespace Script.ScriptUI
         public abstract PageType Type { get; }
 
         public RectTransform rootObject;
-        public CustomAnimationHandler AnimationHandler;
         public event Action<BasePageUI> OnShow;
         public event Action<BasePageUI> OnClose;
 
