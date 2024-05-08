@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using Script.ScriptUI;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
+using VR_PROJECT;
 
 public class ClientPage : BasePageUI
 {
-    [SerializeField] private Button backButton;
+    [SerializeField] private TMP_InputField _addressInput;
+    [SerializeField] private Button _joinButton;
+    [SerializeField] private Button _backButton;
 
     private BasePageUI _basePageUIImplementation;
     public override PageType Type => _basePageUIImplementation.Type;
@@ -22,8 +27,17 @@ public class ClientPage : BasePageUI
 
     private void Init()
     {
-        backButton.onClick.AddListener(ButtonClosePage);
+        _joinButton.onClick.AddListener(OnJoinButtonClick);
+        _backButton.onClick.AddListener(ButtonClosePage);
 
+    }
+
+    private async void OnJoinButtonClick()
+    {
+       var result = await GameManager.Instance.NetworkController.ConnectClient(_addressInput.text);
+       
+       if(result.IsSuccess)
+           CloseAllPages();
     }
 
     public override void Hide(BasePageUI page)

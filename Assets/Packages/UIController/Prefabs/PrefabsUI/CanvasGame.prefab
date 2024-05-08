@@ -1178,7 +1178,9 @@ MonoBehaviour:
   root: {fileID: 4343352644742866818}
   uiPageMover: {fileID: 219212834903892661}
   uiPageScaler: {fileID: 4337979195832787259}
-  backButton: {fileID: 4694060222289758687}
+  _addressInput: {fileID: 903534869897496418}
+  _joinButton: {fileID: 189238329749790021}
+  _backButton: {fileID: 4694060222289758687}
   PageType: 0
 --- !u!1 &5094807889256848017
 GameObject:
@@ -2258,6 +2260,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7be9c901485221c49ba13321c5fdb117, type: 3}
+--- !u!114 &189238329749790021 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5691500591981793008, guid: 7be9c901485221c49ba13321c5fdb117,
+    type: 3}
+  m_PrefabInstance: {fileID: 5502284802711081909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &6079997243349466692 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1746402317804842481, guid: 7be9c901485221c49ba13321c5fdb117,
