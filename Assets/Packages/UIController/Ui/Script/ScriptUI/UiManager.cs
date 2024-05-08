@@ -24,15 +24,12 @@ namespace Script.ScriptUI
             instance = this;
             GenratePageUi();
             firstPageUI.transform.SetAsLastSibling();
+            pages = pageContainer.listPageUi;
             // previousScreens = new List<BasePageUi>();
         }
         public void GenratePageUi()
         {
-            for (int i = 0; i < pageContainer.listPageUi.Count; i++)
-            {
-                var myPage = Instantiate(pageContainer.listPageUi[i], transform.position, Quaternion.identity);
-                pages.Add(myPage);
-            }
+           
             for (int i = 0; i < animationData.listAnimationData.Count; i++)
             {
                 var myPage = Instantiate(animationData.listAnimationData[i], transform.position, Quaternion.identity);
