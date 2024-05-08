@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using FishNet.Managing;
+using Unity.VisualScripting;
 using UnityEngine;
 using VR_PROJECT.General;
 using VR_PROJECT.Network.Core;
@@ -18,38 +19,90 @@ namespace VR_PROJECT.Network.Modules.FishNet
         {
             var result = await base.Init();
 
-            if (result != null)
+            if (result is not null)
                 return result;
 
-            _networkManager = GameObject.Instantiate(_fishNetConfiguration.NetworkManager);
+            _networkManager = GameObject.FindObjectOfType<NetworkManager>();
+
+            if (_networkManager is null)
+                _networkManager = GameObject.Instantiate(_fishNetConfiguration.NetworkManager);
 
             if (!_networkManager.Initialized)
             {
                 string errorMessage = "FishNet NetworkManager Not Initialized!!!";
-                
+
                 IsAvailable = false;
-                
+
                 Debug.LogError(errorMessage);
-                
+
                 result = new Result<bool>()
                 {
                     IsSuccess = false,
                     Data = false,
                     ErrorMessage = errorMessage
                 };
-                
+
                 return await UniTask.FromResult(result);
             }
 
             _networkManager.TransportManager.Transport.SetClientAddress(_fishNetConfiguration.Address);
 
-            result = new Result<bool>() 
+            result = new Result<bool>()
             {
                 IsSuccess = true,
-                Data = true 
+                Data = true
             };
-            
+
             return await UniTask.FromResult(result);
+        }
+
+        #endregion
+
+        #region INetworkController
+
+        public override UniTask<Result> ConnectServer(ushort port = 0)
+        {
+            if(port != 0)
+                _networkManager.TransportManager.Transport.SetPort(port);
+            
+           var isConnected = _networkManager.ServerManager.StartConnection();
+
+           var result = new Result()  { IsSuccess = isConnected };
+
+           return UniTask.FromResult(result);
+        }
+
+        public override UniTask<Result> DisconnectServer(bool sendDisconnetionMessage = false)
+        {
+            var isDisconnected = _networkManager.ServerManager.StopConnection(sendDisconnetionMessage);
+            
+            var result = new Result()  { IsSuccess = isDisconnected };
+
+            return UniTask.FromResult(result);
+        }
+
+        public override UniTask<Result> ConnectClient(string address = "", ushort port = 0)
+        {
+            if(address != string.Empty)
+                _networkManager.TransportManager.Transport.SetClientAddress(address);
+            
+            if(port != 0)
+                _networkManager.TransportManager.Transport.SetPort(port);
+
+            var isConnected = _networkManager.ClientManager.StartConnection();
+
+            var result = new Result()  { IsSuccess = isConnected };
+
+            return UniTask.FromResult(result);
+            
+        }
+        public override UniTask<Result> DisconnectClient()
+        {
+            var isDisconnected = _networkManager.ClientManager.StopConnection();
+            
+            var result = new Result()  { IsSuccess = isDisconnected };
+
+            return UniTask.FromResult(result);
         }
 
         #endregion
@@ -66,7 +119,7 @@ namespace VR_PROJECT.Network.Modules.FishNet
         {
             var result = await base.CanInit();
 
-            if (result != null)
+            if (result is not null)
                 return result;
 
             if (_fishNetConfiguration.NetworkManager is null)

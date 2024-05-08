@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.Serialization;
-using VR_PROJECT.General;
 
 namespace VR_PROJECT.Network.Core
 {
