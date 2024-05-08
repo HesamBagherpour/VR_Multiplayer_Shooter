@@ -330,7 +330,8 @@ PrefabInstance:
       value: WarcCity_Scene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8068192401142075360, guid: e27a64bd03b74ab43a7d63828b448843, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e27a64bd03b74ab43a7d63828b448843, type: 3}
