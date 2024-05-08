@@ -89,6 +89,8 @@ public class AttackAction : Action
 		Vector3 shotDirection = controller.personalTarget - controller.enemyAnimation.gunMuzzle.position;
 		// Cast shot.
 		Ray ray = new Ray(controller.enemyAnimation.gunMuzzle.position, shotDirection.normalized + imprecision);
+		Debug.DrawRay(controller.enemyAnimation.gunMuzzle.position, shotDirection.normalized + imprecision * 100f, Color.magenta);
+		//Debug.Break();
 		if (Physics.Raycast(ray, out RaycastHit hit, controller.viewRadius, controller.generalStats.shotMask.value))
 		{
 			// Hit something organic? Consider all layers in target mask as organic.

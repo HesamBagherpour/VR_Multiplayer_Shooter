@@ -28,6 +28,7 @@ public class HealthManager : MonoBehaviour
 	// You may remove the 'virtual' keyword before coding the content.
 	public virtual void TakeDamage(Vector3 location, Vector3 direction, float damage, Collider bodyPart=null, GameObject origin=null)
 	{
+		
 	}
 
 	// This is the message receiver for damage taken by a child gameObject rigidbody (ex.: ragdoll)

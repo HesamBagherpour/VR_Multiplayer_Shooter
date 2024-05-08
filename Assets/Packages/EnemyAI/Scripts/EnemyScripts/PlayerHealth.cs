@@ -15,7 +15,7 @@ public class PlayerHealth : HealthManager
          dead = true;
          health = 0;
          Debug.Log("Dead");
-         SceneManager.LoadScene(0);
+         //SceneManager.LoadScene(0);
       }
       else
       {

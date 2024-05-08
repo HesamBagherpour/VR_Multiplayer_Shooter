@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8a8978f5979594489a2ddfdf4b9dc1, type: 3}
   m_Name: Mad_Armature
   m_EditorClassIdentifier: 
-  aimOffset: {x: 16.8, y: 24.8, z: 1.39}
-  leftArmAim: {x: 0, y: 0, z: 0}
+  aimOffset: {x: 2.9, y: 24.8, z: 2.2}
+  leftArmAim: {x: -1.07, y: -7.89, z: 0}
   leftArmGuard: {x: 0, y: 0, z: 0}
   changeCoverChance: 50
   weaponType: 2

@@ -6,11 +6,11 @@ using UnityEngine;
 
 public class PlayerRefrenceFinder : MonoBehaviour
 {
-   private StateController stateController;
+   [SerializeField]private StateController stateController;
 
-   private void Awake()
+   private void Start()
    {
       stateController = GetComponent<StateController>();
-      //stateController.aimTarget = GameObject.FindGameObjectWithTag("Player").GetComponent<ChestHolderRefrence>().upperChest.transform;
+      stateController.aimTarget = GameObject.FindGameObjectWithTag("Player").GetComponent<ChestHolderRefrence>().upperChest.transform/*<ChestHolderRefrence>().upperChest.transform*/;
    }
 }

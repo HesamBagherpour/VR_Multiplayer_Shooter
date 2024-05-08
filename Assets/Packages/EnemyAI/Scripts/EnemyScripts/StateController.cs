@@ -130,7 +130,7 @@ namespace EnemyAI
 				coverLookup.Setup(generalStats.coverMask);
 			}
 			// Ensure the target has a health manager component to receive shots.
-			Debug.Assert(aimTarget.root.GetComponent<HealthManager>(), "You must add a health manager to the target");
+//			Debug.Assert(aimTarget.root.GetComponent<HealthManager>(), "You must add a health manager to the target");
 		}
 
 		public void Start()
