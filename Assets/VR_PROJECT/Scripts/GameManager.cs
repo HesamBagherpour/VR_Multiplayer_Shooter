@@ -1,13 +1,24 @@
 using Cysharp.Threading.Tasks;
+using Emaj.Patterns;
 using UnityEngine;
 using VR_PROJECT.Network.Core;
 using VR_PROJECT.Network.Modules.FishNet;
 
 namespace VR_PROJECT
 {
-    public class GameManager : MonoBehaviour
+    public class GameManager : SingletonMonoBehaviour<GameManager>
     {
-        private INetworkController _networkController;
+        #region Fields
+
+        private NetworkController _networkController;
+        
+        #endregion
+
+        #region Properties
+
+        public INetworkController NetworkController => _networkController;
+
+        #endregion
 
         private void Awake()
         {

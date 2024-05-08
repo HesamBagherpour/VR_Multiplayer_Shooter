@@ -36,6 +36,15 @@ namespace VR_PROJECT.Network.Core
         
         #endregion
 
+        #region INetworkController
+
+        public abstract UniTask<Result> ConnectServer(ushort port = 0);
+        public abstract UniTask<Result> DisconnectServer(bool sendDisconnetionMessage = false);
+        public abstract UniTask<Result> ConnectClient(string address = "", ushort port = 0);
+        public abstract UniTask<Result> DisconnectClient();
+
+        #endregion
+
         #region Private Methods
 
         protected abstract NetworkConfiguration LoadConfiguration();
