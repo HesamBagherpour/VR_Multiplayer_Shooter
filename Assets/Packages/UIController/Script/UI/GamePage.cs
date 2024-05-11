@@ -13,7 +13,8 @@ namespace Packages.UIController.Script.UI
         [SerializeField] private Button backButton;
         [SerializeField] private Button serverButton;
         [SerializeField] private Button clientButton;
-        [SerializeField] private ClientPage clientPage;
+        [SerializeField] private Vector3 initScaleState;
+        public bool isFinishedAnim = false;
         public override PageType Type => PageType.Game;
 
         public override void Init()
@@ -22,6 +23,7 @@ namespace Packages.UIController.Script.UI
             serverButton.onClick.AddListener(OnServerButtonClick);
             backButton.onClick.AddListener(Back);
             clientButton.onClick.AddListener(() => { UIManager.Instance.OpenPage(PageType.Client); });
+            root.transform.localScale = initScaleState;
         }
 
         public override void Show(BasePageUI page)

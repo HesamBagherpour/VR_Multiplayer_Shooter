@@ -16,6 +16,7 @@ namespace Packages.UIController.Script.UI
         [SerializeField] private BasePageUI firstPageUI;
         public BasePageUI previousPage;
         public List<BasePageUI> openPages = new List<BasePageUI>();
+        public  List<BaseAnimationUIPage> baseAnimationList =new();
 
         private void Awake()
         {
@@ -47,32 +48,27 @@ namespace Packages.UIController.Script.UI
         public void OpenPage(PageType type)
         {
             var page = pages.Find(t => t.Type == type);
-            print("Open Page Type : " + type.ToString());
             if (page == null)
                 return;
-
-            print("Opened");
-
             if (currentPage == null)
                 return;
-
-            print("current page was => " + currentPage.transform.name);
-
             currentPage.Hide();
             previousPage = currentPage;
             openPages.Add(currentPage);
             currentPage = page;
             currentPage.Show();
+            Debug.Log("open");
         }
 
         public void ClosePage()
         {
+            Debug.Log("// "+previousPage);
+
             currentPage.Hide();
+            currentPage = previousPage;
             if (openPages.Count > 0)
             {
-                currentPage = openPages[^1];
-                openPages.Remove(
-                    openPages[^1]);
+                openPages.Remove(openPages[^1]);
             }
 
             currentPage.Show();

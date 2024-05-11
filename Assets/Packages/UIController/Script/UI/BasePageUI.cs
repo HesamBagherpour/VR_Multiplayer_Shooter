@@ -9,6 +9,8 @@ namespace Packages.UIController.Script.UI
         public abstract PageType Type { get; }
         public Canvas rootCanvas;
         public GameObject root;
+        public Vector3 defaultScale;
+        public Vector3 defaultPosition;
 
         public abstract void Init();
 
@@ -19,11 +21,18 @@ namespace Packages.UIController.Script.UI
         public void Show()
         {
             rootCanvas.enabled = true;
+            Debug.Log(rootCanvas.name);
         }
 
         public void Hide()
         {
             rootCanvas.enabled = false;
+        }
+
+        public void ResetAnimation()
+        {
+            root.transform.localScale = defaultScale;
+            root.transform.localPosition = defaultPosition;
         }
     }
 

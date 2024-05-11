@@ -336,8 +336,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootCanvas: {fileID: 2819426298140334849}
   root: {fileID: 8997684919163106617}
-  uiPageMover: {fileID: 597491069542857273}
-  uiPageScaler: {fileID: 1366340640406001231}
   _addressInput: {fileID: 2193061146253632409}
   _joinButton: {fileID: 5014145850199147366}
   _backButton: {fileID: 3687155244522371208}

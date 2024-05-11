@@ -220,8 +220,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootCanvas: {fileID: 3568256009979222924}
   root: {fileID: 1727332779907950334}
-  uiPageMover: {fileID: 219212834903892661}
-  uiPageScaler: {fileID: 4337979195832787259}
   backButton: {fileID: 3418630331684917335}
   serverButton: {fileID: 7633421302049289354}
   clientButton: {fileID: 4502541771010124885}

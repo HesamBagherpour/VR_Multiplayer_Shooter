@@ -127,8 +127,8 @@ GameObject:
   - component: {fileID: 7867043164118115005}
   - component: {fileID: 7118579456351069416}
   - component: {fileID: 2100807592790743292}
-  - component: {fileID: -6752534791870235691}
-  - component: {fileID: 5590399364750375869}
+  - component: {fileID: 6456231617860006113}
+  - component: {fileID: 1644667913262374786}
   m_Layer: 5
   m_Name: Canvas-Settings
   m_TagString: Untagged
@@ -233,10 +233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootCanvas: {fileID: 2893840046279363952}
   root: {fileID: 3050682079933354728}
-  uiPageMover: {fileID: -6752534791870235691}
-  uiPageScaler: {fileID: 5590399364750375869}
   backButton: {fileID: 1134126747671420788}
---- !u!114 &-6752534791870235691
+--- !u!114 &6456231617860006113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,13 +243,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5661490307442419698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7a9a3218cc32c04da94f2fd8062c01a, type: 3}
+  m_Script: {fileID: 11500000, guid: db6173f41979bbb4db2fefbaf77966ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageStartPosition: 1500
-  pageEndPosition: 0
-  duration: 0.3
---- !u!114 &5590399364750375869
+--- !u!114 &1644667913262374786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,13 +255,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5661490307442419698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c09a119de0f03642a9b07b19eef0e7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a76bf5c23304162a336630873fab445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageStartPosition: 1
-  pageEndPosition: 0
-  duration: 0.3
-  animationType: 0
+  target: 0
+  duration: 0.2
+  _state: 2
+  _scaleType: 0
 --- !u!1 &7951521239170125559
 GameObject:
   m_ObjectHideFlags: 0
