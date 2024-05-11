@@ -28,22 +28,22 @@ namespace VR_PROJECT.Character
 
         private void Jump()
         {
-            bool Jumped = OVRInput.Get(OVRInput.Button.Three);
-            jump = Jumped;
+           // bool Jumped =  ;
+            //jump = Jumped;
         }
 
         private void Move()
         {
-            Vector2 leftThumbstick = OVRInput.Get(OVRInput.RawAxis2D.LThumbstick);
-            bool _isRunning = OVRInput.Get(OVRInput.RawButton.LThumbstick);
-            sprint = _isRunning;
-            move = leftThumbstick;
+            // Vector2 leftThumbstick = ;
+            //  bool _isRunning = ;
+            // sprint = _isRunning;
+            // move = leftThumbstick;
         }
 
         private void Rotate()
         {
-            Vector2 rightThumbstick = OVRInput.Get(OVRInput.RawAxis2D.RThumbstick);
-            look = rightThumbstick;
+            // Vector2 rightThumbstick = OVRInput.Get(OVRInput.RawAxis2D.RThumbstick);
+            // look = rightThumbstick;
         }
 
         public Vector3 GetMovementDirection(Vector2 input)
