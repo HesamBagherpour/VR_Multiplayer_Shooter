@@ -151,8 +151,8 @@ Material:
     - _rain_switch: 1
     - _rain_tile: 3.83
     - _reflection_step_1: -0.24
-    - _reflection_step_2: 0.96
-    - _refract: 11
+    - _reflection_step_2: 0.76
+    - _refract: -0.71
     - _smooth_step_1: 3.47
     - _smooth_step_2: -0.94
     - _step_1: 1.04
