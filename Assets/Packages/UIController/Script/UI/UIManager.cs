@@ -26,8 +26,22 @@ namespace Packages.UIController.Script.UI
         {
             currentPage = firstPageUI = pages.Find(t => t.Type == type);
             pages.ForEach(t => t.Init());
+            PopupUI.Instance.Init();
             await UniTask.Delay(100);
             currentPage.Show();
+        }
+
+        public void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                PopupUI.Instance.ShowMessage($"Message_{Random.Range(0, 100)}", () => { print("hello muhammad"); });
+            }
+
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                PopupUI.Instance.ShowMessage($"Message_{Random.Range(100, 200)}", () => { print("Yellow Jaffar"); });
+            }
         }
 
         public void OpenPage(PageType type)
