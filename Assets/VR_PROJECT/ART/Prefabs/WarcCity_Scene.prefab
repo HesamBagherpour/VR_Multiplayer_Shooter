@@ -109,7 +109,7 @@ Transform:
   m_GameObject: {fileID: 49548294108133508}
   serializedVersion: 2
   m_LocalRotation: {x: 0.99991965, y: 0.012679829, z: -0, w: 0}
-  m_LocalPosition: {x: 2.4402413, y: 0.5809818, z: -4.711}
+  m_LocalPosition: {x: 2.4402413, y: 0.5809818, z: -5.551}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.83919024}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.030998647}
   m_FadeFactor: 1
 --- !u!1 &90319756683176070
@@ -164,13 +164,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90319756683176070}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.99989426, z: -0, w: -0.014547206}
-  m_LocalPosition: {x: 2.472, y: 7.207191, z: -6.174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.481, y: 7.207191, z: -6.483}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: -181.667, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4666364530664184215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,12 +188,12 @@ MonoBehaviour:
   m_FadeScale: 0.9
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
+  m_UVScale: {x: 1, y: 0.98999196}
+  m_UVBias: {x: 0, y: 0.000000054186042}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.22306097}
-  m_Size: {x: 1.9, y: 2.2, z: 0.44612193}
+  m_Offset: {x: 0, y: -0.0110087395, z: -0.068483874}
+  m_Size: {x: 1.9, y: 2.1779823, z: 0.34752837}
   m_FadeFactor: 1
 --- !u!1 &109256961907067583
 GameObject:
@@ -470,7 +470,7 @@ Transform:
   m_GameObject: {fileID: 165501785424919957}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.427, y: 3.648, z: 2.73}
+  m_LocalPosition: {x: -8.427, y: 3.648, z: 2.444}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -497,8 +497,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: -0.1869443}
-  m_Size: {x: 4.86, y: 1.22, z: 0.77893937}
+  m_Offset: {x: 0, y: 0, z: -0.040048152}
+  m_Size: {x: 4.86, y: 1.22, z: 0.14524657}
   m_FadeFactor: 1
 --- !u!1 &168045642080858986
 GameObject:
@@ -516,7 +516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9078834003314628319
 Transform:
   m_ObjectHideFlags: 0
@@ -916,62 +916,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &362470417285383781
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2791841783939135276}
-  - component: {fileID: 3707384406650765148}
-  m_Layer: 0
-  m_Name: Decal Projector (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &2791841783939135276
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362470417285383781}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 27.889, y: 3.665, z: 1.304}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &3707384406650765148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362470417285383781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: f22e6f4f88ca3fb4fa7e09dcddb7a2e1, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1, z: 1}
-  m_FadeFactor: 1
 --- !u!1 &396547734985880821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1112,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: -95733.95, y: -3.3072986e+9, z: 1.37963e-26, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1222,7 +1166,7 @@ Transform:
   m_GameObject: {fileID: 410119875369187837}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 17.202, y: 7.893, z: 12.012}
+  m_LocalPosition: {x: 15.19, y: 7.893, z: 12.012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1249,7 +1193,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3.48, y: 1.34, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &439381623119887603
@@ -1305,7 +1249,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.019443944}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2.72, y: 1.83, z: 0.03888789}
   m_FadeFactor: 1
 --- !u!1 &444654614772940434
@@ -1618,7 +1562,7 @@ Transform:
   m_GameObject: {fileID: 476252039900852747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 5.379, y: 2.647, z: -4.711}
+  m_LocalPosition: {x: 5.379, y: 2.647, z: -5.559}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1645,7 +1589,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.84116447}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.063522816}
   m_FadeFactor: 1
 --- !u!1 &483990105518793239
@@ -2023,7 +1967,7 @@ Transform:
   m_GameObject: {fileID: 541400279901774999}
   serializedVersion: 2
   m_LocalRotation: {x: -1.0903589e-15, y: 1, z: 0.000000014901163, w: -0.000000119209275}
-  m_LocalPosition: {x: 22.407, y: 0.547, z: -3.158}
+  m_LocalPosition: {x: 22.407, y: 0.547, z: -3.508}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2050,7 +1994,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.44957572}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 1, z: 0.106570005}
   m_FadeFactor: 1
 --- !u!1 &554810351563616176
@@ -2143,7 +2087,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 3600
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1, z: 13, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2695,7 +2639,7 @@ Transform:
   m_GameObject: {fileID: 747871799791241267}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.001, y: 2.163, z: 6.26}
+  m_LocalPosition: {x: 13.001, y: 2.163, z: 6.346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2722,7 +2666,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 1, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &760092983713833557
@@ -2751,7 +2695,7 @@ Transform:
   m_GameObject: {fileID: 760092983713833557}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7160157, y: -0.69808424, z: -0, w: 0}
-  m_LocalPosition: {x: 3.44, y: 3.34, z: -4.711}
+  m_LocalPosition: {x: 3.44, y: 3.34, z: -5.566}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2778,7 +2722,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.83919024}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.030998647}
   m_FadeFactor: 1
 --- !u!1 &761758949501875042
@@ -2807,7 +2751,7 @@ Transform:
   m_GameObject: {fileID: 761758949501875042}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.9137363, y: 3.037191, z: -19.378433}
+  m_LocalPosition: {x: 7.523, y: 3.037191, z: -19.378433}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2834,7 +2778,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1.9, y: 2.2, z: 1}
   m_FadeFactor: 1
 --- !u!1 &763157167641313400
@@ -3494,9 +3438,6 @@ Transform:
   - {fileID: 6084621694653556029}
   - {fileID: 3620168648712231550}
   - {fileID: 9101623128333288286}
-  - {fileID: 4556788340541138837}
-  - {fileID: 4300834232343248747}
-  - {fileID: 260066684140592501}
   - {fileID: 8750385984291600626}
   - {fileID: 866968249970435894}
   - {fileID: 5302993178505227148}
@@ -3505,7 +3446,6 @@ Transform:
   - {fileID: 7757228816384520268}
   - {fileID: 1466514596268127292}
   - {fileID: 9218920867386950808}
-  - {fileID: 3987468431581442247}
   - {fileID: 294432879269017201}
   - {fileID: 4811418824441216024}
   - {fileID: 8892546413316128449}
@@ -3540,7 +3480,6 @@ Transform:
   - {fileID: 2814699445740340820}
   - {fileID: 5607344262861437815}
   - {fileID: 116970579667008837}
-  - {fileID: 2633349374312815158}
   - {fileID: 4619369233045308964}
   - {fileID: 1234285742765507239}
   - {fileID: 7215324000798284694}
@@ -3549,11 +3488,6 @@ Transform:
   - {fileID: 7514014487791460286}
   - {fileID: 150788149834744958}
   - {fileID: 8266236552936929552}
-  - {fileID: 2791841783939135276}
-  - {fileID: 1759828605122814404}
-  - {fileID: 1004747193720142073}
-  - {fileID: 2132121777138882252}
-  - {fileID: 4362648014264852757}
   - {fileID: 9202158382707665787}
   - {fileID: 6263245477744862016}
   - {fileID: 3560626467245453267}
@@ -3619,6 +3553,7 @@ Transform:
   - {fileID: 8043749214708531028}
   - {fileID: 6103854759924028807}
   - {fileID: 5229866279590098406}
+  - {fileID: 7036386566942311185}
   m_Father: {fileID: 1259934588636072212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &887800182781991219
@@ -3711,7 +3646,7 @@ Light:
   m_BounceIntensity: 2.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 6e-44, z: 1e-44, w: 3.9382e-41}
+  m_BoundingSphereOverride: {x: 5.3e-44, y: 1e-45, z: 1, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -3765,7 +3700,7 @@ Transform:
   m_GameObject: {fileID: 888579894174444879}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 15.03, y: 3.63, z: -7.965}
+  m_LocalPosition: {x: 15.173, y: 3.63, z: -7.965}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3792,7 +3727,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 2.62, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &957870858028341059
@@ -4105,7 +4040,7 @@ Transform:
   m_GameObject: {fileID: 1020185370807246026}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6615125, y: -0.644946, z: 0.26714468, w: -0.2740067}
-  m_LocalPosition: {x: -0.571, y: 0.787, z: -4.769}
+  m_LocalPosition: {x: -0.415, y: 0.791, z: -6.046}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4132,7 +4067,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.0105898}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.37379873}
   m_FadeFactor: 1
 --- !u!1 &1028213680035185335
@@ -4278,13 +4213,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047914185138230076}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.719736, y: 3.050191, z: -34.093433}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 7.212, y: 3.050191, z: -34.276}
   m_LocalScale: {x: 1.6, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!114 &6668015320284232708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4306,7 +4241,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1.9, y: 2.02, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1056861224397084941
@@ -4335,7 +4270,7 @@ Transform:
   m_GameObject: {fileID: 1056861224397084941}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 7.01, y: 5.75, z: -19.36}
+  m_LocalPosition: {x: 7.25, y: 5.75, z: -19.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4362,7 +4297,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.20599961}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.061024234}
   m_FadeFactor: 1
 --- !u!1 &1063371899449976068
@@ -4993,7 +4928,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 4.86, y: 1.22, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1172902559405761379
@@ -5022,7 +4957,7 @@ Transform:
   m_GameObject: {fileID: 1172902559405761379}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.000000119209275, z: -0, w: 1}
-  m_LocalPosition: {x: 19.3, y: 7.773, z: 6.36}
+  m_LocalPosition: {x: 17.084, y: 7.773, z: 6.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5049,7 +4984,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3.48, y: 1.34, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &1186801439278240641
@@ -5848,7 +5783,7 @@ Transform:
   m_GameObject: {fileID: 1357218720074404288}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00089832186, y: -0.7071062, z: 0.01798037, w: 0.7068782}
-  m_LocalPosition: {x: 7.913, y: 3.518, z: -15.893}
+  m_LocalPosition: {x: 7.376, y: 3.505, z: -15.893}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5875,7 +5810,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1.9, y: 1.24, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1359133890788484403
@@ -5968,7 +5903,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 3e-45, z: 0, w: 6e-45}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -6330,7 +6265,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901163, y: -0.0000001490116, z: -5.2636783e-15,
     w: 1}
-  m_LocalPosition: {x: 16.97, y: 3.242, z: -11.77}
+  m_LocalPosition: {x: 16.97, y: 3.242, z: -11.603}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6357,7 +6292,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2.72, y: 1.83, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &1407941349733667695
@@ -6386,7 +6321,7 @@ Transform:
   m_GameObject: {fileID: 1407941349733667695}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901161, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.73, y: 3.592, z: 5.804}
+  m_LocalPosition: {x: 20.324, y: 3.592, z: 6.452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6413,8 +6348,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Offset: {x: 0, y: 0, z: -0.016302159}
+  m_Size: {x: 1, y: 1, z: 0.107706904}
   m_FadeFactor: 1
 --- !u!1 &1421870758101462569
 GameObject:
@@ -6560,7 +6495,7 @@ Transform:
   m_GameObject: {fileID: 1423422107700203693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.999678, w: -0.025374614}
-  m_LocalPosition: {x: 2.948, y: 1.973, z: 6.26}
+  m_LocalPosition: {x: 2.948, y: 1.973, z: 6.543}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6587,7 +6522,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &1441160086680196372
@@ -7112,12 +7047,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.97033256}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
-  m_Size: {x: 4.86, y: 1.48, z: 1}
+  m_Offset: {x: 0, y: -0.02195394, z: 0}
+  m_Size: {x: 4.86, y: 1.4360921, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1563558945067924689
 GameObject:
@@ -7146,7 +7081,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901163, y: -0.00000086426724, z: -1.5594364e-14,
     w: 1}
-  m_LocalPosition: {x: 2.421, y: 1.5, z: -5.74}
+  m_LocalPosition: {x: 2.421, y: 1.5, z: -5.552}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7173,7 +7108,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.20599961}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.061024234}
   m_FadeFactor: 1
 --- !u!1 &1564739778903097998
@@ -7550,7 +7485,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 1e-45}
+  m_BoundingSphereOverride: {x: NaN, y: 0.0000056659555, z: 5.4e-43, w: 0.000000025009342}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -7604,7 +7539,7 @@ Transform:
   m_GameObject: {fileID: 1615489996598559291}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.883, y: 1.866, z: 6.26}
+  m_LocalPosition: {x: 0.892, y: 2.86, z: 6.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7631,7 +7566,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1619464480689879028
@@ -7724,7 +7659,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 3600
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 3e-45, z: 4.5e-44, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -7923,7 +7858,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 1, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1694284365932589698
@@ -8016,7 +7951,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: -95733.95, y: -3.3072986e+9, z: 1.37963e-26, w: 6.493e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8134,7 +8069,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: NaN, z: 2.1056e-41, w: 0}
+  m_BoundingSphereOverride: {x: 2.7e-44, y: 1.47e-43, z: 1.4e-43, w: 4.6e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8271,7 +8206,7 @@ Transform:
   m_GameObject: {fileID: 1716882353087417719}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.627736, y: 3.050191, z: -39.48}
+  m_LocalPosition: {x: 10.052, y: 3.073, z: -39.71}
   m_LocalScale: {x: 1.6, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8298,7 +8233,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1.9, y: 2.02, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1750207605369722103
@@ -8415,62 +8350,6 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &1757694670924477364
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1004747193720142073}
-  - component: {fileID: 7941486756628990720}
-  m_Layer: 0
-  m_Name: Decal Projector (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &1004747193720142073
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757694670924477364}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 27.438, y: 3.334, z: 1.926}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &7941486756628990720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757694670924477364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: f22e6f4f88ca3fb4fa7e09dcddb7a2e1, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1.99, z: 1}
-  m_FadeFactor: 1
 --- !u!1 &1817236053372138396
 GameObject:
   m_ObjectHideFlags: 0
@@ -8880,7 +8759,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.046189975}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 1, z: 0.09237995}
   m_FadeFactor: 1
 --- !u!1 &1922154991176977885
@@ -9265,7 +9144,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901163, y: -0.00000086426724, z: -1.5594364e-14,
     w: 1}
-  m_LocalPosition: {x: 4.94, y: 1.91, z: -5.74}
+  m_LocalPosition: {x: 4.94, y: 1.91, z: -5.549}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9292,7 +9171,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.20599961}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.061024234}
   m_FadeFactor: 1
 --- !u!1 &2017225759236850461
@@ -9348,7 +9227,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.41124868}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.82249737}
   m_FadeFactor: 1
 --- !u!1 &2017938272578455118
@@ -9559,7 +9438,7 @@ Light:
   m_BounceIntensity: 1.01
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 8.5e-43, y: 6e-44, z: 0, w: 2.2896e-41}
+  m_BoundingSphereOverride: {x: NaN, y: 0.1015625, z: 0.0859375, w: 36}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9587,62 +9466,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &2055388525557355040
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2132121777138882252}
-  - component: {fileID: 1562780743332683722}
-  m_Layer: 0
-  m_Name: Decal Projector (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &2132121777138882252
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055388525557355040}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 27.889, y: 3.879, z: 3.728}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1562780743332683722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055388525557355040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: f22e6f4f88ca3fb4fa7e09dcddb7a2e1, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1, z: 1}
-  m_FadeFactor: 1
 --- !u!1 &2067441370452769420
 GameObject:
   m_ObjectHideFlags: 0
@@ -10341,7 +10164,7 @@ Light:
   m_BounceIntensity: 1.01
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.1858e-41, y: NaN, z: 2.2e-44, w: -1.5751624e-36}
+  m_BoundingSphereOverride: {x: 0.2578125, y: NaN, z: 11, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -10395,7 +10218,7 @@ Transform:
   m_GameObject: {fileID: 2153270513492567883}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5000012, y: 0.5000003, z: 0.4999996, w: 0.49999902}
-  m_LocalPosition: {x: 16.02, y: 7.174, z: -31.848}
+  m_LocalPosition: {x: 17.42, y: 7.174, z: -31.848}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10418,12 +10241,12 @@ MonoBehaviour:
   m_FadeScale: 0.9
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 0.8688937, y: 1}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.4824007}
-  m_Size: {x: 3, y: 3, z: 0.6023946}
+  m_Offset: {x: -0.19665927, y: 0, z: 0}
+  m_Size: {x: 2.6066813, y: 3, z: 0.7744167}
   m_FadeFactor: 1
 --- !u!1 &2193580614510874847
 GameObject:
@@ -10535,7 +10358,7 @@ Transform:
   m_GameObject: {fileID: 2205405224957062843}
   serializedVersion: 2
   m_LocalRotation: {x: 0.34109804, y: 0.6193966, z: -0.34109804, w: 0.61939657}
-  m_LocalPosition: {x: -5.393, y: 1.23, z: -19.18}
+  m_LocalPosition: {x: -4.428, y: 1.004, z: -19.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10598,7 +10421,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 3600
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.05e-43, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -11264,7 +11087,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.435858}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.871716}
   m_FadeFactor: 1
 --- !u!1 &2319611435370300427
@@ -16349,7 +16172,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 6e-44, z: 1.4e-44, w: 2.0392e-41}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -16509,7 +16332,7 @@ Transform:
   m_GameObject: {fileID: 2531495773176004228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 7.647, y: 2.277, z: -6.13}
+  m_LocalPosition: {x: 7.098, y: 2.277, z: -6.13}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16536,7 +16359,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 1}
   m_FadeFactor: 1
 --- !u!1 &2584537872153924333
@@ -16565,7 +16388,7 @@ Transform:
   m_GameObject: {fileID: 2584537872153924333}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5000006, y: 0.5000008, z: -0.49999937, w: 0.4999994}
-  m_LocalPosition: {x: 16.02, y: 2.923, z: -30.473}
+  m_LocalPosition: {x: 17.196, y: 2.923, z: -30.473}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16592,7 +16415,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.2084154}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.054424286}
   m_FadeFactor: 1
 --- !u!1 &2585695830732519513
@@ -16648,7 +16471,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 1}
   m_FadeFactor: 1
 --- !u!1 &2586980897702113344
@@ -16783,7 +16606,7 @@ Transform:
   m_GameObject: {fileID: 2658095540689888591}
   serializedVersion: 2
   m_LocalRotation: {x: 1.20182295e-14, y: 1, z: 0.000000014901165, w: 0.00000074505795}
-  m_LocalPosition: {x: 19.204, y: 7.936, z: -32.448}
+  m_LocalPosition: {x: 19.204, y: 7.516, z: -31.483}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16810,7 +16633,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2.72, y: 1.83, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &2666557621925319656
@@ -16839,7 +16662,7 @@ Transform:
   m_GameObject: {fileID: 2666557621925319656}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.42986754, z: -0, w: 0.90289205}
-  m_LocalPosition: {x: -0.306, y: 3.524, z: -4.845}
+  m_LocalPosition: {x: -0.094, y: 3.468, z: -5.846}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16862,12 +16685,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 0.68600667, y: 1}
+  m_UVScale: {x: 1, y: 1}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: -1.1610191, y: 0, z: -0.4987511}
-  m_Size: {x: 2.5379615, y: 1.22, z: 0.73817456}
+  m_Offset: {x: 0, y: 0, z: -0.22015315}
+  m_Size: {x: 2.5379615, y: 1.22, z: 1.1784809}
   m_FadeFactor: 1
 --- !u!1 &2667987196239698289
 GameObject:
@@ -16931,7 +16754,7 @@ Transform:
   m_GameObject: {fileID: 2673730860932179721}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.204, y: 1.974, z: -6.798}
+  m_LocalPosition: {x: -0.982, y: 1.974, z: -5.873}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16958,7 +16781,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.1508422}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.3016844}
   m_FadeFactor: 1
 --- !u!1 &2701851001724311243
@@ -17097,7 +16920,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.5411956}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.7199844}
   m_FadeFactor: 1
 --- !u!1 &2778196505374701197
@@ -17126,7 +16949,7 @@ Transform:
   m_GameObject: {fileID: 2778196505374701197}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.9177365, y: 3.1371908, z: -32.143433}
+  m_LocalPosition: {x: 7.246, y: 3.1371908, z: -32.143433}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17153,8 +16976,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1.9, y: 2.02, z: 1}
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.9, y: 2.02, z: 0.11947632}
   m_FadeFactor: 1
 --- !u!1 &2780288369949461344
 GameObject:
@@ -17666,7 +17489,7 @@ Transform:
   m_GameObject: {fileID: 2912145529658802623}
   serializedVersion: 2
   m_LocalRotation: {x: -1.0903589e-15, y: 1, z: 0.000000014901163, w: -0.000000119209275}
-  m_LocalPosition: {x: 24.083, y: 0.384, z: -3.158}
+  m_LocalPosition: {x: 24.083, y: 0.399, z: -3.512}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17693,8 +17516,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Offset: {x: 0, y: 0, z: 0.010904666}
+  m_Size: {x: 1, y: 1, z: 0.15047956}
   m_FadeFactor: 1
 --- !u!1 &2917768124167680932
 GameObject:
@@ -17805,7 +17628,7 @@ Transform:
   m_GameObject: {fileID: 2929269610460885182}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 15.03, y: 3.615, z: -5.9}
+  m_LocalPosition: {x: 15.2, y: 3.615, z: -5.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17828,12 +17651,12 @@ MonoBehaviour:
   m_FadeScale: 1
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.7841033}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 1, y: 1.63, z: 0.23651174}
+  m_Offset: {x: 0, y: -0.17595583, z: 0}
+  m_Size: {x: 1, y: 1.2780883, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &2958012968977610842
 GameObject:
@@ -18209,7 +18032,7 @@ Light:
   m_BounceIntensity: 1.01
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.2e-44, z: 3.9221e-41, w: 4.591775e-39}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 4.8e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -18582,7 +18405,7 @@ Transform:
   m_GameObject: {fileID: 3068311227075804496}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 17.202, y: 7.665, z: 8.758}
+  m_LocalPosition: {x: 15.19, y: 7.665, z: 8.758}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18609,7 +18432,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3.48, y: 1.34, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &3069863928101184938
@@ -18702,7 +18525,7 @@ Light:
   m_BounceIntensity: 2.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: NaN, z: 2.0682e-41, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -18783,7 +18606,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.014697004}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2.72, y: 1.83, z: 0.029394008}
   m_FadeFactor: 1
 --- !u!1 &3084657748628955661
@@ -18813,7 +18636,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901163, y: -0.00000086426724, z: -1.5594364e-14,
     w: 1}
-  m_LocalPosition: {x: -0.957, y: 2.8, z: 6.362}
+  m_LocalPosition: {x: -0.957, y: 2.8, z: 6.662}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18840,7 +18663,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.4432682}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.8865364}
   m_FadeFactor: 1
 --- !u!1 &3100858447808887130
@@ -18933,7 +18756,7 @@ Light:
   m_BounceIntensity: 1.01
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 4e-45, z: 3.931e-41, w: 4.591775e-39}
+  m_BoundingSphereOverride: {x: 5.38e-43, y: 0.0019449424, z: 5.4e-43, w: 0.0019449424}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -19342,7 +19165,7 @@ Transform:
   m_GameObject: {fileID: 3183677304157292865}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5000012, y: 0.5000003, z: 0.4999996, w: 0.49999902}
-  m_LocalPosition: {x: 16.02, y: 3.79, z: -32.8}
+  m_LocalPosition: {x: 17.435, y: 3.79, z: -32.8}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19369,8 +19192,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.5411956}
-  m_Size: {x: 3, y: 3, z: 0.7199844}
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 3, z: 0.7197768}
   m_FadeFactor: 1
 --- !u!1 &3194174468330058175
 GameObject:
@@ -19516,7 +19339,7 @@ Transform:
   m_GameObject: {fileID: 3203935737107025918}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7160157, y: -0.69808424, z: -0, w: 0}
-  m_LocalPosition: {x: 1.1, y: 0.83, z: -4.711}
+  m_LocalPosition: {x: 1.1, y: 0.83, z: -5.55}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19543,7 +19366,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.83919024}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.030998647}
   m_FadeFactor: 1
 --- !u!1 &3222403027006055383
@@ -19802,7 +19625,7 @@ Light:
   m_BounceIntensity: 2.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 4e-45, z: 3.9309e-41, w: 4.591775e-39}
+  m_BoundingSphereOverride: {x: 0, y: 1.83315e-40, z: 2.2e-44, w: 9.8e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -19845,7 +19668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3901746799791583951
 Transform:
   m_ObjectHideFlags: 0
@@ -19890,7 +19713,7 @@ Transform:
   m_GameObject: {fileID: 3316344414496679112}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.30194995, z: -0, w: 0.9533238}
-  m_LocalPosition: {x: -4.789, y: 3.437191, z: 3.443}
+  m_LocalPosition: {x: -4.914, y: 3.494, z: 3.621}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19913,12 +19736,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.9785819}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.126793}
-  m_Size: {x: 4.86, y: 1.22, z: 1.406414}
+  m_Offset: {x: 0, y: -0.01306504, z: 0}
+  m_Size: {x: 4.86, y: 1.19387, z: 1.406414}
   m_FadeFactor: 1
 --- !u!1 &3332259626523765331
 GameObject:
@@ -20010,7 +19833,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 3600
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 8.1e-44}
+  m_BoundingSphereOverride: {x: 5.38e-43, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -20147,7 +19970,7 @@ Transform:
   m_GameObject: {fileID: 3408687680258231468}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.038, y: 3.532, z: -5.27}
+  m_LocalPosition: {x: 2.038, y: 3.532, z: -5.286}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20174,7 +19997,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: -0.07986772}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 4.86, y: 1.22, z: 0.5647862}
   m_FadeFactor: 1
 --- !u!1 &3423819289711586579
@@ -20203,7 +20026,7 @@ Transform:
   m_GameObject: {fileID: 3423819289711586579}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.9177365, y: 3.4331908, z: -28.647434}
+  m_LocalPosition: {x: 7.444, y: 3.4331908, z: -28.647434}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20230,7 +20053,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1.9, y: 1.24, z: 1}
   m_FadeFactor: 1
 --- !u!1 &3445058749645377697
@@ -30616,7 +30439,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0.00013962187, y: 1.1770787e+32, z: -1.379863e-26,
+    w: 8.602676e+10}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -30894,7 +30718,7 @@ Transform:
   m_GameObject: {fileID: 3557551494919287886}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 15.199, y: 0.194, z: -6.829}
+  m_LocalPosition: {x: 15.209, y: 0.194, z: -6.829}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30921,7 +30745,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.013830621}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 2.62, z: 0.027661242}
   m_FadeFactor: 1
 --- !u!1 &3572768102061259813
@@ -30950,7 +30774,7 @@ Transform:
   m_GameObject: {fileID: 3572768102061259813}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.244, y: 3.547, z: -5.27}
+  m_LocalPosition: {x: -9.48, y: 3.547, z: -5.604}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30977,8 +30801,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: -0.07986772}
-  m_Size: {x: 4.86, y: 1.22, z: 0.5647862}
+  m_Offset: {x: 0, y: 0, z: 0.02290374}
+  m_Size: {x: 4.86, y: 1.22, z: 0.051643014}
   m_FadeFactor: 1
 --- !u!1 &3588044260807470710
 GameObject:
@@ -31389,7 +31213,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 3600
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.18e-43, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -31470,7 +31294,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 4.86, y: 1.22, z: 1}
   m_FadeFactor: 1
 --- !u!1 &3694808462045294879
@@ -31563,7 +31387,7 @@ Light:
   m_BounceIntensity: 2.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 3e-45, z: 3.9327e-41, w: 1.4546743e-37}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 4e-45}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -31965,7 +31789,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 8.1e-44, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -37656,6 +37480,62 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3993083120254733647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7036386566942311185}
+  - component: {fileID: 386699556609130211}
+  m_Layer: 0
+  m_Name: Decal Projector (36)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &7036386566942311185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993083120254733647}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.51, y: 3.073, z: -39.71}
+  m_LocalScale: {x: 1.6, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2681410836455923544}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &386699556609130211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993083120254733647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 83acb3eac251c50489c1028e431bf0f6, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_DecalLayerMask: 1
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.9, y: 2.02, z: 1}
+  m_FadeFactor: 1
 --- !u!1 &4003257689008811275
 GameObject:
   m_ObjectHideFlags: 0
@@ -37924,7 +37804,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 515, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -38379,7 +38259,7 @@ Transform:
   m_GameObject: {fileID: 4271088880100453488}
   serializedVersion: 2
   m_LocalRotation: {x: -3.0900344e-15, y: 1, z: 0.000000014901161, w: -0.00000031292436}
-  m_LocalPosition: {x: 19.582, y: 3.29, z: -24.008}
+  m_LocalPosition: {x: 19.582, y: 3.29, z: -23.501}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38406,8 +38286,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 3.09, y: 1.63, z: 1}
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.09, y: 1.63, z: 0.12837982}
   m_FadeFactor: 1
 --- !u!1 &4325959688786780867
 GameObject:
@@ -38435,7 +38315,7 @@ Transform:
   m_GameObject: {fileID: 4325959688786780867}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.3638098, z: -0, w: 0.9314733}
-  m_LocalPosition: {x: -4.002264, y: 3.437191, z: 5.206567}
+  m_LocalPosition: {x: -4.292, y: 3.527, z: 5.941}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38458,12 +38338,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.9571339}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
-  m_Size: {x: 4.86, y: 1.22, z: 1}
+  m_Offset: {x: 0, y: -0.02614826, z: 0}
+  m_Size: {x: 4.86, y: 1.1677035, z: 1}
   m_FadeFactor: 1
 --- !u!1 &4352734968404477070
 GameObject:
@@ -38519,7 +38399,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: -0.14776129}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.7685461}
   m_FadeFactor: 1
 --- !u!1 &4366963649125703243
@@ -38899,7 +38779,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.006820921}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1.92, y: 1.18, z: 0.013641842}
   m_FadeFactor: 1
 --- !u!1 &4416866117677457756
@@ -39295,7 +39175,7 @@ Transform:
   m_GameObject: {fileID: 4537547742360287861}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: -0.7071068}
-  m_LocalPosition: {x: 14.4, y: 1.712, z: -4.842}
+  m_LocalPosition: {x: 15.49, y: 1.712, z: -4.842}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39322,7 +39202,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.0882064}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.5576067}
   m_FadeFactor: 1
 --- !u!1 &4551948518995502724
@@ -39600,7 +39480,7 @@ Transform:
   m_GameObject: {fileID: 4564385490864036773}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.7077365, y: 7.4171906, z: 6.4365664}
+  m_LocalPosition: {x: 6.7077365, y: 7.6, z: 6.4365664}
   m_LocalScale: {x: 1.6, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39623,12 +39503,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.96108514}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
-  m_Size: {x: 4.86, y: 1.48, z: 1}
+  m_Offset: {x: 0, y: -0.02879703, z: 0}
+  m_Size: {x: 4.86, y: 1.422406, z: 1}
   m_FadeFactor: 1
 --- !u!1 &4593013005205859660
 GameObject:
@@ -39720,7 +39600,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 239490880, y: 9.311414e-39, z: 6.3584094e+22, w: 9.995533e-29}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -39748,62 +39628,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &4653558364736287013
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4300834232343248747}
-  - component: {fileID: 8525180476469407692}
-  m_Layer: 0
-  m_Name: Decal Projector (38)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &4300834232343248747
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4653558364736287013}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000041723246}
-  m_LocalPosition: {x: 18.128, y: 4.605, z: -32.284}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &8525180476469407692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4653558364736287013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: c184b2bc408fb3e4d873a40665f18d74, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1.2, y: 1, z: 1}
-  m_FadeFactor: 1
 --- !u!1 &4654590204741341320
 GameObject:
   m_ObjectHideFlags: 0
@@ -39913,7 +39737,7 @@ Transform:
   m_GameObject: {fileID: 4657063588745334457}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.277736, y: 7.4171906, z: -21.993435}
+  m_LocalPosition: {x: 5.277736, y: 7.606, z: -21.993435}
   m_LocalScale: {x: 1.6, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39940,7 +39764,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 4.86, y: 1.48, z: 1}
   m_FadeFactor: 1
 --- !u!1 &4660885015786396064
@@ -39969,7 +39793,7 @@ Transform:
   m_GameObject: {fileID: 4660885015786396064}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 7.01, y: 1.91, z: -11.23}
+  m_LocalPosition: {x: 7.23, y: 1.91, z: -11.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39996,7 +39820,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.20599961}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.061024234}
   m_FadeFactor: 1
 --- !u!1 &4700892068097206087
@@ -40656,7 +40480,7 @@ Transform:
   m_GameObject: {fileID: 4790161481422885218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 7.708, y: 3.518, z: -7.081}
+  m_LocalPosition: {x: 7.251, y: 3.518, z: -7.081}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40683,8 +40507,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.25405714}
-  m_Size: {x: 1.9, y: 1.24, z: 0.5081143}
+  m_Offset: {x: 0, y: 0, z: 0.009433299}
+  m_Size: {x: 1.9, y: 1.24, z: 0.057676718}
   m_FadeFactor: 1
 --- !u!1 &4793883211392180036
 GameObject:
@@ -40712,7 +40536,7 @@ Transform:
   m_GameObject: {fileID: 4793883211392180036}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071069, y: 0.0000003203551, z: 0.7071067, w: 0.00000032989783}
-  m_LocalPosition: {x: 7.01, y: 2.99, z: -15.6}
+  m_LocalPosition: {x: 7.252, y: 2.075, z: -13.919}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40739,7 +40563,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.20599961}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.061024234}
   m_FadeFactor: 1
 --- !u!1 &4796939345104939072
@@ -40768,7 +40592,7 @@ Transform:
   m_GameObject: {fileID: 4796939345104939072}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.3344783, z: -0, w: 0.9424035}
-  m_LocalPosition: {x: -0.608, y: 3.524, z: -6.219}
+  m_LocalPosition: {x: -1.941, y: 3.524, z: -5.486}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40791,12 +40615,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 0.68600667, y: 1}
+  m_UVScale: {x: 0.68600667, y: 0.9577135}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: -1.1610191, y: 0, z: -0.4987511}
-  m_Size: {x: 2.5379615, y: 1.22, z: 0.73817456}
+  m_Offset: {x: 0, y: -0.025794804, z: 0}
+  m_Size: {x: 2.5379615, y: 1.1684104, z: 0.73817456}
   m_FadeFactor: 1
 --- !u!1 &4813158144406294450
 GameObject:
@@ -41123,7 +40947,7 @@ Light:
   m_BounceIntensity: 1.55
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 8e-45, z: 3.9339e-41, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 5.3e-44, w: 1.1e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -41813,7 +41637,7 @@ Transform:
   m_GameObject: {fileID: 4975506880464449864}
   serializedVersion: 2
   m_LocalRotation: {x: 0.69808424, y: 0.71601576, z: -0, w: 0}
-  m_LocalPosition: {x: 3.9, y: 0.54, z: -4.711}
+  m_LocalPosition: {x: 3.9, y: 0.54, z: -5.558}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41840,7 +41664,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.83919024}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.030998647}
   m_FadeFactor: 1
 --- !u!1 &4989534350630484637
@@ -41979,7 +41803,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.0041307844}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2.72, y: 1.83, z: 0.008261569}
   m_FadeFactor: 1
 --- !u!1 &5027621739668046316
@@ -42126,7 +41950,7 @@ Transform:
   m_GameObject: {fileID: 5062421997725020588}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901161, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.293, y: 3.592, z: 5.804}
+  m_LocalPosition: {x: 14.293, y: 3.592, z: 6.466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42153,8 +41977,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Offset: {x: 0, y: 0, z: -0.02331739}
+  m_Size: {x: 1, y: 1, z: 0.04173077}
   m_FadeFactor: 1
 --- !u!1 &5066642248158294741
 GameObject:
@@ -42348,7 +42172,7 @@ Transform:
   m_GameObject: {fileID: 5101031921266030683}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.9137363, y: 7.207191, z: -19.378433}
+  m_LocalPosition: {x: 7.608, y: 7.207191, z: -19.378433}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42371,12 +42195,12 @@ MonoBehaviour:
   m_FadeScale: 0.9
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
+  m_UVScale: {x: 1, y: 0.9893027}
+  m_UVBias: {x: 0, y: 0.00000005418604}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1.9, y: 2.2, z: 1}
+  m_Offset: {x: 0, y: -0.011766911, z: 0}
+  m_Size: {x: 1.9, y: 2.176466, z: 1}
   m_FadeFactor: 1
 --- !u!1 &5113938014172626041
 GameObject:
@@ -43052,7 +42876,7 @@ Transform:
   m_GameObject: {fileID: 5220080135633884147}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.99989426, z: -0, w: -0.014547206}
-  m_LocalPosition: {x: 6.01, y: 7.207191, z: -16.88}
+  m_LocalPosition: {x: 6.018, y: 7.207191, z: -17.167}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43075,68 +42899,12 @@ MonoBehaviour:
   m_FadeScale: 0.9
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
+  m_UVScale: {x: 1, y: 0.98910284}
+  m_UVBias: {x: 0, y: 0.000000054186042}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1.9, y: 2.2, z: 1}
-  m_FadeFactor: 1
---- !u!1 &5300366590034220744
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4556788340541138837}
-  - component: {fileID: 7984977374192500057}
-  m_Layer: 0
-  m_Name: Decal Projector (36)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &4556788340541138837
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300366590034220744}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000041723246}
-  m_LocalPosition: {x: 16.362, y: 4.773, z: -32.284}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &7984977374192500057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300366590034220744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: c184b2bc408fb3e4d873a40665f18d74, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1.2, y: 0.65, z: 1}
+  m_Offset: {x: 0, y: -0.0119867325, z: 0}
+  m_Size: {x: 1.9, y: 2.1760263, z: 1}
   m_FadeFactor: 1
 --- !u!1 &5314702130610935911
 GameObject:
@@ -43376,7 +43144,7 @@ Transform:
   m_GameObject: {fileID: 5354233496781345910}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 15.03, y: 3.298, z: -6.83}
+  m_LocalPosition: {x: 15.285, y: 3.298, z: -6.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43399,12 +43167,12 @@ MonoBehaviour:
   m_FadeScale: 1
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.9821238}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 1, y: 1.63, z: 0.23651174}
+  m_Offset: {x: 0, y: -0.014569104, z: 0}
+  m_Size: {x: 1, y: 1.6008618, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &5356799528986264262
 GameObject:
@@ -43780,7 +43548,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1, y: NaN, z: 0, w: 1}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -44062,7 +43830,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.435858}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.871716}
   m_FadeFactor: 1
 --- !u!1 &5549156897935972156
@@ -44728,7 +44496,7 @@ Transform:
   m_GameObject: {fileID: 5724334489509639193}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 16.601, y: 3.29, z: -26.692}
+  m_LocalPosition: {x: 17.222, y: 3.29, z: -26.692}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44755,8 +44523,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.312409}
-  m_Size: {x: 3.09, y: 1.63, z: 0.624818}
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.09, y: 1.63, z: 0.014719009}
   m_FadeFactor: 1
 --- !u!1 &5733273723221971010
 GameObject:
@@ -45238,7 +45006,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 3600
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.05e-43, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -45493,7 +45261,7 @@ Transform:
   m_GameObject: {fileID: 5855518240353712528}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000032420817, y: -0.00000080129206, z: 0.39099374, w: 0.92039335}
-  m_LocalPosition: {x: 14.532, y: 1.609, z: 6.26}
+  m_LocalPosition: {x: 14.532, y: 1.609, z: 6.418}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45520,7 +45288,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 1, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &5860887614313174865
@@ -45667,7 +45435,7 @@ Transform:
   m_GameObject: {fileID: 5884444843847900640}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901161, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.938, y: 3.287, z: -12.377}
+  m_LocalPosition: {x: 19.938, y: 3.287, z: -11.604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45694,8 +45462,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 3.09, y: 1.63, z: 1}
+  m_Offset: {x: 0, y: 0, z: 0.023570005}
+  m_Size: {x: 3.09, y: 1.63, z: 0.12999925}
   m_FadeFactor: 1
 --- !u!1 &5897270960472627767
 GameObject:
@@ -46650,7 +46418,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901163, y: -0.00000086426724, z: -1.5594364e-14,
     w: 1}
-  m_LocalPosition: {x: 19.391, y: 2.171, z: 5.888}
+  m_LocalPosition: {x: 2.078, y: 2.171, z: 6.922}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46677,8 +46445,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.563501}
-  m_Size: {x: 6, y: 6, z: 1.127002}
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4, y: 4, z: 1}
   m_FadeFactor: 1
 --- !u!1 &6052289478940831236
 GameObject:
@@ -46706,7 +46474,7 @@ Transform:
   m_GameObject: {fileID: 6052289478940831236}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 15.03, y: 3.506, z: -7.637}
+  m_LocalPosition: {x: 15.199, y: 3.506, z: -7.637}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46733,7 +46501,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 2.62, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &6061816450045672646
@@ -46902,62 +46670,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &6064917873861211769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2633349374312815158}
-  - component: {fileID: 5374331736251062504}
-  m_Layer: 0
-  m_Name: Decal Projector (40)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &2633349374312815158
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6064917873861211769}
-  serializedVersion: 2
-  m_LocalRotation: {x: 1.20182295e-14, y: 1, z: 0.000000014901165, w: 0.00000074505795}
-  m_LocalPosition: {x: 14.512, y: 7.936, z: -32.448}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &5374331736251062504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6064917873861211769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: f22e6f4f88ca3fb4fa7e09dcddb7a2e1, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 2.72, y: 1.83, z: 0.23651174}
-  m_FadeFactor: 1
 --- !u!1 &6064924044636096874
 GameObject:
   m_ObjectHideFlags: 0
@@ -46984,7 +46696,7 @@ Transform:
   m_GameObject: {fileID: 6064924044636096874}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5000012, y: 0.5000003, z: 0.4999996, w: 0.49999902}
-  m_LocalPosition: {x: 16.02, y: 6.82, z: -37.64}
+  m_LocalPosition: {x: 17.236, y: 6.82, z: -37.64}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47011,8 +46723,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.5411956}
-  m_Size: {x: 3, y: 3, z: 0.7199844}
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 3, z: 0.054607958}
   m_FadeFactor: 1
 --- !u!1 &6065064989416423190
 GameObject:
@@ -47187,7 +46899,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 3600
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: -205568.75, z: 7.23e-43, w: 4.19e-43}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -47492,7 +47204,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.01997921}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1.63, y: 0.87, z: 0.03995842}
   m_FadeFactor: 1
 --- !u!1 &6106478986819525103
@@ -47521,7 +47233,7 @@ Transform:
   m_GameObject: {fileID: 6106478986819525103}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0000003094938, y: -0.0000008070896, z: -0.34189728, w: 0.9397374}
-  m_LocalPosition: {x: 14.865, y: 1.646, z: 6.26}
+  m_LocalPosition: {x: 14.865, y: 1.646, z: 6.409}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47548,7 +47260,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 1, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &6118737734407388148
@@ -47578,7 +47290,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901163, y: -0.00000086426724, z: -1.5594364e-14,
     w: 1}
-  m_LocalPosition: {x: 0.193, y: 2.212, z: -5.74}
+  m_LocalPosition: {x: 0.193, y: 2.212, z: -5.907}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47605,7 +47317,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: -0.14776129}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.7685461}
   m_FadeFactor: 1
 --- !u!1 &6133428240584518370
@@ -47635,7 +47347,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901163, y: -0.00000086426724, z: -1.5594364e-14,
     w: 1}
-  m_LocalPosition: {x: -7.71, y: 2.212, z: -5.74}
+  m_LocalPosition: {x: -6.945999, y: 2.212, z: -5.9399996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47662,7 +47374,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: -0.14776129}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.7685461}
   m_FadeFactor: 1
 --- !u!1 &6137360952649710306
@@ -47691,7 +47403,7 @@ Transform:
   m_GameObject: {fileID: 6137360952649710306}
   serializedVersion: 2
   m_LocalRotation: {x: 0.707107, y: 0.00000010797825, z: 0.70710665, w: 0.00000011938879}
-  m_LocalPosition: {x: 20.95, y: 3.031, z: -19.495}
+  m_LocalPosition: {x: 21.16, y: 3.031, z: -19.495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47718,8 +47430,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 2, y: 2, z: 1}
+  m_Offset: {x: 0, y: 0, z: 0.057609886}
+  m_Size: {x: 2, y: 2, z: 0.055144683}
   m_FadeFactor: 1
 --- !u!1 &6145000465520324530
 GameObject:
@@ -47747,7 +47459,7 @@ Transform:
   m_GameObject: {fileID: 6145000465520324530}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 15.03, y: 3.346, z: -4.09}
+  m_LocalPosition: {x: 15.177, y: 3.346, z: -4.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47770,12 +47482,12 @@ MonoBehaviour:
   m_FadeScale: 1
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
+  m_UVScale: {x: 1, y: 0.95344806}
+  m_UVBias: {x: 0, y: 0.00000003656727}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 1, y: 1.63, z: 0.23651174}
+  m_Offset: {x: 0, y: -0.037939787, z: 0.02426067}
+  m_Size: {x: 1, y: 1.5541203, z: 0.9180438}
   m_FadeFactor: 1
 --- !u!1 &6156097182309044163
 GameObject:
@@ -47803,7 +47515,7 @@ Transform:
   m_GameObject: {fileID: 6156097182309044163}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0000004640604, y: 0.00000052899117, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 16.77, y: 2.63, z: -12.76}
+  m_LocalPosition: {x: 16.559, y: 2.63, z: -11.489}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47830,8 +47542,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.0882064}
-  m_Size: {x: 3, y: 3, z: 0.5576067}
+  m_Offset: {x: 0, y: 0, z: 0.09602922}
+  m_Size: {x: 3, y: 3, z: 0.6496}
   m_FadeFactor: 1
 --- !u!1 &6158526476363259021
 GameObject:
@@ -48083,7 +47795,7 @@ Transform:
   m_GameObject: {fileID: 6169947037061656616}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 16.02, y: 3.5, z: -37.66}
+  m_LocalPosition: {x: 17.213, y: 3.5, z: -37.66}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48110,8 +47822,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.5411956}
-  m_Size: {x: 3, y: 3, z: 0.7199844}
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 3, z: 0.06671256}
   m_FadeFactor: 1
 --- !u!1 &6175238611297083470
 GameObject:
@@ -48328,7 +48040,7 @@ Transform:
   m_GameObject: {fileID: 6191457389750564401}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901161, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.58, y: 3.41, z: 5.804}
+  m_LocalPosition: {x: 19.174, y: 3.41, z: 6.452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48355,8 +48067,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1.38, z: 1}
+  m_Offset: {x: 0, y: 0, z: -0.03967958}
+  m_Size: {x: 1, y: 1.38, z: 0.20755948}
   m_FadeFactor: 1
 --- !u!1 &6227797204933011639
 GameObject:
@@ -48531,7 +48243,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 3600
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0.265625, z: 0.07421875, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -48870,7 +48582,7 @@ Transform:
   m_GameObject: {fileID: 6329006413100199683}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.55, y: 3.65, z: -5.27}
+  m_LocalPosition: {x: -4.7859993, y: 3.65, z: -5.522}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48897,8 +48609,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: -0.07986772}
-  m_Size: {x: 4.86, y: 1.22, z: 0.5647862}
+  m_Offset: {x: 0, y: 0, z: -0.0443812}
+  m_Size: {x: 4.86, y: 1.22, z: 0.037968755}
   m_FadeFactor: 1
 --- !u!1 &6391631202816338537
 GameObject:
@@ -49067,12 +48779,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.89726853}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
-  m_Size: {x: 4.86, y: 1.22, z: 1}
+  m_Offset: {x: 0, y: -0.06266612, z: 0}
+  m_Size: {x: 4.86, y: 1.0946678, z: 1}
   m_FadeFactor: 1
 --- !u!1 &6404528559260174626
 GameObject:
@@ -49099,13 +48811,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6404528559260174626}
   serializedVersion: 2
-  m_LocalRotation: {x: 1.20182295e-14, y: 1, z: 0.000000014901165, w: 0.00000074505795}
-  m_LocalPosition: {x: 16.58, y: 7.405, z: -32.448}
+  m_LocalRotation: {x: 0.000000010536719, y: 0.70710665, z: 0.000000010536712, w: 0.707107}
+  m_LocalPosition: {x: 17.141, y: 7.4, z: -34.139}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &661279195234076914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49127,7 +48839,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2.72, y: 1.83, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &6411211731587861520
@@ -49311,7 +49023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &490720612752916411
 Transform:
   m_ObjectHideFlags: 0
@@ -50046,7 +49758,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.005549986}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1.27, y: 1.05, z: 0.011099972}
   m_FadeFactor: 1
 --- !u!1 &6613032054822295141
@@ -50375,7 +50087,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &6647986717724056532
@@ -50468,7 +50180,7 @@ Light:
   m_BounceIntensity: 2.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 7e-45, z: 3.9336e-41, w: 4.591775e-39}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -50669,7 +50381,7 @@ Light:
   m_BounceIntensity: 2.3
   m_ColorTemperature: 10195
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -50723,7 +50435,7 @@ Transform:
   m_GameObject: {fileID: 6663246364324985635}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.9177365, y: 3.482191, z: -30.643433}
+  m_LocalPosition: {x: 7.246, y: 3.482191, z: -30.643433}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50750,8 +50462,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1.9, y: 1.24, z: 1}
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.9, y: 1.24, z: 0.21094877}
   m_FadeFactor: 1
 --- !u!1 &6678079952624022808
 GameObject:
@@ -50871,62 +50583,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &6695565452949439071
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 260066684140592501}
-  - component: {fileID: 8150266166884160675}
-  m_Layer: 0
-  m_Name: Decal Projector (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &260066684140592501
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6695565452949439071}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 27.889, y: 2.989, z: 0.343}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &8150266166884160675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6695565452949439071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: f22e6f4f88ca3fb4fa7e09dcddb7a2e1, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 2.47, z: 1}
-  m_FadeFactor: 1
 --- !u!1 &6697768805989409668
 GameObject:
   m_ObjectHideFlags: 0
@@ -50953,7 +50609,7 @@ Transform:
   m_GameObject: {fileID: 6697768805989409668}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0.0000002533197}
-  m_LocalPosition: {x: -6.53, y: 1.33, z: 2.24}
+  m_LocalPosition: {x: -6.859, y: 1.33, z: 2.382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50980,8 +50636,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 2, y: 2, z: 1}
+  m_Offset: {x: 0, y: 0, z: 0.053482056}
+  m_Size: {x: 2, y: 2, z: 0.017092228}
   m_FadeFactor: 1
 --- !u!1 &6716126805013504936
 GameObject:
@@ -51233,12 +50889,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.9042775}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
-  m_Size: {x: 4.86, y: 1.22, z: 1}
+  m_Offset: {x: 0, y: -0.058390796, z: -0.24338341}
+  m_Size: {x: 4.86, y: 1.1032184, z: 0.5132332}
   m_FadeFactor: 1
 --- !u!1 &6772844200780051102
 GameObject:
@@ -56376,7 +56032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8488279853336636585
 Transform:
   m_ObjectHideFlags: 0
@@ -56420,7 +56076,7 @@ Transform:
   m_GameObject: {fileID: 6802289784238552169}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 15.03, y: 3.73, z: -4.995}
+  m_LocalPosition: {x: 15.205, y: 3.73, z: -4.995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56443,12 +56099,12 @@ MonoBehaviour:
   m_FadeScale: 1
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
+  m_UVScale: {x: 1, y: 0.71574783}
+  m_UVBias: {x: 0, y: 0.00000003656727}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 1, y: 1.63, z: 0.23651174}
+  m_Offset: {x: 0, y: -0.2316655, z: 0}
+  m_Size: {x: 1, y: 1.1666689, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &6822858296674488096
 GameObject:
@@ -57036,7 +56692,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.4432682}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.8865364}
   m_FadeFactor: 1
 --- !u!1 &6919336411848716669
@@ -57092,7 +56748,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3.09, y: 1.63, z: 1}
   m_FadeFactor: 1
 --- !u!1 &6953699249014003691
@@ -57121,7 +56777,7 @@ Transform:
   m_GameObject: {fileID: 6953699249014003691}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.9277363, y: 3.307191, z: 6.4365664}
+  m_LocalPosition: {x: 6.9277363, y: 3.372, z: 6.4365664}
   m_LocalScale: {x: 1.6, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57144,12 +56800,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.9812465}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
-  m_Size: {x: 4.86, y: 1.48, z: 1}
+  m_Offset: {x: 0, y: -0.01387763, z: 0}
+  m_Size: {x: 4.86, y: 1.4522448, z: 1}
   m_FadeFactor: 1
 --- !u!1 &7001388920672758792
 GameObject:
@@ -57886,7 +57542,7 @@ Transform:
   m_GameObject: {fileID: 7107014179237558289}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6422634, y: 3.437191, z: 6.4365664}
+  m_LocalPosition: {x: -2.6422634, y: 3.513, z: 6.4365664}
   m_LocalScale: {x: 1.6, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57909,12 +57565,12 @@ MonoBehaviour:
   m_FadeScale: 0.804
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.9663096}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.33}
-  m_Size: {x: 4.86, y: 1.22, z: 1}
+  m_Offset: {x: 0, y: -0.020551145, z: 0}
+  m_Size: {x: 4.86, y: 1.1788977, z: 1}
   m_FadeFactor: 1
 --- !u!1 &7140048512344386216
 GameObject:
@@ -58230,7 +57886,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 3600
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0.0703125, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -58540,7 +58196,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.39455867}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.78911734}
   m_FadeFactor: 1
 --- !u!1 &7240329912717688559
@@ -59069,7 +58725,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.1044703}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.2089406}
   m_FadeFactor: 1
 --- !u!1 &7292820406407566738
@@ -59414,7 +59070,7 @@ Transform:
   m_GameObject: {fileID: 7328563398843373255}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000022351739, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 19.959, y: 1.566, z: -2.707}
+  m_LocalPosition: {x: 19.959, y: 1.566, z: -3.59}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59441,7 +59097,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.84116447}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.063522816}
   m_FadeFactor: 1
 --- !u!1 &7356916689820931160
@@ -59562,63 +59218,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &7383955573827822059
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3987468431581442247}
-  - component: {fileID: 6308119504846588135}
-  m_Layer: 0
-  m_Name: Decal Projector (96)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &3987468431581442247
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7383955573827822059}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000014901163, y: -0.00000086426724, z: -1.5594364e-14,
-    w: 1}
-  m_LocalPosition: {x: 18.265, y: 1.883, z: 6.373}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6308119504846588135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7383955573827822059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: e993635b2958d2f4ca5deef43f9146b8, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 3, y: 3, z: 0.23651174}
-  m_FadeFactor: 1
 --- !u!1 &7398303152789782972
 GameObject:
   m_ObjectHideFlags: 0
@@ -60330,7 +59929,7 @@ Transform:
   m_GameObject: {fileID: 7678592334805783841}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.9137363, y: 3.4851909, z: -21.255434}
+  m_LocalPosition: {x: 7.718, y: 3.4851909, z: -21.255434}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60357,7 +59956,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1.9, y: 1.24, z: 1}
   m_FadeFactor: 1
 --- !u!1 &7699848219414424294
@@ -60552,7 +60151,7 @@ Transform:
   m_GameObject: {fileID: 7725776935912607776}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 15.199, y: -0.072, z: -8.352}
+  m_LocalPosition: {x: 15.215, y: -0.072, z: -8.352}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60579,7 +60178,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.013830621}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 2.62, z: 0.027661242}
   m_FadeFactor: 1
 --- !u!1 &7755498828353851615
@@ -60824,7 +60423,7 @@ Light:
   m_BounceIntensity: 2.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 6e-45, z: 3.9672e-41, w: 3.124918e-39}
+  m_BoundingSphereOverride: {x: 1.3e-44, y: NaN, z: NaN, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -66098,7 +65697,7 @@ Transform:
   m_GameObject: {fileID: 7925513799172167675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.9238742, z: -0, w: 0.38269633}
-  m_LocalPosition: {x: 6.955, y: 3.518, z: -5.208}
+  m_LocalPosition: {x: 6.6, y: 3.518, z: -5.563}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66121,12 +65720,12 @@ MonoBehaviour:
   m_FadeScale: 0.9
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.9547633}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.25405714}
-  m_Size: {x: 1.9, y: 1.24, z: 0.5081143}
+  m_Offset: {x: 0, y: -0.028046787, z: 0}
+  m_Size: {x: 1.9, y: 1.1839064, z: 0.5081143}
   m_FadeFactor: 1
 --- !u!1 &7931595708398782221
 GameObject:
@@ -66177,12 +65776,12 @@ MonoBehaviour:
   m_FadeScale: 1
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.92822754}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 3.48, y: 1.76, z: 0.23651174}
+  m_Offset: {x: 0, y: -0.063159764, z: 0}
+  m_Size: {x: 3.48, y: 1.6336805, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &7951752312489178744
 GameObject:
@@ -66411,7 +66010,7 @@ Transform:
   m_GameObject: {fileID: 7973110651618447187}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536699, y: -0.7071077, z: -0.000000010536729, w: 0.7071059}
-  m_LocalPosition: {x: 11.809993, y: 1.91, z: -15.193}
+  m_LocalPosition: {x: 7.324, y: 1.81, z: -18.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66438,7 +66037,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &8003052513598857636
@@ -66467,7 +66066,7 @@ Transform:
   m_GameObject: {fileID: 8003052513598857636}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 19.102, y: 7.64, z: -9.318}
+  m_LocalPosition: {x: 19.163, y: 7.64, z: -9.318}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66490,12 +66089,12 @@ MonoBehaviour:
   m_FadeScale: 1
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
+  m_UVScale: {x: 1, y: 0.9771195}
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 3.48, y: 1.34, z: 0.23651174}
+  m_Offset: {x: 0, y: -0.015329957, z: -0.025173262}
+  m_Size: {x: 3.48, y: 1.3093401, z: 0.18616521}
   m_FadeFactor: 1
 --- !u!1 &8011655062930520205
 GameObject:
@@ -66523,7 +66122,7 @@ Transform:
   m_GameObject: {fileID: 8011655062930520205}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 15.03, y: 3.72, z: -9.132}
+  m_LocalPosition: {x: 15.216, y: 3.72, z: -9.132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66550,8 +66149,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 3.48, y: 2.62, z: 0.23651174}
+  m_Offset: {x: 0, y: 0, z: -0.012028494}
+  m_Size: {x: 3.48, y: 2.62, z: 0.08624169}
   m_FadeFactor: 1
 --- !u!1 &8017562051840170460
 GameObject:
@@ -66579,7 +66178,7 @@ Transform:
   m_GameObject: {fileID: 8017562051840170460}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5000006, y: 0.5000008, z: -0.49999937, w: 0.4999994}
-  m_LocalPosition: {x: 16.02, y: 1.83, z: -25.73}
+  m_LocalPosition: {x: 17.245, y: 1.83, z: -25.731}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66606,7 +66205,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.2084154}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.054424286}
   m_FadeFactor: 1
 --- !u!1 &8018585484609547961
@@ -67134,7 +66733,7 @@ Transform:
   m_GameObject: {fileID: 8124324699417273848}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7068793, y: 0.017942568, z: 0.7068789, w: -0.01794254}
-  m_LocalPosition: {x: 11.809994, y: 1.973, z: -17.185001}
+  m_LocalPosition: {x: 7.324001, y: 1.873, z: -20.482002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67161,7 +66760,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &8134425327016159948
@@ -67273,7 +66872,7 @@ Transform:
   m_GameObject: {fileID: 8140052867816472692}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5000006, y: 0.5000008, z: -0.49999937, w: 0.4999994}
-  m_LocalPosition: {x: 20.36, y: 1.44, z: -22.04}
+  m_LocalPosition: {x: 21.014, y: 1.44, z: -22.04}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67300,7 +66899,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.0882064}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 3, y: 3, z: 0.5576067}
   m_FadeFactor: 1
 --- !u!1 &8162673588315035658
@@ -67329,7 +66928,7 @@ Transform:
   m_GameObject: {fileID: 8162673588315035658}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7160157, y: -0.69808424, z: -0, w: 0}
-  m_LocalPosition: {x: 1.04, y: 3.28, z: -4.711}
+  m_LocalPosition: {x: 1.04, y: 3.28, z: -5.57}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67356,7 +66955,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.83919024}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.030998647}
   m_FadeFactor: 1
 --- !u!1 &8198008015424426610
@@ -67385,7 +66984,7 @@ Transform:
   m_GameObject: {fileID: 8198008015424426610}
   serializedVersion: 2
   m_LocalRotation: {x: -1, y: 0.0000002533197, z: -0, w: 0}
-  m_LocalPosition: {x: 16.723, y: 3.226, z: -2.707}
+  m_LocalPosition: {x: 16.723, y: 3.226, z: -3.535}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67412,8 +67011,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.2387723}
-  m_Size: {x: 3, y: 3, z: 0.85873866}
+  m_Offset: {x: 0, y: 0, z: 0.044318378}
+  m_Size: {x: 3, y: 3, z: 0.097563624}
   m_FadeFactor: 1
 --- !u!1 &8198390067521070023
 GameObject:
@@ -67547,12 +67146,12 @@ MonoBehaviour:
   m_FadeScale: 1
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
+  m_UVScale: {x: 1, y: 0.9704129}
+  m_UVBias: {x: 0, y: -0.000000044481077}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.11825587}
-  m_Size: {x: 3.48, y: 1.34, z: 0.23651174}
+  m_Offset: {x: 0, y: -0.019823432, z: 0}
+  m_Size: {x: 3.48, y: 1.3003533, z: 0.23651174}
   m_FadeFactor: 1
 --- !u!1 &8217071576248645114
 GameObject:
@@ -67603,12 +67202,12 @@ MonoBehaviour:
   m_FadeScale: 0.9
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
+  m_UVScale: {x: 1, y: 0.9695031}
+  m_UVBias: {x: 0, y: 0.00000005418604}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.3164606}
-  m_Size: {x: 4.86, y: 2.2, z: 0.6329212}
+  m_Offset: {x: 0, y: -0.033546448, z: 0.15773392}
+  m_Size: {x: 4.86, y: 2.132907, z: 0.94838905}
   m_FadeFactor: 1
 --- !u!1 &8249801692432029048
 GameObject:
@@ -67754,7 +67353,7 @@ Transform:
   m_GameObject: {fileID: 8260038735933209595}
   serializedVersion: 2
   m_LocalRotation: {x: 0.9999196, y: 0.012680126, z: -0, w: 0}
-  m_LocalPosition: {x: 1.014, y: 1.981, z: -4.711}
+  m_LocalPosition: {x: 1.014, y: 1.981, z: -5.554}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67781,7 +67380,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.83919024}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.030998647}
   m_FadeFactor: 1
 --- !u!1 &8317814374498726733
@@ -73363,7 +72962,7 @@ Transform:
   m_GameObject: {fileID: 8425126381002029105}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5000006, y: 0.5000008, z: -0.49999937, w: 0.4999994}
-  m_LocalPosition: {x: 20.36, y: 2.63, z: -18.11}
+  m_LocalPosition: {x: 21.165, y: 2.63, z: -18.11}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73390,8 +72989,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.0882064}
-  m_Size: {x: 3, y: 3, z: 0.5576067}
+  m_Offset: {x: 0, y: 0, z: 0.049316674}
+  m_Size: {x: 3, y: 3, z: 0.057510853}
   m_FadeFactor: 1
 --- !u!1 &8450620823297154360
 GameObject:
@@ -73419,7 +73018,7 @@ Transform:
   m_GameObject: {fileID: 8450620823297154360}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.50000006, z: -0.49999994, w: 0.50000006}
-  m_LocalPosition: {x: 14.4, y: 2.63, z: -10.26}
+  m_LocalPosition: {x: 15.19, y: 2.63, z: -10.26}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73446,8 +73045,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.0882064}
-  m_Size: {x: 3, y: 3, z: 0.5576067}
+  m_Offset: {x: 0, y: 0, z: 0.03559167}
+  m_Size: {x: 3, y: 3, z: 0.022329196}
   m_FadeFactor: 1
 --- !u!1 &8456027288627957485
 GameObject:
@@ -73960,7 +73559,7 @@ Transform:
   m_GameObject: {fileID: 8498334679219458802}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 16.02, y: 0.938, z: -38.467}
+  m_LocalPosition: {x: 17.276, y: 0.938, z: -38.467}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73987,8 +73586,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 1.5411956}
-  m_Size: {x: 3, y: 3, z: 0.7199844}
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 3, z: 0.05749625}
   m_FadeFactor: 1
 --- !u!1 &8518431176836417879
 GameObject:
@@ -74043,7 +73642,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 1, y: 1, z: 1}
   m_FadeFactor: 1
 --- !u!1 &8553354248326522573
@@ -74072,7 +73671,7 @@ Transform:
   m_GameObject: {fileID: 8553354248326522573}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7160157, y: -0.69808424, z: -0, w: 0}
-  m_LocalPosition: {x: 5.76, y: 0.56, z: -4.711}
+  m_LocalPosition: {x: 5.76, y: 0.56, z: -5.553}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74099,7 +73698,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.83919024}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.030998647}
   m_FadeFactor: 1
 --- !u!1 &8601529390161425041
@@ -74292,62 +73891,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8618816854041301706
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4362648014264852757}
-  - component: {fileID: 2619354683007715639}
-  m_Layer: 0
-  m_Name: Decal Projector (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &4362648014264852757
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8618816854041301706}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 27.889, y: 3.753, z: -0.934}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &2619354683007715639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8618816854041301706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: f22e6f4f88ca3fb4fa7e09dcddb7a2e1, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1, z: 1}
-  m_FadeFactor: 1
 --- !u!1 &8638414239880963484
 GameObject:
   m_ObjectHideFlags: 0
@@ -74859,7 +74402,7 @@ Transform:
   m_GameObject: {fileID: 8857546043454776909}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.534, y: 3.63, z: -5.27}
+  m_LocalPosition: {x: 5.534, y: 3.63, z: -5.316}
   m_LocalScale: {x: 1.6000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74886,7 +74429,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: -0.07986772}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 4.86, y: 1.22, z: 0.5647862}
   m_FadeFactor: 1
 --- !u!1 &8862693610961538476
@@ -80609,7 +80152,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.4432682}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.8865364}
   m_FadeFactor: 1
 --- !u!1 &8959430227111461366
@@ -80638,7 +80181,7 @@ Transform:
   m_GameObject: {fileID: 8959430227111461366}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901161, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.09, y: 3.592, z: 5.804}
+  m_LocalPosition: {x: 21.684, y: 3.592, z: 6.452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80665,8 +80208,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Offset: {x: 0, y: 0, z: -0.05515056}
+  m_Size: {x: 1, y: 1, z: 0.13322343}
   m_FadeFactor: 1
 --- !u!1 &8968520030584096996
 GameObject:
@@ -80766,7 +80309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1391793554344918394
 Transform:
   m_ObjectHideFlags: 0
@@ -80915,7 +80458,7 @@ Light:
   m_BounceIntensity: 2.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 4e-45, z: 3.9326e-41, w: 3.5052916e+33}
+  m_BoundingSphereOverride: {x: 6.6e-44, y: 1.26e-43, z: 1, w: 1}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -81033,7 +80576,7 @@ Light:
   m_BounceIntensity: 1.01
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.8e-44, z: 3.9222e-41, w: 1.0038149e+9}
+  m_BoundingSphereOverride: {x: 0, y: 1.05e-43, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -81087,7 +80630,7 @@ Transform:
   m_GameObject: {fileID: 9023186838330943387}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014901161, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.323, y: 2.871, z: 6.198}
+  m_LocalPosition: {x: 13.323, y: 2.871, z: 6.473}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81114,8 +80657,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.13831826}
-  m_Size: {x: 1, y: 2.54, z: 0.2766365}
+  m_Offset: {x: 0, y: 0, z: -0.025292782}
+  m_Size: {x: 1, y: 2.54, z: 0.07926047}
   m_FadeFactor: 1
 --- !u!1 &9035291340791640580
 GameObject:
@@ -81207,7 +80750,7 @@ Light:
   m_BounceIntensity: 2.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1e-44, z: 3.9333e-41, w: 4.591775e-39}
+  m_BoundingSphereOverride: {x: 2.8e-44, y: NaN, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -81401,62 +80944,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &9095894045380960781
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1759828605122814404}
-  - component: {fileID: 9163920463379286393}
-  m_Layer: 0
-  m_Name: Decal Projector (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &1759828605122814404
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9095894045380960781}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000010536716, y: 0.70710665, z: 0.000000010536709, w: 0.707107}
-  m_LocalPosition: {x: 27.89, y: 2.17, z: -2.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2681410836455923544}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &9163920463379286393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9095894045380960781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: f22e6f4f88ca3fb4fa7e09dcddb7a2e1, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 1
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 1, y: 4.31, z: 1}
-  m_FadeFactor: 1
 --- !u!1 &9131825498421076216
 GameObject:
   m_ObjectHideFlags: 0
@@ -81510,7 +80997,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 1}
   m_FadeFactor: 1
 --- !u!1 &9152209954003244530
@@ -81539,7 +81026,7 @@ Transform:
   m_GameObject: {fileID: 9152209954003244530}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5000001, y: -0.5000001, z: 0.49999988, w: 0.49999988}
-  m_LocalPosition: {x: 7.776, y: 3.436, z: -27.158}
+  m_LocalPosition: {x: 7.483, y: 3.436, z: -27.158}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81566,7 +81053,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.4432682}
+  m_Offset: {x: 0, y: 0, z: 0}
   m_Size: {x: 2, y: 2, z: 0.8865364}
   m_FadeFactor: 1
 --- !u!1 &9161369973699262036
@@ -81908,7 +81395,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.05e-43, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
