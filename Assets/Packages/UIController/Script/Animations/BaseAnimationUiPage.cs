@@ -6,8 +6,9 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 using DG.Tweening;
+using Packages.UIController.Script.UI;
 
-namespace Script.ScriptUI
+namespace Packages.UIController.Script.Animations
 {
     public abstract class BaseAnimationUiPage : MonoBehaviour
     {
@@ -24,16 +25,6 @@ namespace Script.ScriptUI
 
         public void ResetAnimation(BasePageUI page)
         {
-            if (page.uiPageScaler != null)
-            {
-                page.root.transform.DOScaleY(1, page.uiPageScaler.duration);
-            }
-
-            if (page.uiPageMover != null)
-            {
-                page.root.transform.DOMoveX(page.uiPageMover.pageStartPosition, page.uiPageMover.duration);
-            }
-
         }
     }
 
