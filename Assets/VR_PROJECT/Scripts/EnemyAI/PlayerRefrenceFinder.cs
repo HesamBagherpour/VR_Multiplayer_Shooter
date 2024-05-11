@@ -8,13 +8,12 @@ public class PlayerRefrenceFinder : MonoBehaviour
 {
    [SerializeField]private StateController stateController;
 
-   private void Start()
+   private void Awake()
    {
-      stateController = GetComponent<StateController>();
       if (stateController.aimTarget != null)
       {
          return;
       }
-      stateController.aimTarget = GameObject.FindGameObjectWithTag("Player").GetComponent<ChestHolderRefrence>().upperChest.transform/*<ChestHolderRefrence>().upperChest.transform*/;
+      stateController = GetComponent<StateController>();
    }
 }
