@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class PlayerSpawnManager : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
+    public GameObject player;
     [SerializeField] private StateController enemy;
     
     private static PlayerSpawnManager instance;

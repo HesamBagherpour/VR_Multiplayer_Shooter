@@ -15,5 +15,9 @@ public class PlayerRefrenceFinder : MonoBehaviour
          return;
       }
       stateController = GetComponent<StateController>();
+      var dummy = new GameObject();
+      stateController.aimTarget = dummy.transform;
+      dummy.AddComponent<PlayerHealth>().dead = true;
+      dummy.SetActive(false);
    }
 }

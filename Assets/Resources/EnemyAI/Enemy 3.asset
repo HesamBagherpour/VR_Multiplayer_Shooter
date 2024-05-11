@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269892a570e9411298d9a6eed69a4a5f, type: 3}
+  m_Name: Enemy 3
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8959064792741435856, guid: ee15306a07a943b4b818cf774904afb9, type: 3}
+  enemies:
+    enemyPrefab: {fileID: 3900981097194452508, guid: ee15306a07a943b4b818cf774904afb9,
+      type: 3}
+    myState: {fileID: 3900981097194452508, guid: ee15306a07a943b4b818cf774904afb9,
+      type: 3}
+    myClass: {fileID: 11400000, guid: 653e30b1cf1b9f64dbebe371cf2db65e, type: 2}
+    aimTarget: {fileID: 0}
+    patrolWayPoints:
+    - {fileID: 7214322276350237628, guid: 20032b960b54f234e88f7d27602c9483, type: 3}
+    - {fileID: 2248091401852066204, guid: a1983e3a060a4f44f86b5ee9a42e4496, type: 3}
+    bullets: 20
+    viewRadius: 12
+    viewAngle: 60
+    perceptionRadius: 5
+  enemyClass: {fileID: 11400000, guid: 653e30b1cf1b9f64dbebe371cf2db65e, type: 2}
+  enemyStateController: {fileID: 3900981097194452508, guid: ee15306a07a943b4b818cf774904afb9,
+    type: 3}
