@@ -34,17 +34,19 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Debris_m
-  m_Shader: {fileID: -6465566751694194690, guid: 6736b94ae6a0b884ab8487a9c6b1c35d, type: 3}
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
+  m_ValidKeywords:
+  - _METALLICSPECGLOSSMAP
+  - _NORMALMAP
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2225
-  stringTagMap: {}
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -56,6 +58,10 @@ Material:
     m_TexEnvs:
     - Texture2D_5120d8f6d71540ea870ee885d9819075:
         m_Texture: {fileID: 2800000, guid: 0c1255f5c1750a147ab7b7320f5e16fc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 3c3c1cf66e4b57440b1d1886f8e6c2ad, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -87,7 +93,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: c7765445c99d2e64c899b6a8c8add3b9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0c1255f5c1750a147ab7b7320f5e16fc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -134,23 +140,32 @@ Material:
     - Vector1_c020ff24cb25405286b0609a0b359414: 0
     - Vector1_d6275c7ea3974cb3a03d422e32d59c3c: 0
     - _AddPrecomputedVelocity: 0
+    - _AlphaClip: 0
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
+    - _Blend: 0
     - _BlendMode: 0
+    - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
     - _DepthOffsetEnable: 0
+    - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
+    - _DstBlendAlpha: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
+    - _EnvironmentReflections: 1
     - _Gloss: 1
     - _GlossMapScale: 0.7
     - _Glossiness: 0.26
@@ -163,15 +178,18 @@ Material:
     - _QueueControl: 1
     - _QueueOffset: 0
     - _RayTracing: 0
+    - _ReceiveShadows: 1
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _Spcular: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
     - _StencilRefDistortionVec: 4
@@ -183,6 +201,7 @@ Material:
     - _StencilWriteMaskGBuffer: 14
     - _StencilWriteMaskMV: 40
     - _SupportDecals: 1
+    - _Surface: 0
     - _SurfaceType: 0
     - _Tesselation: 1
     - _TransparentBackfaceEnable: 0
@@ -194,6 +213,7 @@ Material:
     - _TransparentZWrite: 0
     - _UVSec: 0
     - _UseShadowThreshold: 0
+    - _WorkflowMode: 1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
@@ -207,10 +227,13 @@ Material:
     - _noisestr: 0
     - _normalstr: 1
     m_Colors:
-    - Color_030647fa97a24f01b05ccfde176f9ccb: {r: 0.29245278, g: 0.26868638, b: 0.26072448, a: 0}
+    - Color_030647fa97a24f01b05ccfde176f9ccb: {r: 0.29245278, g: 0.26868638, b: 0.26072448,
+        a: 0}
     - Color_09bc71ca831e4e6bb0688fe3ac86a291: {r: 1, g: 1, b: 1, a: 0}
-    - Color_170cb2eaa2b941319b3ff4bb73d90690: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0}
+    - Color_170cb2eaa2b941319b3ff4bb73d90690: {r: 0.3679245, g: 0.3679245, b: 0.3679245,
+        a: 0}
     - Color_d4dbd54059e74ff482d1cd002ad14c4f: {r: 1, g: 1, b: 1, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DiffuseColor: {r: 1, g: 1, b: 1, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}

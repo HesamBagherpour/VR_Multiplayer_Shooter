@@ -24,6 +24,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_5120d8f6d71540ea870ee885d9819075:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -69,15 +73,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _dif:
-        m_Texture: {fileID: 2800000, guid: 7d68d9ff7c142c54fa6c91efaed71911, type: 3}
+        m_Texture: {fileID: 2800000, guid: 367eddf898ed8574eb0abff432610639, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _normal:
-        m_Texture: {fileID: 2800000, guid: 626a7b55416e5184095a3d57737c13e3, type: 3}
+        m_Texture: {fileID: 2800000, guid: d6e672d7094f59741a2ad3eac3f0b77b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _roughness:
-        m_Texture: {fileID: 2800000, guid: 66e7a7f3c680fc14a80ace90fa27a6da, type: 3}
+        m_Texture: {fileID: 2800000, guid: bb3672bc1b472ed4da8928e286a8eaae, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _water_norm:
@@ -98,6 +102,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Boolean_2a175cc8e1584a96aabf87e7f3774b83: 0
+    - Boolean_961a3100d5af4c74adc9e7f4f37b4681: 0
+    - Boolean_d9a78bd940ec4591afd93c019bc27d9f: 0
+    - Tiling: 1
+    - Vector1_1e75a7939e58499c950dcbdf88701d5c: 1
+    - Vector1_1f3876f64376491ab8ba076b1f060009: 0
+    - Vector1_42e270e0dad946619d88b802310cc9c5: 0.5
+    - Vector1_57df3994227d4a709e2c8b9ce508fece: 0
+    - Vector1_afb92a2608974325b1e8fcd8f89c8da0: 0
+    - Vector1_c020ff24cb25405286b0609a0b359414: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
@@ -131,29 +145,34 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _big_noise_subtracter: -0.06
-    - _floor_normal_cont_1: -3.18
-    - _floor_normal_cont_2: 4.94
+    - _floor_normal_cont_1: 9.08
+    - _floor_normal_cont_2: -1.68
     - _little_noise: 1.02
     - _rain_switch: 1
-    - _rain_tile: 0.31
-    - _reflection_step_1: 0.4
-    - _reflection_step_2: 2.19
-    - _refract: 11.68
-    - _smooth_step_1: 1.61
-    - _smooth_step_2: 0.4
-    - _step_1: 0.99
+    - _rain_tile: 3.83
+    - _reflection_step_1: -0.24
+    - _reflection_step_2: 0.96
+    - _refract: 11
+    - _smooth_step_1: 3.47
+    - _smooth_step_2: -0.94
+    - _step_1: 1.04
     - _step_2: 0.43
     - _vawes_size: 6.21
     - _water_height_stregth: 0.02
     m_Colors:
+    - Color_030647fa97a24f01b05ccfde176f9ccb: {r: 0.29245278, g: 0.26868638, b: 0.26072448,
+        a: 0}
+    - Color_09bc71ca831e4e6bb0688fe3ac86a291: {r: 1, g: 1, b: 1, a: 0}
+    - Color_170cb2eaa2b941319b3ff4bb73d90690: {r: 1, g: 1, b: 1, a: 0}
+    - Color_feb55d6c66f6432d879586fc6092489c: {r: 1, g: 1, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Vector2: {r: 0.79, g: 5.05, b: 0, a: 0}
-    - _test_speed: {r: 0.2, g: 0.04, b: 0, a: 0}
-    - _test_speed_2: {r: -0.09, g: -0.27, b: 0, a: 0}
-    - _water_color: {r: 0.2524475, g: 0.2920611, b: 0.2924528, a: 0}
+    - _test_speed: {r: 0.008, g: 0.008, b: 0, a: 0}
+    - _test_speed_2: {r: -0.06, g: -0.04, b: 0, a: 0}
+    - _water_color: {r: 0.191, g: 0.191, b: 0.191, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &5586755185706036502
 MonoBehaviour:

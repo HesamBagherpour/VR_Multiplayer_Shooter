@@ -91,7 +91,7 @@ namespace FishNet.Managing
         /// True if can log for loggingType.
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        internal static bool CanLog(this NetworkManager networkManager, LoggingType loggingType)
+        public static bool CanLog(this NetworkManager networkManager, LoggingType loggingType)
         {
             if (GetNetworkManager(ref networkManager))
                 return networkManager.InternalCanLog(loggingType);

@@ -101,7 +101,7 @@ namespace VR_PROJECT.Character
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
 #endif
-        private Animator _animator;
+        public Animator _animator;
         private CharacterController _controller;
         private CharacterVRInput _input;
         private GameObject _mainCamera;
@@ -130,13 +130,16 @@ namespace VR_PROJECT.Character
             {
                 _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
             }
+
+            // var ovrCamera = GetComponent<OVRCameraRig>();
+            // ovrCamera.
         }
 
         private void Start()
         {
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
-            _hasAnimator = TryGetComponent(out _animator);
+            _hasAnimator = _animator != null;
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<CharacterVRInput>();
 #if ENABLE_INPUT_SYSTEM 
@@ -154,7 +157,7 @@ namespace VR_PROJECT.Character
 
         private void Update()
         {
-            _hasAnimator = TryGetComponent(out _animator);
+            //_hasAnimator = TryGetComponent(out _animator);
 
             JumpAndGravity();
             GroundedCheck();
@@ -261,7 +264,7 @@ namespace VR_PROJECT.Character
                     RotationSmoothTime);
 
                 // rotate to face input direction relative to camera position
-                transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+                //transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             }
 
 
@@ -376,7 +379,7 @@ namespace VR_PROJECT.Character
                 if (FootstepAudioClips.Length > 0)
                 {
                     var index = Random.Range(0, FootstepAudioClips.Length);
-                    AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                    //AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
                 }
             }
         }
@@ -385,7 +388,7 @@ namespace VR_PROJECT.Character
         {
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
-                AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                //AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
     }

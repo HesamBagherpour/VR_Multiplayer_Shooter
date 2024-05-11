@@ -1,72 +1,73 @@
-using System.Collections;
-using System.Collections.Generic;
-using FishNet.Managing;
+using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
+using VR_PROJECT.General;
 
 namespace VR_PROJECT.Network.Core
 {
-    public class NetworkController : INetworkController
+    public abstract class NetworkController : INetworkController
     {
         #region Field
 
         private NetworkConfiguration _configuration;
-        private bool _isAvailable;
 
         #endregion
 
         #region Properties
 
-        public bool IsAvailable => _isAvailable;
+        public bool IsAvailable { get; protected set; }
+        public bool IsServerStarted { get; protected set; }
+        public bool IsClientStarted { get; protected set; }
+        public bool IsHostStarted => IsServerStarted && IsClientStarted;
+        public bool IsOffline => !IsServerStarted && !IsClientStarted;
 
-        #endregion
-        
-        #region CTORs
-
-        public NetworkController()
-        {
-            _configuration = Resources.Load<NetworkConfiguration>(nameof(NetworkConfiguration));
-        }
-        
         #endregion
         
         #region Initialize
         
-        public void Init()
+        public virtual UniTask<Result<bool>> Init()
         {
-            if (!IsConfigValid())
-            {
-                _isAvailable = false;
-                return;
-            }
+            Result<bool> result = null;
+            
+            _configuration = LoadConfiguration();
 
-            var networkManager = GameObject.Instantiate(_configuration.NetworkManager);
+            return CanInit();
         }
-
+        
         #endregion
-        
-        #region Public Methods
 
-        
+        #region INetworkController
+
+        public abstract UniTask<Result> ConnectServer(ushort port = 0);
+        public abstract UniTask<Result> DisconnectServer(bool sendDisconnetionMessage = false);
+        public abstract UniTask<Result> ConnectClient(string address = "", ushort port = 0);
+        public abstract UniTask<Result> DisconnectClient();
 
         #endregion
 
         #region Private Methods
 
-        private bool IsConfigValid()
+        protected abstract NetworkConfiguration LoadConfiguration();
+        protected virtual UniTask<Result<bool>> CanInit()
         {
+            Result<bool> result = null;
+
             if (_configuration is null)
             {
-                Debug.LogError("NetworkConfig is not loaded and Network not available");
-                return false;
+                string errorMessage = "NetworkConfig is not loaded and Network not available";
+                
+                Debug.LogError(errorMessage);
+                IsAvailable = false;
+                
+                result = new Result<bool>()
+                {
+                    IsSuccess = false,
+                    Data = false,
+                    ErrorMessage = errorMessage
+                };
             }
 
-            if (_configuration.NetworkManager is null)
-            {
-                Debug.LogError("NetworkManager in NetworkConfig is null pls insure to fill it properly");
-                return false;
-            }
-
-            return true;
+            return UniTask.FromResult(result);
         }
 
         #endregion
