@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1049631674201162863}
   - component: {fileID: 3787763099121617506}
   - component: {fileID: 7679385050772760745}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 7272389156310694392}
   - component: {fileID: 3669751620159843270}
   - component: {fileID: 4128314769886389886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,12 +220,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8141103676232378764}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8141103676232378764
 Transform:
@@ -260,12 +260,12 @@ GameObject:
   - component: {fileID: 1279209729564867543}
   - component: {fileID: 568726577156271714}
   - component: {fileID: 1242667800619886452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface10_polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1279209729564867543
 Transform:
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 6655421961693829670}
   - component: {fileID: 2582487876482968567}
   - component: {fileID: 3266738688633373770}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierSand01_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 8066524126297019407}
   - component: {fileID: 8297507614324770871}
   - component: {fileID: 3418962595979951468}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RoadBarrier01a_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 4709036373604915790}
   - component: {fileID: 1069938839148631904}
   - component: {fileID: 1860640619973358743}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hamed's_Lights 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,12 +659,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3226098272102962034}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3226098272102962034
 Transform:
@@ -696,7 +696,7 @@ GameObject:
   - component: {fileID: 8042194579205430733}
   - component: {fileID: 2135657152638079281}
   - component: {fileID: 3373003681226891328}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Trash_Bags_01_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -789,111 +789,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.4939479, y: 0.49167037, z: 0.63737595}
   m_Center: {x: -0.015732873, y: -0.0038021363, z: 0.31270716}
---- !u!1 &441572205995738505
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5612865223454351389}
-  - component: {fileID: 4089141926397421049}
-  - component: {fileID: 6747651880448444675}
-  - component: {fileID: 5162558414996923840}
-  m_Layer: 0
-  m_Name: SM_Decal04_LOD0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &5612865223454351389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441572205995738505}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.0000011807509, y: -0.707107, z: -0.70710665, w: -0.000001158399}
-  m_LocalPosition: {x: 0.15, y: -1.17, z: 19.77}
-  m_LocalScale: {x: 2.6046, y: 2.6046002, z: 2.6046004}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9207267169576964205}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &4089141926397421049
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441572205995738505}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3b84b6415bedb734c9a2f6a17999a494, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &6747651880448444675
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441572205995738505}
-  m_Mesh: {fileID: -1358591788122278075, guid: 5e9dbd0cfd3bf4949b5cf6b85a17e45f, type: 3}
---- !u!65 &5162558414996923840
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441572205995738505}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.8998697, y: 0.0000005487661, z: 1.3884534}
-  m_Center: {x: -1.2252828, y: 0.0000011561285, z: 0.6942268}
 --- !u!1 &500821229723496172
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,12 +799,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6798927471922238843}
   - component: {fileID: 5027278835193252022}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6798927471922238843
 Transform:
@@ -961,12 +856,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1964650075408374823}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1964650075408374823
 Transform:
@@ -1026,7 +921,7 @@ GameObject:
   - component: {fileID: 3725248939488604774}
   - component: {fileID: 9066851499242852233}
   - component: {fileID: 6931687380626088376}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierConcrete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1131,7 +1026,7 @@ GameObject:
   - component: {fileID: 8347600298477339530}
   - component: {fileID: 33888820881423343}
   - component: {fileID: 2530847266448172651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1237,7 +1132,7 @@ GameObject:
   - component: {fileID: 4577747080836526959}
   - component: {fileID: 1741834846704591795}
   - component: {fileID: 6641316272227801824}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierSand02_LOD0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1364,7 +1259,7 @@ GameObject:
   - component: {fileID: 1314684914192101624}
   - component: {fileID: 5887591475334497184}
   - component: {fileID: 2495259077198708661}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_7 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1468,7 +1363,7 @@ GameObject:
   - component: {fileID: 4923337285521707757}
   - component: {fileID: 4607986885345809740}
   - component: {fileID: 3104595234030592287}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PF_PipeB_ClampB_5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1552,7 +1447,7 @@ GameObject:
   - component: {fileID: 6949750254663338514}
   - component: {fileID: 2848830685503429855}
   - component: {fileID: 3741100959560905580}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Food_Package_Trash_01_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1657,7 +1552,7 @@ GameObject:
   - component: {fileID: 8087622522800749691}
   - component: {fileID: 2929660449539551436}
   - component: {fileID: 373667469899715905}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RoadBarrier01a_LOD0_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1759,7 +1654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1452741812142259432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1801,7 +1696,7 @@ GameObject:
   - component: {fileID: 7546917675733123967}
   - component: {fileID: 7611615766832446863}
   - component: {fileID: 6730822264270789719}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1903,7 +1798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7971035285555332973}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Accessory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1950,7 +1845,7 @@ GameObject:
   - component: {fileID: 1508391912713991452}
   - component: {fileID: 8181145772229110327}
   - component: {fileID: 1195190750994989007}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2055,7 +1950,7 @@ GameObject:
   - component: {fileID: 5042023447696814000}
   - component: {fileID: 8270379575626852891}
   - component: {fileID: 150754459799678552}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_CyberPunkStructure01_LOD0_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2158,7 +2053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 510076057097840762}
   - component: {fileID: 3831485673333486843}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2213,7 +2108,7 @@ GameObject:
   - component: {fileID: 3391488521145059655}
   - component: {fileID: 6839291391832869026}
   - component: {fileID: 5935276653845724623}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2318,7 +2213,7 @@ GameObject:
   - component: {fileID: 4348405053669619978}
   - component: {fileID: 4546588307653553819}
   - component: {fileID: 1531591693203405398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2424,7 +2319,7 @@ GameObject:
   - component: {fileID: 4027265441733290746}
   - component: {fileID: 3908534670753594805}
   - component: {fileID: 3482426741762825781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierSand02_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2551,7 +2446,7 @@ GameObject:
   - component: {fileID: 4610254296938959275}
   - component: {fileID: 2409541622110798886}
   - component: {fileID: 2395958797967995142}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_StructurePrefab04_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2653,12 +2548,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4183786261413632578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4183786261413632578
 Transform:
@@ -2692,7 +2587,7 @@ GameObject:
   - component: {fileID: 7564404996426334373}
   - component: {fileID: 8114580042450849299}
   - component: {fileID: 5456031870733361132}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2797,7 +2692,7 @@ GameObject:
   - component: {fileID: 4366553004844182937}
   - component: {fileID: 4351274638592388349}
   - component: {fileID: 2701251086838873758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_7 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2899,12 +2794,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6343509288401733186}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lamp (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6343509288401733186
 Transform:
@@ -2934,12 +2829,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2376111095049076510}
   - component: {fileID: 4989044437150204070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pipe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2376111095049076510
 Transform:
@@ -2998,12 +2893,12 @@ GameObject:
   - component: {fileID: 1114026818417586898}
   - component: {fileID: 8740296858151429867}
   - component: {fileID: 8441756907185224510}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface7_polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4354276171696832386
 Transform:
@@ -3102,7 +2997,7 @@ GameObject:
   - component: {fileID: 7755550720672657685}
   - component: {fileID: 5909744176093445509}
   - component: {fileID: 4051275868819354811}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PipeC02_LOD0_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3184,7 +3079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6048894499316390852}
   - component: {fileID: 172085542492632979}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3238,12 +3133,12 @@ GameObject:
   - component: {fileID: 8062604689067768402}
   - component: {fileID: 3114421355084582978}
   - component: {fileID: 8691449697909294296}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface10_polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8062604689067768402
 Transform:
@@ -3323,7 +3218,7 @@ GameObject:
   - component: {fileID: 1882715531215279708}
   - component: {fileID: 2189054768759083348}
   - component: {fileID: 6679560993660649844}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Structure04_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3428,7 +3323,7 @@ GameObject:
   - component: {fileID: 9201441345145279557}
   - component: {fileID: 8984103175829539971}
   - component: {fileID: 7444864716950441704}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3533,7 +3428,7 @@ GameObject:
   - component: {fileID: 1392264589058253181}
   - component: {fileID: 5467721160334236473}
   - component: {fileID: 1621775859411291036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag01_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3638,7 +3533,7 @@ GameObject:
   - component: {fileID: 2138627796790591574}
   - component: {fileID: 4715604611462266213}
   - component: {fileID: 1570885393209163118}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_7 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3743,7 +3638,7 @@ GameObject:
   - component: {fileID: 7216069181241559472}
   - component: {fileID: 7126475868250037537}
   - component: {fileID: 6695479809468676402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3848,7 +3743,7 @@ GameObject:
   - component: {fileID: 2634216505892754578}
   - component: {fileID: 5896966094781753934}
   - component: {fileID: 4913612509388104786}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_WallLight08b_LOD0_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3954,7 +3849,7 @@ GameObject:
   - component: {fileID: 7308703690567067673}
   - component: {fileID: 6870616608321853070}
   - component: {fileID: 4985401155305180784}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierSand01_LOD0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4080,7 +3975,7 @@ GameObject:
   - component: {fileID: 465818205411405350}
   - component: {fileID: 5120424884908949364}
   - component: {fileID: 9042183768387543394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag01_LOD0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4185,7 +4080,7 @@ GameObject:
   - component: {fileID: 982694359454000782}
   - component: {fileID: 2367961978026861640}
   - component: {fileID: 3898730818630149288}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Food_Package_Trash_01_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4287,12 +4182,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1356897284573950780}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1356897284573950780
 Transform:
@@ -4328,7 +4223,7 @@ GameObject:
   - component: {fileID: 4151550182400683562}
   - component: {fileID: 3303350932999690363}
   - component: {fileID: 346570518669282105}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4433,7 +4328,7 @@ GameObject:
   - component: {fileID: 4586422862417327716}
   - component: {fileID: 5818344680308198277}
   - component: {fileID: 7232761178927798593}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_7 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4538,7 +4433,7 @@ GameObject:
   - component: {fileID: 9133889395885145843}
   - component: {fileID: 2385332235605044969}
   - component: {fileID: 2662107307574371474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4642,12 +4537,12 @@ GameObject:
   - component: {fileID: 5941599759226833499}
   - component: {fileID: 971509240647791410}
   - component: {fileID: 2647831145872436091}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface10_polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5941599759226833499
 Transform:
@@ -4727,7 +4622,7 @@ GameObject:
   - component: {fileID: 8394407376718227615}
   - component: {fileID: 3730348183937759614}
   - component: {fileID: 7670911941935970334}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4831,7 +4726,7 @@ GameObject:
   - component: {fileID: 2287649310926945679}
   - component: {fileID: 2643189990478416586}
   - component: {fileID: 3308174409483330798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Pebbles01__1__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4915,7 +4810,7 @@ GameObject:
   - component: {fileID: 3630020825927855232}
   - component: {fileID: 6966421307775242635}
   - component: {fileID: 4286911810217521013}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Server01_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5020,7 +4915,7 @@ GameObject:
   - component: {fileID: 1368061125535259264}
   - component: {fileID: 1356006352649691357}
   - component: {fileID: 8390796583914094515}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag01_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5122,7 +5017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5367677972586538169}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Base_Station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5164,7 +5059,7 @@ GameObject:
   - component: {fileID: 8722791359283605250}
   - component: {fileID: 4270901390083354227}
   - component: {fileID: 6506061787498081674}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5268,7 +5163,7 @@ GameObject:
   - component: {fileID: 5430455865598367898}
   - component: {fileID: 3220003723201701824}
   - component: {fileID: 6771313116077536202}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AntitankObstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5352,7 +5247,7 @@ GameObject:
   - component: {fileID: 6025923860639089742}
   - component: {fileID: 7995328742945198932}
   - component: {fileID: 3225993581130580430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5457,7 +5352,7 @@ GameObject:
   - component: {fileID: 5282372706559135895}
   - component: {fileID: 2759349020079582850}
   - component: {fileID: 6256638375032033430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Oil_tank (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5559,7 +5454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6511998694325895748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RoadBarrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5598,12 +5493,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5577682800832392067}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5577682800832392067
 Transform:
@@ -5633,7 +5528,7 @@ GameObject:
   - component: {fileID: 5566127665686858395}
   - component: {fileID: 1414807667479695365}
   - component: {fileID: 4673833977469277988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_LaundryLight_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5739,7 +5634,7 @@ GameObject:
   - component: {fileID: 8684974802928955069}
   - component: {fileID: 4040677487000330170}
   - component: {fileID: 1907477244294406782}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5844,7 +5739,7 @@ GameObject:
   - component: {fileID: 6125683429400304051}
   - component: {fileID: 6789882672870771881}
   - component: {fileID: 8544178527199075323}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Server01_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5949,7 +5844,7 @@ GameObject:
   - component: {fileID: 8417746247543815075}
   - component: {fileID: 8659086607429894941}
   - component: {fileID: 5974694944511762285}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6054,7 +5949,7 @@ GameObject:
   - component: {fileID: 3632944071487317793}
   - component: {fileID: 4664855732205788380}
   - component: {fileID: 4678036345991649112}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6158,7 +6053,7 @@ GameObject:
   - component: {fileID: 7753410921785762754}
   - component: {fileID: 3145109812869051378}
   - component: {fileID: 3542511837294657771}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PipeC02_LOD0_5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6241,12 +6136,12 @@ GameObject:
   - component: {fileID: 761645119952737341}
   - component: {fileID: 4587753180022479110}
   - component: {fileID: 5889903233205572990}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface11_polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &761645119952737341
 Transform:
@@ -6325,7 +6220,7 @@ GameObject:
   - component: {fileID: 5794126795525460522}
   - component: {fileID: 783080795021717380}
   - component: {fileID: 2283761563787101076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PF_PipeB_ClampB_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6406,12 +6301,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8935482644807307347}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: trash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8935482644807307347
 Transform:
@@ -6443,7 +6338,7 @@ GameObject:
   - component: {fileID: 8008142101868601961}
   - component: {fileID: 2310141182340111308}
   - component: {fileID: 1201335691567075620}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Pebbles01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6524,7 +6419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4578151319954429644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arcade_Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6558,7 +6453,7 @@ GameObject:
   - component: {fileID: 6188124056454361261}
   - component: {fileID: 7790872182164867617}
   - component: {fileID: 2074146624414406129}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PipeC02_LOD0_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6642,7 +6537,7 @@ GameObject:
   - component: {fileID: 5687189372337286048}
   - component: {fileID: 3040610517498776859}
   - component: {fileID: 6516664925661081574}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6747,7 +6642,7 @@ GameObject:
   - component: {fileID: 6370535790094101171}
   - component: {fileID: 8198528783321659171}
   - component: {fileID: 7917754838000430498}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_WallLight08b_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6851,7 +6746,7 @@ GameObject:
   - component: {fileID: 2476630565181937479}
   - component: {fileID: 8291443419163096207}
   - component: {fileID: 5651727688655744902}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6970,7 +6865,7 @@ GameObject:
   - component: {fileID: 6720327563007364882}
   - component: {fileID: 5476201436047737580}
   - component: {fileID: 4827073915868575890}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7075,7 +6970,7 @@ GameObject:
   - component: {fileID: 8924628833685670147}
   - component: {fileID: 1314625037886089819}
   - component: {fileID: 1977284313288460881}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Floor02_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7180,7 +7075,7 @@ GameObject:
   - component: {fileID: 8513967771854943983}
   - component: {fileID: 758198839285585159}
   - component: {fileID: 8476005143135477671}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Oil_tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7285,7 +7180,7 @@ GameObject:
   - component: {fileID: 5129271834624076289}
   - component: {fileID: 7696417565487654632}
   - component: {fileID: 3363034905028286208}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Server01_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7389,7 +7284,7 @@ GameObject:
   - component: {fileID: 5113772291142284195}
   - component: {fileID: 4830689922821068209}
   - component: {fileID: 9072062138031168518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hamed's_Lights 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7472,7 +7367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9207050707646658924}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sci-Fi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7522,7 +7417,7 @@ GameObject:
   - component: {fileID: 4962065332204601813}
   - component: {fileID: 482156528176762458}
   - component: {fileID: 6569028805590877967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7628,7 +7523,7 @@ GameObject:
   - component: {fileID: 1029654272972850641}
   - component: {fileID: 2502047956852330666}
   - component: {fileID: 5217641493520732518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PowerMachine_DoorBelt_Build01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7736,12 +7631,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9207810597672066378}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wall lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &9207810597672066378
 Transform:
@@ -7775,7 +7670,7 @@ GameObject:
   - component: {fileID: 7761318346859182328}
   - component: {fileID: 2689957997798238590}
   - component: {fileID: 5379758345876952012}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_WallLight08b_LOD0_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7879,7 +7774,7 @@ GameObject:
   - component: {fileID: 3879200495887139509}
   - component: {fileID: 5353123476830959271}
   - component: {fileID: 3683843688422609517}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Light04b_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7963,7 +7858,7 @@ GameObject:
   - component: {fileID: 8870151208488805654}
   - component: {fileID: 6284567763805244332}
   - component: {fileID: 5196756302238124438}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RoadBarrier01a_LOD0_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8068,7 +7963,7 @@ GameObject:
   - component: {fileID: 5542152816724461019}
   - component: {fileID: 4661391486603390810}
   - component: {fileID: 1669504359237851514}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PanfletosPilha_01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8171,12 +8066,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5657623697890864211}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AntitankObstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5657623697890864211
 Transform:
@@ -8207,7 +8102,7 @@ GameObject:
   - component: {fileID: 7001614310675275384}
   - component: {fileID: 7316659505907049385}
   - component: {fileID: 8470010695789034160}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8313,7 +8208,7 @@ GameObject:
   - component: {fileID: 4875815913783762119}
   - component: {fileID: 4569469158155940467}
   - component: {fileID: 7546489489106217036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Floor02_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8418,7 +8313,7 @@ GameObject:
   - component: {fileID: 3375767317802374582}
   - component: {fileID: 4069178233476186934}
   - component: {fileID: 4777003276186476818}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8523,7 +8418,7 @@ GameObject:
   - component: {fileID: 100186348103907770}
   - component: {fileID: 4104213401643420946}
   - component: {fileID: 69093074411373910}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8627,7 +8522,7 @@ GameObject:
   - component: {fileID: 1096705686595593142}
   - component: {fileID: 7259004607167267322}
   - component: {fileID: 3788721926130391155}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8746,7 +8641,7 @@ GameObject:
   - component: {fileID: 2371544340515104030}
   - component: {fileID: 9100369791484639433}
   - component: {fileID: 8935003647942949467}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8848,12 +8743,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4005097598885787110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lamps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4005097598885787110
 Transform:
@@ -8893,7 +8788,7 @@ GameObject:
   - component: {fileID: 4189098626935715815}
   - component: {fileID: 3614327269691874653}
   - component: {fileID: 4370768180537419197}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9011,7 +8906,7 @@ GameObject:
   - component: {fileID: 3904390503439675079}
   - component: {fileID: 777543626700679027}
   - component: {fileID: 6759726808810904287}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PF_PipeB_ClampB_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9095,7 +8990,7 @@ GameObject:
   - component: {fileID: 97872894855884307}
   - component: {fileID: 2039775474088485348}
   - component: {fileID: 5493175615317302503}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9197,7 +9092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9172601310488984266}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9240,7 +9135,7 @@ GameObject:
   - component: {fileID: 2402973379261935876}
   - component: {fileID: 802882598701845394}
   - component: {fileID: 2460564368762675291}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EntranceLight01_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9346,7 +9241,7 @@ GameObject:
   - component: {fileID: 309459210294518142}
   - component: {fileID: 5819140167437406255}
   - component: {fileID: 2081074073122053021}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9451,7 +9346,7 @@ GameObject:
   - component: {fileID: 3534246656654717742}
   - component: {fileID: 8248264992557500914}
   - component: {fileID: 8339183002990196013}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Fence02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9556,7 +9451,7 @@ GameObject:
   - component: {fileID: 7902867174198368344}
   - component: {fileID: 4532956925650661457}
   - component: {fileID: 1041595965403191}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9661,7 +9556,7 @@ GameObject:
   - component: {fileID: 3551349161917550353}
   - component: {fileID: 7089992421448349340}
   - component: {fileID: 7238095533923697157}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_WallLight08b_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9766,12 +9661,12 @@ GameObject:
   - component: {fileID: 1624740518521749346}
   - component: {fileID: 1487690614009019119}
   - component: {fileID: 4565405350988681287}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface7_polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5705269477125789720
 Transform:
@@ -9871,7 +9766,7 @@ GameObject:
   - component: {fileID: 545310476294792375}
   - component: {fileID: 1915154567567338620}
   - component: {fileID: 2246344163412751557}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9976,7 +9871,7 @@ GameObject:
   - component: {fileID: 8815987616498570212}
   - component: {fileID: 5517319184477744491}
   - component: {fileID: 5199912773093038863}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hamed's_Lights 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10062,7 +9957,7 @@ GameObject:
   - component: {fileID: 7746013909593932975}
   - component: {fileID: 7212790108729325479}
   - component: {fileID: 505866032584914985}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_SidewalkBarriers01_LOD0_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10167,7 +10062,7 @@ GameObject:
   - component: {fileID: 6267278426078623568}
   - component: {fileID: 5327253866182451588}
   - component: {fileID: 757869957339877506}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag01_LOD0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10272,7 +10167,7 @@ GameObject:
   - component: {fileID: 6257866474529605867}
   - component: {fileID: 7046674467672679412}
   - component: {fileID: 4321051566307101273}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10378,7 +10273,7 @@ GameObject:
   - component: {fileID: 2606397999397157587}
   - component: {fileID: 2491250392636167356}
   - component: {fileID: 7229592972650080942}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag01_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10480,12 +10375,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 208561732080031855}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &208561732080031855
 Transform:
@@ -10517,7 +10412,7 @@ GameObject:
   - component: {fileID: 5887641230610814059}
   - component: {fileID: 1427976613606820620}
   - component: {fileID: 5534989000864168321}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10621,12 +10516,12 @@ GameObject:
   - component: {fileID: 4516165753790397070}
   - component: {fileID: 2871441339780782098}
   - component: {fileID: 58799261429780099}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface11_polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4516165753790397070
 Transform:
@@ -10706,7 +10601,7 @@ GameObject:
   - component: {fileID: 6892662196686944796}
   - component: {fileID: 1087532558240026350}
   - component: {fileID: 2335041424977406445}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HologramStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10812,7 +10707,7 @@ GameObject:
   - component: {fileID: 3361096478989072517}
   - component: {fileID: 192175945280646278}
   - component: {fileID: 1075182114286231719}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bags_on_pallet_v1_1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10917,7 +10812,7 @@ GameObject:
   - component: {fileID: 6378508012378755767}
   - component: {fileID: 4525558445040864380}
   - component: {fileID: 7088558284899262606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11019,7 +10914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3516468982080556225}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Door_Mix2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11056,7 +10951,7 @@ GameObject:
   - component: {fileID: 4746821084032895696}
   - component: {fileID: 2562412438738878464}
   - component: {fileID: 3059897818230535246}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11175,12 +11070,12 @@ GameObject:
   - component: {fileID: 2174417230387070010}
   - component: {fileID: 5848708446736678913}
   - component: {fileID: 281139963525679822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface7_polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &901251743269200743
 Transform:
@@ -11280,7 +11175,7 @@ GameObject:
   - component: {fileID: 8467492949119825526}
   - component: {fileID: 7419135933381808919}
   - component: {fileID: 7853256008658236935}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11385,12 +11280,12 @@ GameObject:
   - component: {fileID: 6701630295496694767}
   - component: {fileID: 7716495748131300573}
   - component: {fileID: 5094426109561834311}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface7_polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7523006187365612700
 Transform:
@@ -11487,12 +11382,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730621461895777815}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lamp (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1730621461895777815
 Transform:
@@ -11524,7 +11419,7 @@ GameObject:
   - component: {fileID: 3148335504220195897}
   - component: {fileID: 145934378067107657}
   - component: {fileID: 2289649030295590046}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11628,7 +11523,7 @@ GameObject:
   - component: {fileID: 7036721847067394923}
   - component: {fileID: 8225944123064250455}
   - component: {fileID: 1089995698843045444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PipeC02_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11709,7 +11604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5617217699395006750}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trash_Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11744,7 +11639,7 @@ GameObject:
   - component: {fileID: 679499567367578346}
   - component: {fileID: 3474840736432015712}
   - component: {fileID: 8786156534341854644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11849,7 +11744,7 @@ GameObject:
   - component: {fileID: 8526323804943510429}
   - component: {fileID: 1561772354166097715}
   - component: {fileID: 442349237872802439}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11954,7 +11849,7 @@ GameObject:
   - component: {fileID: 7168809016598799775}
   - component: {fileID: 8561716445840144712}
   - component: {fileID: 4386854523080981231}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Fence01_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12057,7 +11952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2155225081237611341}
   - component: {fileID: 2026949097776857886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12112,7 +12007,7 @@ GameObject:
   - component: {fileID: 4264742729409632609}
   - component: {fileID: 6012828000428007925}
   - component: {fileID: 7978823532249292004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12217,7 +12112,7 @@ GameObject:
   - component: {fileID: 7506519355195785546}
   - component: {fileID: 4356836401556333604}
   - component: {fileID: 4422678915471759066}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12322,7 +12217,7 @@ GameObject:
   - component: {fileID: 5556079146588447173}
   - component: {fileID: 4738126691092761758}
   - component: {fileID: 6733267278823574094}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12427,7 +12322,7 @@ GameObject:
   - component: {fileID: 5474672008631462753}
   - component: {fileID: 6912504744648754026}
   - component: {fileID: 4374834161344747334}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_MenuScreen01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12532,7 +12427,7 @@ GameObject:
   - component: {fileID: 1996151876410494045}
   - component: {fileID: 5448785788718732274}
   - component: {fileID: 2581528966319163402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12637,7 +12532,7 @@ GameObject:
   - component: {fileID: 2731460262017525400}
   - component: {fileID: 1450363494762540033}
   - component: {fileID: 7557138098568060951}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12742,7 +12637,7 @@ GameObject:
   - component: {fileID: 1415079199061999463}
   - component: {fileID: 5706211609298367298}
   - component: {fileID: 4712029585947739578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_trash_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12844,12 +12739,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5691862011514297773}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lamp (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5691862011514297773
 Transform:
@@ -12881,7 +12776,7 @@ GameObject:
   - component: {fileID: 4723457312268311222}
   - component: {fileID: 554249648806852607}
   - component: {fileID: 4474121121259997310}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12985,7 +12880,7 @@ GameObject:
   - component: {fileID: 6255334083065737643}
   - component: {fileID: 5398477064828530804}
   - component: {fileID: 7825540566597326910}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PipeC02_LOD0_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13069,7 +12964,7 @@ GameObject:
   - component: {fileID: 2867888039409796816}
   - component: {fileID: 3306563152870726178}
   - component: {fileID: 1140043620321007761}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13174,7 +13069,7 @@ GameObject:
   - component: {fileID: 6133440560899234524}
   - component: {fileID: 436912191160898986}
   - component: {fileID: 6363755020159920033}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Fence01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13279,7 +13174,7 @@ GameObject:
   - component: {fileID: 7345164716796410722}
   - component: {fileID: 6906953792582227843}
   - component: {fileID: 3005371408265084384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag05_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13384,7 +13279,7 @@ GameObject:
   - component: {fileID: 7362295112951893999}
   - component: {fileID: 7476438163373040559}
   - component: {fileID: 333965830037381421}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13489,7 +13384,7 @@ GameObject:
   - component: {fileID: 7034669898540137187}
   - component: {fileID: 6460680505574022952}
   - component: {fileID: 6205996827239668555}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13594,7 +13489,7 @@ GameObject:
   - component: {fileID: 4186721828897843873}
   - component: {fileID: 9142482100602867694}
   - component: {fileID: 271764829442482664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13696,7 +13591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9207267169576964205}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: paint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13716,9 +13611,7 @@ Transform:
   m_LocalPosition: {x: 2.8140326, y: -0.29538858, z: -3.0978813}
   m_LocalScale: {x: 0.9101184, y: 0.9101184, z: 0.9101184}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 802863420054121042}
-  - {fileID: 5612865223454351389}
+  m_Children: []
   m_Father: {fileID: 9207050707646658924}
   m_LocalEulerAnglesHint: {x: 180, y: -180, z: -540}
 --- !u!1 &4042853229963549159
@@ -13733,7 +13626,7 @@ GameObject:
   - component: {fileID: 1128713278210278668}
   - component: {fileID: 436507259185445220}
   - component: {fileID: 3627547514955831113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_LaundryLight_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13838,7 +13731,7 @@ GameObject:
   - component: {fileID: 3810813669760121962}
   - component: {fileID: 213514576154599580}
   - component: {fileID: 1406548098217266301}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Bridge_Module02_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13929,7 +13822,7 @@ GameObject:
   - component: {fileID: 74040006013294318}
   - component: {fileID: 5450277409637059069}
   - component: {fileID: 8676310959466511789}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierSand02_LOD0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14033,7 +13926,7 @@ GameObject:
   - component: {fileID: 1998050867038746069}
   - component: {fileID: 9206431005451167144}
   - component: {fileID: 1044671064735881483}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PF_PipeB_ClampB_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14117,7 +14010,7 @@ GameObject:
   - component: {fileID: 8800653403120738597}
   - component: {fileID: 5332308104227389267}
   - component: {fileID: 81979163519909305}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14221,12 +14114,12 @@ GameObject:
   - component: {fileID: 8625112590856542017}
   - component: {fileID: 8968320370557523125}
   - component: {fileID: 4457422821860720725}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface11_polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8625112590856542017
 Transform:
@@ -14306,7 +14199,7 @@ GameObject:
   - component: {fileID: 3501134466822893417}
   - component: {fileID: 1939877183016026786}
   - component: {fileID: 4140412042796907231}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14411,7 +14304,7 @@ GameObject:
   - component: {fileID: 3858454173323277136}
   - component: {fileID: 6757997810389986200}
   - component: {fileID: 7254293712255536538}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AmmoBox01_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14516,7 +14409,7 @@ GameObject:
   - component: {fileID: 3936202451014880247}
   - component: {fileID: 6287529955642746956}
   - component: {fileID: 5534602220310743272}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14621,7 +14514,7 @@ GameObject:
   - component: {fileID: 4251615823232999260}
   - component: {fileID: 210107159411835202}
   - component: {fileID: 1367415120543998854}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14726,7 +14619,7 @@ GameObject:
   - component: {fileID: 6013267380292173353}
   - component: {fileID: 6466384633139668185}
   - component: {fileID: 1196687192330882940}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RoadBarrier01a_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14831,7 +14724,7 @@ GameObject:
   - component: {fileID: 8487909957778452158}
   - component: {fileID: 7686109506666564915}
   - component: {fileID: 869817256332164685}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Conditioner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14936,7 +14829,7 @@ GameObject:
   - component: {fileID: 3791780253386761641}
   - component: {fileID: 8083865076214031853}
   - component: {fileID: 8447009744388088909}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag06_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15038,12 +14931,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6792582580011768504}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6792582580011768504
 Transform:
@@ -15074,7 +14967,7 @@ GameObject:
   - component: {fileID: 6486177366874722693}
   - component: {fileID: 1251776185956668787}
   - component: {fileID: 3375726617306242759}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15179,7 +15072,7 @@ GameObject:
   - component: {fileID: 7068229597000505654}
   - component: {fileID: 7250207293838319704}
   - component: {fileID: 20639718223789344}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_7 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15284,7 +15177,7 @@ GameObject:
   - component: {fileID: 2076687575643660944}
   - component: {fileID: 3988050456537350542}
   - component: {fileID: 862186566763170394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Server01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15389,7 +15282,7 @@ GameObject:
   - component: {fileID: 7713614297721074336}
   - component: {fileID: 7447224266766334939}
   - component: {fileID: 1823423028923662002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15495,7 +15388,7 @@ GameObject:
   - component: {fileID: 8407244785072239003}
   - component: {fileID: 5758488926950158764}
   - component: {fileID: 9018064534590409265}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15600,7 +15493,7 @@ GameObject:
   - component: {fileID: 8793954202541301906}
   - component: {fileID: 2701954947226711371}
   - component: {fileID: 6168779705183687140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_StructurePrefab04_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15684,7 +15577,7 @@ GameObject:
   - component: {fileID: 881545828759083832}
   - component: {fileID: 2132513446281638115}
   - component: {fileID: 2287470012811329871}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15789,7 +15682,7 @@ GameObject:
   - component: {fileID: 8850832108994496405}
   - component: {fileID: 7271857049073286350}
   - component: {fileID: 5595905835436339444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Floor02_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15894,7 +15787,7 @@ GameObject:
   - component: {fileID: 6039810476448183956}
   - component: {fileID: 2132144564685200281}
   - component: {fileID: 1776045627620810469}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Structure04_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15999,7 +15892,7 @@ GameObject:
   - component: {fileID: 8234630359443392167}
   - component: {fileID: 6015667463056799644}
   - component: {fileID: 4412550903226628011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16104,7 +15997,7 @@ GameObject:
   - component: {fileID: 6781470198971514609}
   - component: {fileID: 8550679970269327794}
   - component: {fileID: 7303483155206385701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16207,7 +16100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2065232117657789845}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trash_Collection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16254,7 +16147,7 @@ GameObject:
   - component: {fileID: 4279345886256348320}
   - component: {fileID: 1537012984217523262}
   - component: {fileID: 2880891552298175045}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag02_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16359,7 +16252,7 @@ GameObject:
   - component: {fileID: 501851740054743352}
   - component: {fileID: 195768238968073315}
   - component: {fileID: 4010102713608278512}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD0_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16464,7 +16357,7 @@ GameObject:
   - component: {fileID: 82546972774353944}
   - component: {fileID: 1614188231010379510}
   - component: {fileID: 6424169642206964594}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_WoodenProp01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16569,7 +16462,7 @@ GameObject:
   - component: {fileID: 8797587158043971556}
   - component: {fileID: 1027743313946089069}
   - component: {fileID: 958929834494580784}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Futuristiclocker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16673,12 +16566,12 @@ GameObject:
   - component: {fileID: 3244342055967885156}
   - component: {fileID: 4109170433581200726}
   - component: {fileID: 8286885156781535111}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface10_polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3244342055967885156
 Transform:
@@ -16758,7 +16651,7 @@ GameObject:
   - component: {fileID: 2495776941349274630}
   - component: {fileID: 8547265222799050141}
   - component: {fileID: 6358003366184062708}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Trash_01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16863,7 +16756,7 @@ GameObject:
   - component: {fileID: 3922455344169178993}
   - component: {fileID: 6502701353651687263}
   - component: {fileID: 7250051659145525935}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag01_LOD0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16968,7 +16861,7 @@ GameObject:
   - component: {fileID: 2708251668653567447}
   - component: {fileID: 479915741286749046}
   - component: {fileID: 7688989126979217922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EntranceLight01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17074,7 +16967,7 @@ GameObject:
   - component: {fileID: 4170143269437653256}
   - component: {fileID: 5440738381187257415}
   - component: {fileID: 9008798331100195312}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wooden_box_v1_LD1square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17179,7 +17072,7 @@ GameObject:
   - component: {fileID: 1251561866985180369}
   - component: {fileID: 7692806023598876041}
   - component: {fileID: 4324183184250186815}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17282,7 +17175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8855230488688760214}
   - component: {fileID: 1633175213662820248}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17334,12 +17227,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8321635798199953088}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wall lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8321635798199953088
 Transform:
@@ -17378,7 +17271,7 @@ GameObject:
   - component: {fileID: 4860761492893815528}
   - component: {fileID: 314923811368255488}
   - component: {fileID: 1732328129710566812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17483,12 +17376,12 @@ GameObject:
   - component: {fileID: 4567484405538977851}
   - component: {fileID: 2957023130362364032}
   - component: {fileID: 1558251945119330252}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface10_polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4567484405538977851
 Transform:
@@ -17568,7 +17461,7 @@ GameObject:
   - component: {fileID: 7859052323574809923}
   - component: {fileID: 4992585097304073761}
   - component: {fileID: 6448507090522360161}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17674,7 +17567,7 @@ GameObject:
   - component: {fileID: 7004547904729127981}
   - component: {fileID: 4576543965778882839}
   - component: {fileID: 1202716693973607672}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17779,7 +17672,7 @@ GameObject:
   - component: {fileID: 1029069854145579609}
   - component: {fileID: 9064316124172992059}
   - component: {fileID: 5401455865239947609}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17884,7 +17777,7 @@ GameObject:
   - component: {fileID: 2309073721206946502}
   - component: {fileID: 953129107756756073}
   - component: {fileID: 4639448009195866687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17989,7 +17882,7 @@ GameObject:
   - component: {fileID: 1431090123241379793}
   - component: {fileID: 5407328785286755144}
   - component: {fileID: 3306021299594313500}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PowerVent_01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18095,7 +17988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3280364390605146201}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Power_Supply
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18133,7 +18026,7 @@ GameObject:
   - component: {fileID: 8518678520645821312}
   - component: {fileID: 5041394661373119878}
   - component: {fileID: 6505510465040928748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD0_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18238,7 +18131,7 @@ GameObject:
   - component: {fileID: 2452359326258483823}
   - component: {fileID: 3741774821382492999}
   - component: {fileID: 9018393313435636569}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_trash_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18343,7 +18236,7 @@ GameObject:
   - component: {fileID: 5606272765097835108}
   - component: {fileID: 4292622098177392568}
   - component: {fileID: 8708008914964509755}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18445,7 +18338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9195843707904649668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'Bricks '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18518,7 +18411,7 @@ GameObject:
   - component: {fileID: 4602894850184915094}
   - component: {fileID: 2856287608993540971}
   - component: {fileID: 5697672315663501348}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hamed's_Lights 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18604,7 +18497,7 @@ GameObject:
   - component: {fileID: 5567343846104723757}
   - component: {fileID: 989618745086245067}
   - component: {fileID: 6440704595584220649}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18709,7 +18602,7 @@ GameObject:
   - component: {fileID: 2774789939861144485}
   - component: {fileID: 1046587590053849090}
   - component: {fileID: 3772619505361741463}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18814,7 +18707,7 @@ GameObject:
   - component: {fileID: 8923192685312058716}
   - component: {fileID: 3093341595969012488}
   - component: {fileID: 7274241555089837958}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierSand02_LOD0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18919,7 +18812,7 @@ GameObject:
   - component: {fileID: 4986380680823581588}
   - component: {fileID: 6745023629017407583}
   - component: {fileID: 7158871783511958427}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19023,7 +18916,7 @@ GameObject:
   - component: {fileID: 5371257605106937908}
   - component: {fileID: 2568538461566787731}
   - component: {fileID: 6907135171077151496}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hamed's_Lights 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19109,7 +19002,7 @@ GameObject:
   - component: {fileID: 2607144150394510077}
   - component: {fileID: 7348816099519231203}
   - component: {fileID: 1331939628014296409}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierConcrete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19214,7 +19107,7 @@ GameObject:
   - component: {fileID: 5739105310499771850}
   - component: {fileID: 5371500345491210650}
   - component: {fileID: 6788977305188638668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19319,7 +19212,7 @@ GameObject:
   - component: {fileID: 638693650301483274}
   - component: {fileID: 8505542511277408146}
   - component: {fileID: 9203152936327146930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Trash_Container_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19424,7 +19317,7 @@ GameObject:
   - component: {fileID: 5673186871157049626}
   - component: {fileID: 4097958003168122853}
   - component: {fileID: 1247517010576571918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19529,7 +19422,7 @@ GameObject:
   - component: {fileID: 5439526361201513211}
   - component: {fileID: 8038335320396181412}
   - component: {fileID: 6279746990521367636}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19631,7 +19524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5376513103797472592}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SidewalkBarriers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19668,7 +19561,7 @@ GameObject:
   - component: {fileID: 4516730960930849994}
   - component: {fileID: 1064088272221398899}
   - component: {fileID: 7614387396761490477}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19772,7 +19665,7 @@ GameObject:
   - component: {fileID: 9062475427243977904}
   - component: {fileID: 2055973980929473399}
   - component: {fileID: 1057940690709218042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19891,7 +19784,7 @@ GameObject:
   - component: {fileID: 4774498595791967406}
   - component: {fileID: 6886873116608264522}
   - component: {fileID: 2536744711209628094}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19996,7 +19889,7 @@ GameObject:
   - component: {fileID: 1769785483582339167}
   - component: {fileID: 5989781568437124736}
   - component: {fileID: 639258516141558015}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PF_PipeB_ClampB_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20080,7 +19973,7 @@ GameObject:
   - component: {fileID: 1685972377091221697}
   - component: {fileID: 6157249773376734744}
   - component: {fileID: 1709061119569498011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20185,7 +20078,7 @@ GameObject:
   - component: {fileID: 6481559202710797868}
   - component: {fileID: 8657125295361456188}
   - component: {fileID: 3841883580616081696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20290,7 +20183,7 @@ GameObject:
   - component: {fileID: 3489632228841703594}
   - component: {fileID: 4749750120485632543}
   - component: {fileID: 2850774830197879358}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20395,7 +20288,7 @@ GameObject:
   - component: {fileID: 16860742645347020}
   - component: {fileID: 421559108237053805}
   - component: {fileID: 9086074340391828460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Server01_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20500,7 +20393,7 @@ GameObject:
   - component: {fileID: 3742586589682528551}
   - component: {fileID: 5229548987403215333}
   - component: {fileID: 8650456048903266726}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20605,7 +20498,7 @@ GameObject:
   - component: {fileID: 1480282727965079113}
   - component: {fileID: 2547787053366064950}
   - component: {fileID: 5428214105535784869}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Fence01__1_ (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20710,7 +20603,7 @@ GameObject:
   - component: {fileID: 2874349757933039411}
   - component: {fileID: 7792087931683672659}
   - component: {fileID: 5200621227298687158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Server01_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20815,7 +20708,7 @@ GameObject:
   - component: {fileID: 7624552985794500689}
   - component: {fileID: 7547191212471519719}
   - component: {fileID: 7612547578320719195}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20920,7 +20813,7 @@ GameObject:
   - component: {fileID: 9120473470088696358}
   - component: {fileID: 2312821025102546592}
   - component: {fileID: 791042021180639227}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Trash_Bags_02_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21025,7 +20918,7 @@ GameObject:
   - component: {fileID: 396198505206206259}
   - component: {fileID: 5997131821832888479}
   - component: {fileID: 8454815332131108760}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21130,7 +21023,7 @@ GameObject:
   - component: {fileID: 8707225222533921922}
   - component: {fileID: 7124958220957116877}
   - component: {fileID: 5646648408340956535}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21235,7 +21128,7 @@ GameObject:
   - component: {fileID: 7871365782302003192}
   - component: {fileID: 7378080065774968245}
   - component: {fileID: 3204209069808009237}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Electric_box_v2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21340,7 +21233,7 @@ GameObject:
   - component: {fileID: 6543863311463681903}
   - component: {fileID: 4321362157330411381}
   - component: {fileID: 6912032997320857110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Server01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21442,12 +21335,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2737828119892857209}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sand bags
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2737828119892857209
 Transform:
@@ -21497,12 +21390,12 @@ GameObject:
   - component: {fileID: 1538304192935024002}
   - component: {fileID: 6108635543191393865}
   - component: {fileID: 8174177961445250116}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface7_polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2468775606965384236
 Transform:
@@ -21602,7 +21495,7 @@ GameObject:
   - component: {fileID: 3285774445840221340}
   - component: {fileID: 2652223953060345452}
   - component: {fileID: 5691167653128797119}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21704,12 +21597,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1528218522937772005}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierConcrete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1528218522937772005
 Transform:
@@ -21742,7 +21635,7 @@ GameObject:
   - component: {fileID: 4819910932903691600}
   - component: {fileID: 4834153516370116822}
   - component: {fileID: 2940357696819142191}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21847,7 +21740,7 @@ GameObject:
   - component: {fileID: 2929580568164912330}
   - component: {fileID: 5674614920252396126}
   - component: {fileID: 2193971411439547508}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Arcade_Machine_01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21952,7 +21845,7 @@ GameObject:
   - component: {fileID: 1239549858318089910}
   - component: {fileID: 3967824465279677901}
   - component: {fileID: 1506452862852962645}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22056,7 +21949,7 @@ GameObject:
   - component: {fileID: 3992968419742916856}
   - component: {fileID: 5463941287072513995}
   - component: {fileID: 4062410978666300502}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hamed's_Lights 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22142,7 +22035,7 @@ GameObject:
   - component: {fileID: 6875341673393431885}
   - component: {fileID: 8415621010698456824}
   - component: {fileID: 3047183875111236681}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_WallLight08b_LOD0_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22246,7 +22139,7 @@ GameObject:
   - component: {fileID: 3451912114135574342}
   - component: {fileID: 6422736054778563955}
   - component: {fileID: 3846320158481456947}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fence3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22330,7 +22223,7 @@ GameObject:
   - component: {fileID: 4381308901544934045}
   - component: {fileID: 6764728027943226483}
   - component: {fileID: 5103205096758311552}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22435,7 +22328,7 @@ GameObject:
   - component: {fileID: 368199601215191851}
   - component: {fileID: 6436574746092681744}
   - component: {fileID: 4093370334102316838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierSand01_LOD0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22540,7 +22433,7 @@ GameObject:
   - component: {fileID: 7250038208941282901}
   - component: {fileID: 3007337079578782070}
   - component: {fileID: 1353682696833878860}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22643,7 +22536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7873649410728041668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Door_Mix1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22678,12 +22571,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5041448438643386821}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: servers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5041448438643386821
 Transform:
@@ -22719,7 +22612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8609964991637152399}
   - component: {fileID: 7261873051142970454}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22774,7 +22667,7 @@ GameObject:
   - component: {fileID: 8555696860307323692}
   - component: {fileID: 5658888813260859275}
   - component: {fileID: 3972807122335057168}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Fence01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22879,7 +22772,7 @@ GameObject:
   - component: {fileID: 1330909833896521531}
   - component: {fileID: 314761455757276803}
   - component: {fileID: 6330088640575464189}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierConcrete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22982,7 +22875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5165832305754924161}
   - component: {fileID: 4298840098491273699}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23037,7 +22930,7 @@ GameObject:
   - component: {fileID: 5130935077363199579}
   - component: {fileID: 7934467358951943659}
   - component: {fileID: 3310309925981720487}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23142,7 +23035,7 @@ GameObject:
   - component: {fileID: 7455824642587025651}
   - component: {fileID: 2133693400764216074}
   - component: {fileID: 7378867462813373503}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RoadBarrier01a_LOD0_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23247,7 +23140,7 @@ GameObject:
   - component: {fileID: 6529810877356545282}
   - component: {fileID: 7567642736248954556}
   - component: {fileID: 5532829592782075513}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RoadBarrier01a_LOD0_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23352,7 +23245,7 @@ GameObject:
   - component: {fileID: 2086952530006741384}
   - component: {fileID: 3297938725494329404}
   - component: {fileID: 6989263341934109842}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierConcrete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23457,7 +23350,7 @@ GameObject:
   - component: {fileID: 7065557508904445976}
   - component: {fileID: 5957187945883498165}
   - component: {fileID: 7668165737287050546}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23562,7 +23455,7 @@ GameObject:
   - component: {fileID: 9158178703196855992}
   - component: {fileID: 4696204708625731098}
   - component: {fileID: 6821989669069227314}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23668,7 +23561,7 @@ GameObject:
   - component: {fileID: 39939783041332569}
   - component: {fileID: 6812453636600272664}
   - component: {fileID: 9055328850264502285}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierSand01_LOD0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23794,7 +23687,7 @@ GameObject:
   - component: {fileID: 2391959339792270632}
   - component: {fileID: 2067836915321423941}
   - component: {fileID: 6458663013382803347}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23913,7 +23806,7 @@ GameObject:
   - component: {fileID: 1544691440802596389}
   - component: {fileID: 3703731297976278718}
   - component: {fileID: 7654380777655301348}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24018,7 +23911,7 @@ GameObject:
   - component: {fileID: 3160032198302324629}
   - component: {fileID: 1390690713852010634}
   - component: {fileID: 2587997421211984342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RoadBarrier01a_LOD0_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24121,7 +24014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6416008286143588348}
   - component: {fileID: 3555094187105477082}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24176,7 +24069,7 @@ GameObject:
   - component: {fileID: 5442829625443505597}
   - component: {fileID: 6581180287942122270}
   - component: {fileID: 6796187431473433469}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EntranceLight01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24282,7 +24175,7 @@ GameObject:
   - component: {fileID: 3933050243493465375}
   - component: {fileID: 6687428624821489811}
   - component: {fileID: 3147086360059567586}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24387,7 +24280,7 @@ GameObject:
   - component: {fileID: 6063054498062621814}
   - component: {fileID: 4892167666428222095}
   - component: {fileID: 5922071324447922162}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24491,7 +24384,7 @@ GameObject:
   - component: {fileID: 8251110781897541875}
   - component: {fileID: 6866224964325263595}
   - component: {fileID: 1609893604182183453}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AntitankObstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24575,7 +24468,7 @@ GameObject:
   - component: {fileID: 5436468918892591157}
   - component: {fileID: 7444722654437576309}
   - component: {fileID: 7551704398462466727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24680,7 +24573,7 @@ GameObject:
   - component: {fileID: 6780595665223440001}
   - component: {fileID: 5208259422481640948}
   - component: {fileID: 3822524643752778647}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wooden_box_v1_LD1square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24785,7 +24678,7 @@ GameObject:
   - component: {fileID: 6234096780967275544}
   - component: {fileID: 2105225837285631054}
   - component: {fileID: 2940067312839398812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24890,7 +24783,7 @@ GameObject:
   - component: {fileID: 3534395341030351311}
   - component: {fileID: 8896201886799916306}
   - component: {fileID: 714568268527163414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24995,7 +24888,7 @@ GameObject:
   - component: {fileID: 9025874888172444386}
   - component: {fileID: 6669266366404804266}
   - component: {fileID: 3400585897006755101}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TinSheet04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25097,12 +24990,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774496534217552669}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: floors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &774496534217552669
 Transform:
@@ -25135,7 +25028,7 @@ GameObject:
   - component: {fileID: 3531572164771107517}
   - component: {fileID: 8196957615823111499}
   - component: {fileID: 5721652352275806380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25240,7 +25133,7 @@ GameObject:
   - component: {fileID: 1752329198699697566}
   - component: {fileID: 8087720328136747539}
   - component: {fileID: 3072871194175356915}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25345,7 +25238,7 @@ GameObject:
   - component: {fileID: 5098162157907294466}
   - component: {fileID: 7791339680830066121}
   - component: {fileID: 1492700520636004234}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PipeC02_LOD0_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25429,7 +25322,7 @@ GameObject:
   - component: {fileID: 8301878894770994370}
   - component: {fileID: 5847264866455180572}
   - component: {fileID: 2392796349709146586}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Floor02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25534,7 +25427,7 @@ GameObject:
   - component: {fileID: 8310268525403594746}
   - component: {fileID: 219606428161115256}
   - component: {fileID: 2961459655532292194}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RoadBarrier01a_LOD0_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25639,7 +25532,7 @@ GameObject:
   - component: {fileID: 6419055503246862960}
   - component: {fileID: 6409721690918001945}
   - component: {fileID: 3700784228201086080}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Fence01_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25744,7 +25637,7 @@ GameObject:
   - component: {fileID: 6075613448819801609}
   - component: {fileID: 3273388579235335026}
   - component: {fileID: 4190093019241084740}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Fence01__1_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25849,7 +25742,7 @@ GameObject:
   - component: {fileID: 1809912536129875748}
   - component: {fileID: 1343386388495135766}
   - component: {fileID: 9138172990924589443}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25954,7 +25847,7 @@ GameObject:
   - component: {fileID: 7006825707900736486}
   - component: {fileID: 3881589668236171760}
   - component: {fileID: 3657544535541171488}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26057,7 +25950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5307861142465226156}
   - component: {fileID: 3399815718574030076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26112,7 +26005,7 @@ GameObject:
   - component: {fileID: 2136115759132991808}
   - component: {fileID: 8859396445278066464}
   - component: {fileID: 592034011492910572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26217,7 +26110,7 @@ GameObject:
   - component: {fileID: 8373155601495021058}
   - component: {fileID: 2678718492780091742}
   - component: {fileID: 969865102680456306}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26323,7 +26216,7 @@ GameObject:
   - component: {fileID: 7131097844207070065}
   - component: {fileID: 1431524927482318704}
   - component: {fileID: 8894315672236659211}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26428,7 +26321,7 @@ GameObject:
   - component: {fileID: 3343220944324904025}
   - component: {fileID: 5110617261668420221}
   - component: {fileID: 1576445016301726663}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Food_Package_Trash_01_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26533,7 +26426,7 @@ GameObject:
   - component: {fileID: 6781603599790919396}
   - component: {fileID: 1966555839029838431}
   - component: {fileID: 9130910392041310403}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26639,7 +26532,7 @@ GameObject:
   - component: {fileID: 5909098466888711471}
   - component: {fileID: 3076509509867265612}
   - component: {fileID: 2418204353978304645}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarrierSand01_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26766,7 +26659,7 @@ GameObject:
   - component: {fileID: 7267793009188384699}
   - component: {fileID: 8803759317225791966}
   - component: {fileID: 5737458613690635898}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Fence02_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26871,7 +26764,7 @@ GameObject:
   - component: {fileID: 860423510358002267}
   - component: {fileID: 8233876529437994944}
   - component: {fileID: 5990361359175417513}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26976,7 +26869,7 @@ GameObject:
   - component: {fileID: 7639389124466974037}
   - component: {fileID: 5892476854911613422}
   - component: {fileID: 1585872873408871897}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_7 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27081,7 +26974,7 @@ GameObject:
   - component: {fileID: 2584132880299717551}
   - component: {fileID: 4410102756604347851}
   - component: {fileID: 136632254162367491}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27186,7 +27079,7 @@ GameObject:
   - component: {fileID: 3028585845534199668}
   - component: {fileID: 1900495833866446327}
   - component: {fileID: 3494877525019727444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AmmoBox02_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27291,7 +27184,7 @@ GameObject:
   - component: {fileID: 3118498157546359323}
   - component: {fileID: 6257942534455787824}
   - component: {fileID: 3301846706749411750}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27396,7 +27289,7 @@ GameObject:
   - component: {fileID: 4119321798911443137}
   - component: {fileID: 5913663825268354305}
   - component: {fileID: 8219727360904632227}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27501,7 +27394,7 @@ GameObject:
   - component: {fileID: 7415826801265501199}
   - component: {fileID: 2558375374253184432}
   - component: {fileID: 1318302213543248697}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27606,7 +27499,7 @@ GameObject:
   - component: {fileID: 8273475471603213856}
   - component: {fileID: 3914542322464502733}
   - component: {fileID: 7120554406396535630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HologramStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27712,7 +27605,7 @@ GameObject:
   - component: {fileID: 5375266090611064033}
   - component: {fileID: 4935179979093570619}
   - component: {fileID: 2540164411833951109}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_WallLight08b_LOD0_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27817,7 +27710,7 @@ GameObject:
   - component: {fileID: 1058588635129430373}
   - component: {fileID: 94448777269079973}
   - component: {fileID: 7164032327255818046}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_CyberPunkStructure01_LOD0_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27922,7 +27815,7 @@ GameObject:
   - component: {fileID: 3257623594479595495}
   - component: {fileID: 6733355433224049243}
   - component: {fileID: 6131898272733106238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28027,7 +27920,7 @@ GameObject:
   - component: {fileID: 6656536288886563462}
   - component: {fileID: 2610708672780163708}
   - component: {fileID: 4553152729764890204}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Server01_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28132,7 +28025,7 @@ GameObject:
   - component: {fileID: 8751390471959278680}
   - component: {fileID: 9037332280091177816}
   - component: {fileID: 5185483259146915909}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28234,12 +28127,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1099901058020034879}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1099901058020034879
 Transform:
@@ -28283,7 +28176,7 @@ GameObject:
   - component: {fileID: 7719666221982473685}
   - component: {fileID: 1014570941435309161}
   - component: {fileID: 4158697557039976500}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Structure01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28389,7 +28282,7 @@ GameObject:
   - component: {fileID: 8638894288751286705}
   - component: {fileID: 6164576612500434201}
   - component: {fileID: 7018886373350685749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PF_BridgeModule02_16__4_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28504,12 +28397,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1417222658684025687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1417222658684025687
 Transform:
@@ -28542,12 +28435,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7585038526788928395}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: barrels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7585038526788928395
 Transform:
@@ -28595,7 +28488,7 @@ GameObject:
   - component: {fileID: 4196434333708921110}
   - component: {fileID: 7273594401987550193}
   - component: {fileID: 1515974223284598952}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28714,7 +28607,7 @@ GameObject:
   - component: {fileID: 6131082391698006269}
   - component: {fileID: 7213589320542360110}
   - component: {fileID: 8413326017941798173}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD1_7 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28819,7 +28712,7 @@ GameObject:
   - component: {fileID: 8347706580880899382}
   - component: {fileID: 4083527878794590524}
   - component: {fileID: 4499364363427649422}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28924,7 +28817,7 @@ GameObject:
   - component: {fileID: 949176864441603181}
   - component: {fileID: 8861726696247123340}
   - component: {fileID: 6141215025634712011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29029,7 +28922,7 @@ GameObject:
   - component: {fileID: 138244141947115105}
   - component: {fileID: 2910823068130716642}
   - component: {fileID: 5209795085035290451}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29134,7 +29027,7 @@ GameObject:
   - component: {fileID: 2715113094693555990}
   - component: {fileID: 3282557136235552032}
   - component: {fileID: 4526264054566237992}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_WallLight08b_LOD0_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29239,7 +29132,7 @@ GameObject:
   - component: {fileID: 3794979145516541115}
   - component: {fileID: 3223433507192284580}
   - component: {fileID: 4489533604802758817}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29344,7 +29237,7 @@ GameObject:
   - component: {fileID: 458785008306300923}
   - component: {fileID: 5553706040754285549}
   - component: {fileID: 5975204701539810976}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29449,7 +29342,7 @@ GameObject:
   - component: {fileID: 8173463923583212741}
   - component: {fileID: 2977883840511208602}
   - component: {fileID: 1075870186384942834}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_SidewalkBarriers01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29554,7 +29447,7 @@ GameObject:
   - component: {fileID: 342823345069486661}
   - component: {fileID: 7767554569856156478}
   - component: {fileID: 1609954786182855692}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag01_LOD0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29659,7 +29552,7 @@ GameObject:
   - component: {fileID: 6766802003912003889}
   - component: {fileID: 2780120533255248633}
   - component: {fileID: 3985246456526057337}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29764,7 +29657,7 @@ GameObject:
   - component: {fileID: 3848572775326219043}
   - component: {fileID: 3416587294799837311}
   - component: {fileID: 4000396674652130811}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Floor02_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29866,12 +29759,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1157751323724966414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lamp (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1157751323724966414
 Transform:
@@ -29903,7 +29796,7 @@ GameObject:
   - component: {fileID: 8253149139419708134}
   - component: {fileID: 3793045105228139963}
   - component: {fileID: 8194491759000579821}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30008,7 +29901,7 @@ GameObject:
   - component: {fileID: 7537365709175009496}
   - component: {fileID: 8497668153459958436}
   - component: {fileID: 167280522449829085}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bags_on_pallet_v1_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30101,111 +29994,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.4977179, y: 2.5346947, z: 1.6031036}
   m_Center: {x: 0.00000333786, y: 1.2653635, z: 0}
---- !u!1 &8477859190298385893
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 802863420054121042}
-  - component: {fileID: 1572493430767800859}
-  - component: {fileID: 702924810403633332}
-  - component: {fileID: 2810868881939392791}
-  m_Layer: 0
-  m_Name: SM_Decal05_LOD0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &802863420054121042
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477859190298385893}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9207267169576964205}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1572493430767800859
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477859190298385893}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f68a88ae9797a6f4bb3e6a0735eddded, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &702924810403633332
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477859190298385893}
-  m_Mesh: {fileID: 4552527973110547843, guid: 68f37afb77dabcc4da0ed1473c5c321e, type: 3}
---- !u!65 &2810868881939392791
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477859190298385893}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.858107, y: 0.000000792577, z: 1.974831}
-  m_Center: {x: -1.4290535, y: -0.0000013499628, z: 0.98741597}
 --- !u!1 &8498955523814367110
 GameObject:
   m_ObjectHideFlags: 0
@@ -30218,7 +30006,7 @@ GameObject:
   - component: {fileID: 6338877897001050634}
   - component: {fileID: 327055566778304418}
   - component: {fileID: 7084736661393408682}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Trash_01_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30323,7 +30111,7 @@ GameObject:
   - component: {fileID: 7876633664667984125}
   - component: {fileID: 2535045054311493272}
   - component: {fileID: 1787453122528872833}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30427,7 +30215,7 @@ GameObject:
   - component: {fileID: 1439456681103052374}
   - component: {fileID: 8190092835685572938}
   - component: {fileID: 6374471238412999159}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hamed's_Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30513,7 +30301,7 @@ GameObject:
   - component: {fileID: 2979483595006504081}
   - component: {fileID: 5010928444813218688}
   - component: {fileID: 3804493081005196758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30618,7 +30406,7 @@ GameObject:
   - component: {fileID: 1207800783598214842}
   - component: {fileID: 8980757881151132631}
   - component: {fileID: 8463857759245514343}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30723,7 +30511,7 @@ GameObject:
   - component: {fileID: 505124198074858613}
   - component: {fileID: 7751638373273655151}
   - component: {fileID: 5205021788865749373}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_SidewalkBarriers01_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30828,7 +30616,7 @@ GameObject:
   - component: {fileID: 7666448529649448121}
   - component: {fileID: 3275816572526839719}
   - component: {fileID: 8993758746157122558}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30933,7 +30721,7 @@ GameObject:
   - component: {fileID: 7882509281321719930}
   - component: {fileID: 2241363844061887628}
   - component: {fileID: 457312087625924119}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Server01_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31037,7 +30825,7 @@ GameObject:
   - component: {fileID: 796779601050216841}
   - component: {fileID: 553965121480920063}
   - component: {fileID: 3888128702474920738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PipeC02_LOD0_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31121,7 +30909,7 @@ GameObject:
   - component: {fileID: 2855170525892881203}
   - component: {fileID: 6858637354260473774}
   - component: {fileID: 8342728691791581095}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31227,7 +31015,7 @@ GameObject:
   - component: {fileID: 6509759809330191032}
   - component: {fileID: 7390312443101066829}
   - component: {fileID: 83477259795125617}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate02_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31333,7 +31121,7 @@ GameObject:
   - component: {fileID: 8553723739250409511}
   - component: {fileID: 103824089545110408}
   - component: {fileID: 2911402007085313606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Fence01_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31459,7 +31247,7 @@ GameObject:
   - component: {fileID: 2503445497494048410}
   - component: {fileID: 5792307818160828798}
   - component: {fileID: 6444223514202699085}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_v1_LD3 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31564,7 +31352,7 @@ GameObject:
   - component: {fileID: 3565021221184547321}
   - component: {fileID: 7711470205607189067}
   - component: {fileID: 559893529855124946}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Conditioner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31666,7 +31454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4952383315150579008}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31708,7 +31496,7 @@ GameObject:
   - component: {fileID: 5956694914615514886}
   - component: {fileID: 4334542080094795545}
   - component: {fileID: 7635528296511290275}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31813,7 +31601,7 @@ GameObject:
   - component: {fileID: 6509979672096401588}
   - component: {fileID: 7542593798965441945}
   - component: {fileID: 5758213752524840600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag05_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31918,7 +31706,7 @@ GameObject:
   - component: {fileID: 6358128469382853263}
   - component: {fileID: 3606711344033184347}
   - component: {fileID: 3856669587037393313}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire01_LOD0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32022,12 +31810,12 @@ GameObject:
   - component: {fileID: 5659031947900510803}
   - component: {fileID: 4403358257907750800}
   - component: {fileID: 7242480695918109675}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface11_polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5659031947900510803
 Transform:
@@ -32107,7 +31895,7 @@ GameObject:
   - component: {fileID: 7905257840645130871}
   - component: {fileID: 2468704095069230196}
   - component: {fileID: 5060751725344739650}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brick01_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32212,7 +32000,7 @@ GameObject:
   - component: {fileID: 286319785573633106}
   - component: {fileID: 9029701194231341463}
   - component: {fileID: 4905974329743408036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sandbag01_LOD0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32317,7 +32105,7 @@ GameObject:
   - component: {fileID: 1888842748236211744}
   - component: {fileID: 4994585388391975807}
   - component: {fileID: 2323083607547802553}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_ForeheadToolScreen_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32426,7 +32214,7 @@ GameObject:
   - component: {fileID: 6124859297910639930}
   - component: {fileID: 1243273998759120952}
   - component: {fileID: 83032482691252128}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Crate01_LOD0_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32530,7 +32318,7 @@ GameObject:
   - component: {fileID: 6295551413579818356}
   - component: {fileID: 8693032591536613181}
   - component: {fileID: 3657076854363227820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_PipeC02_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32613,7 +32401,7 @@ GameObject:
   - component: {fileID: 1965964443615114572}
   - component: {fileID: 645112366698529308}
   - component: {fileID: 5638853598538262441}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PF_PipeB_ClampB_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32697,7 +32485,7 @@ GameObject:
   - component: {fileID: 6010878019207914243}
   - component: {fileID: 7729628739885040717}
   - component: {fileID: 7231730300560389766}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barbwire02_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32801,12 +32589,12 @@ GameObject:
   - component: {fileID: 6182044854566255808}
   - component: {fileID: 4552119956377079969}
   - component: {fileID: 7159675746502550143}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface11_polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6182044854566255808
 Transform:
@@ -32886,7 +32674,7 @@ GameObject:
   - component: {fileID: 7622265640195759022}
   - component: {fileID: 3806131779035969485}
   - component: {fileID: 6084609368786835846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_EmissorHolografico_LOD0_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
