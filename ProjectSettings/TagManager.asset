@@ -3,22 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CinemachineTarget
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Lights
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Buildings
+  - Decals
+  - Glasses
+  - Props
+  - Others
+  - Ground
+  - VFX
+  - Reflection_Probs
   - 
   - 
   - 

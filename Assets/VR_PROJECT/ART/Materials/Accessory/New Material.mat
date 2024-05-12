@@ -131,8 +131,11 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _drippings: 0.0005
+    - _dirpping_clamp1: 215.5
+    - _dirpping_clamp2: 201.7
+    - _drippings: 0.002
     - _moving: 0
+    - _noise_power: 8.5
     - _rain_density: 43.3
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
