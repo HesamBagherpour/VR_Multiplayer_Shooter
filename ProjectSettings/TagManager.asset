@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - RHandAnchor
+  - LHandAnchor
+  - Enemy
+  - dummy
   layers:
   - Default
   - TransparentFX
@@ -20,11 +24,11 @@ TagManager:
   - Ground
   - VFX
   - Reflection_Probs
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - Cover
+  - Cover Invisible
+  - Bound
   - 
   - 
   - 
