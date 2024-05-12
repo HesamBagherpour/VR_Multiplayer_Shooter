@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Packages.UIController.Script.Base;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -9,7 +10,7 @@ using VR_PROJECT;
 
 namespace Packages.UIController.Script.UI
 {
-    public class ClientPage : BasePageUI
+    public class Client : PageBaseUI
     {
         [SerializeField] private TMP_InputField _addressInput;
         [SerializeField] private Button _joinButton;
@@ -17,13 +18,9 @@ namespace Packages.UIController.Script.UI
 
         public override PageType Type => PageType.Client;
 
-        public override void Show(BasePageUI page)
-        {
-        }
-
         public override void Init()
         {
-            Hide();
+            HideRoot();
             _joinButton.onClick.AddListener(OnJoinButtonClick);
             _backButton.onClick.AddListener(Back);
         }
@@ -39,11 +36,6 @@ namespace Packages.UIController.Script.UI
 
             if (result.IsSuccess)
                 UIManager.Instance.CloseAllPages();
-        }
-
-        public override void Hide(BasePageUI page)
-        {
-            //UIManager.Instance.ClosePage(page);
         }
     }
 }

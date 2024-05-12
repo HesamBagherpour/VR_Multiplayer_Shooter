@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Packages.UIController.Script.Base;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -8,7 +9,7 @@ using VR_PROJECT;
 
 namespace Packages.UIController.Script.UI
 {
-    public class GamePage : BasePageUI
+    public class Game : PageBaseUI
     {
         [SerializeField] private Button backButton;
         [SerializeField] private Button serverButton;
@@ -19,20 +20,11 @@ namespace Packages.UIController.Script.UI
 
         public override void Init()
         {
-            Hide();
+            HideRoot();
             serverButton.onClick.AddListener(OnServerButtonClick);
             backButton.onClick.AddListener(Back);
             clientButton.onClick.AddListener(() => { UIManager.Instance.OpenPage(PageType.Client); });
             root.transform.localScale = initScaleState;
-        }
-
-        public override void Show(BasePageUI page)
-        {
-        }
-
-        public override void Hide(BasePageUI page)
-        {
-            //UIManager.Instance.ClosePage(page);
         }
 
         public void Back()
