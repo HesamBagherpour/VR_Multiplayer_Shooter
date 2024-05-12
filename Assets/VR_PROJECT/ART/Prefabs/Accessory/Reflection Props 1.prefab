@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2860298131573074519}
   - component: {fileID: 1652039182555226303}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7998
+    m_Bits: 7807
   m_IntensityMultiplier: 1.3
   m_BlendDistance: 0.56
   m_HDR: 1
@@ -74,8 +74,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6819586170347160014}
-  m_Layer: 0
-  m_Name: Reflection Props
+  m_Layer: 13
+  m_Name: Reflection Props 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,6 +103,8 @@ Transform:
   - {fileID: 7924551335735516445}
   - {fileID: 7389442918821161369}
   - {fileID: 1975239623810730538}
+  - {fileID: 7587901975449014673}
+  - {fileID: 276633135008131794}
   - {fileID: 6264767072145099731}
   - {fileID: 3521514444967013067}
   m_Father: {fileID: 0}
@@ -117,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7076472911139616809}
   - component: {fileID: 2151173397167584260}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +165,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7998
+    m_Bits: 16240
   m_IntensityMultiplier: 1.3
   m_BlendDistance: 1
   m_HDR: 1
@@ -182,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3521514444967013067}
   - component: {fileID: 5151765715544160053}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: 'refle ground '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7389442918821161369}
   - component: {fileID: 8611737210218719745}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +295,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7998
+    m_Bits: 7807
   m_IntensityMultiplier: 1.27
   m_BlendDistance: 0
   m_HDR: 1
@@ -301,6 +303,71 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &2581760161648922562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 276633135008131794}
+  - component: {fileID: 6926300982489108757}
+  m_Layer: 13
+  m_Name: rfle house 2 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &276633135008131794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2581760161648922562}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 42.123, y: 15.448103, z: -19.991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6819586170347160014}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &6926300982489108757
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2581760161648922562}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 1.1809802, y: 2.07027, z: 1.4438152}
+  m_BoxOffset: {x: 0.59049034, y: -0.23098588, z: 0.010912895}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 24319
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 0
+  m_HDR: 1
+  m_BoxProjection: 1
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 2
   m_CustomBakedTexture: {fileID: 0}
 --- !u!1 &2594398793341014561
 GameObject:
@@ -312,7 +379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6670043074563422199}
   - component: {fileID: 2557743898235452378}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +425,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7998
+    m_Bits: 7807
   m_IntensityMultiplier: 1.2
   m_BlendDistance: 1
   m_HDR: 1
@@ -377,7 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6264767072145099731}
   - component: {fileID: 2963019071719917566}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +490,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7998
+    m_Bits: 7807
   m_IntensityMultiplier: 1.3
   m_BlendDistance: 1
   m_HDR: 1
@@ -442,7 +509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1975239623810730538}
   - component: {fileID: 6557852072932126478}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,9 +555,74 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8126
+    m_Bits: 7807
   m_IntensityMultiplier: 1.27
   m_BlendDistance: 0.19
+  m_HDR: 1
+  m_BoxProjection: 1
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 2
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &7530208367003372547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7587901975449014673}
+  - component: {fileID: 6233005374355959}
+  m_Layer: 13
+  m_Name: rfle house 2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7587901975449014673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530208367003372547}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 42.123, y: 15.448103, z: -18.31827}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6819586170347160014}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &6233005374355959
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530208367003372547}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 1.1809802, y: 2.07027, z: 1.4438152}
+  m_BoxOffset: {x: 0.59049034, y: -0.23098588, z: 0.010912895}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 24319
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 0
   m_HDR: 1
   m_BoxProjection: 1
   m_RenderDynamicObjects: 0
@@ -507,7 +639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7924551335735516445}
   - component: {fileID: 1114225122411395221}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +685,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7998
+    m_Bits: 7807
   m_IntensityMultiplier: 1.3
   m_BlendDistance: 1
   m_HDR: 1
@@ -572,7 +704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2641456893202597481}
   - component: {fileID: 7260657209698640717}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +750,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7998
+    m_Bits: 7807
   m_IntensityMultiplier: 1.3
   m_BlendDistance: 0.56
   m_HDR: 1
@@ -637,7 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2622631871259346508}
   - component: {fileID: 7209747905780278120}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +815,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7998
+    m_Bits: 7807
   m_IntensityMultiplier: 1.3
   m_BlendDistance: 1
   m_HDR: 1
@@ -702,7 +834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 958655883600020356}
   - component: {fileID: 8260721167418412969}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: rfle house 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,7 +880,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 7998
+    m_Bits: 7807
   m_IntensityMultiplier: 1.3
   m_BlendDistance: 1
   m_HDR: 1
