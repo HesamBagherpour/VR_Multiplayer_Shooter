@@ -9,12 +9,13 @@ public class MainMenuUI : SingletonMonoBehaviour<MainMenuUI>
     public Transform target;
     public Vector3 positionToOpen;
     public LookAtPlayerUI lookAtPlayer;
+
     public void Init(Transform _target)
     {
-        rootCanvas.enabled = false;
-        target = _target;
-        lookAtPlayer = GetComponent<LookAtPlayerUI>();
-        lookAtPlayer.Init(target);
+//        rootCanvas.enabled = false;
+        //  target = _target;
+        //    lookAtPlayer = GetComponent<LookAtPlayerUI>();
+        //    lookAtPlayer.Init(target);
     }
 
     public void Show()
@@ -28,5 +29,8 @@ public class MainMenuUI : SingletonMonoBehaviour<MainMenuUI>
         rootCanvas.enabled = false;
     }
 
-    public bool IsActive() => rootCanvas.enabled;
+    public bool IsActive()
+    {
+        return rootCanvas.enabled;
+    }
 }

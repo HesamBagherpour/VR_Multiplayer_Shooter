@@ -10,12 +10,10 @@ namespace Packages.UIController.Script.Base
     public abstract class PageBaseUI : MonoBehaviour
     {
         public abstract PageType Type { get; }
-        [Header("Page Properties")]
-        public Canvas rootCanvas;
+        [Header("Page Properties")] public Canvas rootCanvas;
         public GameObject root;
-        
-        [Header("Animation Properties")]
-        public Vector3 defaultScale;
+
+        [Header("Animation Properties")] public Vector3 defaultScale;
         public Vector3 defaultPosition;
         public List<AnimationBaseUI> animationComponents = new();
 
@@ -26,7 +24,7 @@ namespace Packages.UIController.Script.Base
         {
             rootCanvas.enabled = true;
             var startComponent = animationComponents.Find(t => t.Type == CurrentAnimationState.StartAnimation);
-            if(startComponent == null)
+            if (startComponent == null)
                 return;
             AnimationManager.Instance.HandleAnimation(startComponent.ComponentType, startComponent.Type, Type);
             await UniTask.WaitUntil(() => startComponent.isFinished);
@@ -36,14 +34,20 @@ namespace Packages.UIController.Script.Base
         public async void Hide()
         {
             var endComponent = animationComponents.Find(t => t.Type == CurrentAnimationState.EndAnimation);
+            print(animationComponents.Count);
+
             if (endComponent == null)
             {
                 HideRoot();
                 return;
             }
+
+            print(endComponent.ComponentType + "    " + endComponent.Type);
             AnimationManager.Instance.HandleAnimation(endComponent.ComponentType, endComponent.Type, Type);
             await UniTask.WaitUntil(() => endComponent.isFinished);
             endComponent.isFinished = false;
+            print("Animation ended");
+            ResetAnimation();
             HideRoot();
         }
 
