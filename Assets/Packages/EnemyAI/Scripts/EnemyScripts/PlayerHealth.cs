@@ -8,25 +8,33 @@ public class PlayerHealth : HealthManager
 {
    private PlayerAssign playerAssign;
    public float health = 100;
-
+   public bool isDummy;
    private void Awake()
    {
+      if (isDummy)
+      {
+         dead = true;
+         return;
+      }
       playerAssign = GetComponent<PlayerAssign>();
    }
 
    public override void TakeDamage(Vector3 location, Vector3 direction, float damage, Collider bodyPart = null, GameObject origin = null)
    {
+      if (isDummy)
+      {
+         //dead = true;
+         return;
+      }
       health -= damage;
       if (health <= 0)
       {
          dead = true;
          health = 0;
-         gameObject.SetActive(false);
-
+         Destroy(gameObject);
          Debug.Log("Dead");
          
-         PlayerSpawnManager.Instance.OnPlayerDead(this.gameObject);
-         //SceneManager.LoadScene(0);
+         PlayerManager.Instance.OnPlayerDead(gameObject);
       }
       else
       {

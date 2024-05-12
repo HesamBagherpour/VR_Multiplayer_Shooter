@@ -15,7 +15,7 @@ MonoBehaviour:
   aimOffset: {x: 13.02, y: 24.9, z: -2.98}
   leftArmAim: {x: 20.9, y: -14.8, z: 7.09}
   leftArmGuard: {x: 0, y: 0, z: 0}
-  changeCoverChance: 50
+  changeCoverChance: 52
   weaponType: 2
   bulletDamage: 2
   shotSound: {fileID: 8300000, guid: 550d02157d7611d47b48f6ec57941b8f, type: 3}

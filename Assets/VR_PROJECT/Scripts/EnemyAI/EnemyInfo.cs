@@ -10,7 +10,7 @@ namespace VR_PROJECT.Scripts.EnemyAI.ScriptableObjects
     public class EnemyInfo : ScriptableObject
     {
         public GameObject enemy;
-        public Enemy enemies; 
+        public List<Enemy>  enemies; 
         public ClassStats enemyClass;
         public StateController enemyStateController;
         

@@ -8,16 +8,27 @@ public class PlayerRefrenceFinder : MonoBehaviour
 {
    [SerializeField]private StateController stateController;
 
-   private void Awake()
+   private void OnEnable()
    {
-      if (stateController.aimTarget != null)
+      AddDummy();
+   }
+
+   public void AddDummy()
+   {
+      if (stateController == null)
       {
-         return;
+         stateController = GetComponent<StateController>();
       }
-      stateController = GetComponent<StateController>();
-      var dummy = new GameObject();
+      var dummy = GameObject.FindWithTag("dummy");
+      if (dummy == null)
+      {
+         dummy = new GameObject();
+         dummy.AddComponent<PlayerHealth>().dead = true;
+         dummy.tag = "dummy";
+         dummy.layer = LayerMask.NameToLayer("Default");
+      }
+     
       stateController.aimTarget = dummy.transform;
-      dummy.AddComponent<PlayerHealth>().dead = true;
-      dummy.SetActive(false);
+      //dummy.SetActive(false);
    }
 }

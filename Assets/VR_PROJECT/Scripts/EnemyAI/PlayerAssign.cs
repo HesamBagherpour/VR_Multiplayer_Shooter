@@ -8,7 +8,7 @@ public class PlayerAssign : MonoBehaviour
 {
     private PlayerHealth playerHealth;
     private List<StateController> enemies;
-    private void OnEnable()
+    private void Start()
     {
         enemies = new List<StateController>(FindObjectsOfType<StateController>());
         AssignPlayer();
