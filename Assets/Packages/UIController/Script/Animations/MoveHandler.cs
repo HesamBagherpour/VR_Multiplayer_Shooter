@@ -20,7 +20,7 @@ namespace Packages.UIController.Script.Animations
 
         private CurrentAnimationState CurrentAnimationStates { get; }
         public override CurrentAnimationState Type => state;
-        public override ComponentType ComponentType { get; }
+        public override ComponentType ComponentType => ComponentType.Move;
 
         public override void Show()
         {

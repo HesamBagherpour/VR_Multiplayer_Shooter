@@ -14,13 +14,16 @@ namespace Packages.UIController.Script.UI
     {
         [FormerlySerializedAs("currentPage")] public PageBaseUI current;
         public List<PageBaseUI> pages;
-        [FormerlySerializedAs("firstPageUI")] [SerializeField] private PageBaseUI firstUI;
+
+        [FormerlySerializedAs("firstPageUI")] [SerializeField]
+        private PageBaseUI firstUI;
+
         [FormerlySerializedAs("previousPage")] public PageBaseUI previous;
-        public List<PageBaseUI> openPages = new List<PageBaseUI>();
+        public List<PageBaseUI> openPages = new();
 
 
         [Header("TEMP PLAYER")] public Transform target;
-        
+
         private void Awake()
         {
             Init(PageType.MainMenu);
@@ -29,12 +32,13 @@ namespace Packages.UIController.Script.UI
         private async void Init(PageType type)
         {
             current = firstUI = pages.Find(t => t.Type == type);
+            openPages.Add(current);
             pages.ForEach(t => t.Init());
             //PopupUI.Instance.Init();
             await UniTask.Delay(100);
             current.Show();
-            
-            
+
+
             MainMenuUI.Instance.Init(target);
         }
 
@@ -42,11 +46,12 @@ namespace Packages.UIController.Script.UI
         {
             if (Input.GetKeyDown(KeyCode.P))
             {
-                if(MainMenuUI.Instance.IsActive())
+                if (MainMenuUI.Instance.IsActive())
                 {
                     MainMenuUI.Instance.Hide();
                     return;
                 }
+
                 MainMenuUI.Instance.Show();
             }
         }
@@ -60,24 +65,28 @@ namespace Packages.UIController.Script.UI
                 return;
             current.Hide();
             previous = current;
-            openPages.Add(current);
             current = page;
+            openPages.Add(current);
+
             current.Show();
-            
+
             Debug.Log("open");
         }
 
         public void ClosePage()
         {
-            Debug.Log("// "+previous);
+            Debug.Log("// " + previous);
 
             current.Hide();
             print("CURRENT BEFORE " + current.rootCanvas.transform.name);
-            current = previous;
+
             if (openPages.Count > 0)
             {
                 openPages.Remove(openPages[^1]);
+                previous = openPages[^1];
             }
+
+            current = previous;
 
             print("CURRENT AFTER " + current.rootCanvas.transform.name);
             current.Show();
