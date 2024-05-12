@@ -307,7 +307,7 @@ MonoBehaviour:
   rootCanvas: {fileID: 2819426298140334849}
   root: {fileID: 8997684919163106617}
   defaultScale: {x: 1, y: 1, z: 1}
-  defaultPosition: {x: 2000, y: 2000, z: 0}
+  defaultPosition: {x: 2000, y: 0, z: 0}
   animationComponents:
   - {fileID: 6107532766021683083}
   - {fileID: 3762935871346078896}
