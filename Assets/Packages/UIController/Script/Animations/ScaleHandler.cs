@@ -10,7 +10,7 @@ namespace Packages.UIController.Script.Animations
         [SerializeField] private int target;
         [SerializeField] private float duration;
         [SerializeField] public CurrentAnimationState state;
-        [SerializeField] private ScaleType scaleType;
+        [SerializeField] public ScaleType scaleType;
 
         public enum ScaleType
         {
@@ -20,28 +20,29 @@ namespace Packages.UIController.Script.Animations
 
         private CurrentAnimationState CurrentAnimationStates { get; }
         public override CurrentAnimationState Type => state;
-        public override ComponentType ComponentType { get; }
+        public override ComponentType ComponentType => ComponentType.Scale;
+
 
         public override void Show()
         {
-            print("<color=cyan> Show called </color>");
             AnimationScale();
+            print("<color=yellow> close called </color>");
         }
 
         public override void Close()
         {
-            print("<color=cyan> close called </color>");
             AnimationScale();
         }
 
         private void AnimationScale()
         {
-            print("parent : " + root.parent.name);
-            print("Target : " + target);
-            print("type : " + Type);
+            print("<color=red> AnimationScale here </color>");
             var mySequence = DOTween.Sequence();
             if (ScaleType.ScaleUp == scaleType)
             {
+                print("parent : " + root.parent.name);
+                print("Target : " + target);
+                print("type : " + Type);
                 mySequence.Append(root.DOScaleX(target, duration));
                 //   mySequence.AppendCallback(() => ResetAnimation(page));
                 mySequence.OnComplete(() => isFinished = true);

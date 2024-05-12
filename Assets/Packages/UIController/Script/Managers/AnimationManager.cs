@@ -2,6 +2,7 @@
 using Packages.UIController.Script.Animations;
 using Packages.UIController.Script.Base;
 using Packages.UIController.Script.UI;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Packages.UIController.Script.Managers
@@ -10,16 +11,18 @@ namespace Packages.UIController.Script.Managers
     {
         public void HandleAnimation(ComponentType componentType, CurrentAnimationState state, PageType type)
         {
-            
             var page = UIManager.Instance.pages.Find(t => t.Type == type);
-            print( "<color=blue> PAGE : "+ page.transform.name + "</color>" + "<color=blue> ANIMATION : "+ state + "</color>");
-            if(page == null)
+            print("<color=blue> PAGE : " + page.transform.name + "</color>" + "<color=blue> ANIMATION : " + state +
+                  "</color>");
+            if (page == null)
                 return;
-            
+            Debug.Log(componentType);
             var component = page.animationComponents.Find(t => t.ComponentType == componentType);
-            var failCondition = (component == null) || state == CurrentAnimationState.None;
-           
-            if(failCondition)
+
+
+            var failCondition = component == null || state == CurrentAnimationState.None;
+
+            if (failCondition)
                 return;
 
             if (state == CurrentAnimationState.StartAnimation)
@@ -27,11 +30,12 @@ namespace Packages.UIController.Script.Managers
                 component.Show();
                 return;
             }
+
             if (state == CurrentAnimationState.EndAnimation)
             {
-                print("<color=red> IS GOING TO END " + page.transform.name + "</color>");
-                component.Close();
-                return;
+                print("<color=red> IS GOING TO END  ssssssssssss" + page.transform.name + "</color>");
+                print("<color=red> IS GOING TO END " + component + "</color>");
+                component.Show();
             }
         }
     }

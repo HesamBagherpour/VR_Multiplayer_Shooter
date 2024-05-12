@@ -33,6 +33,7 @@ namespace Packages.UIController.Script.UI
 
         private void OpenSettingPage()
         {
+            print("Opening game page setting ");
             UIManager.Instance.OpenPage(PageType.Setting);
         }
 
