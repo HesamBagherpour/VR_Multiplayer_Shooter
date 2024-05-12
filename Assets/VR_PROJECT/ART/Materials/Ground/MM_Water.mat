@@ -139,7 +139,7 @@ Material:
     - _power: -0.43
     - _reflection_refraction: 1
     - _refraction: 1
-    - _smoothness: 2
+    - _smoothness: 0.833
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
