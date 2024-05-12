@@ -30,7 +30,7 @@ namespace Packages.UIController.Script.UI
         {
             current = firstUI = pages.Find(t => t.Type == type);
             pages.ForEach(t => t.Init());
-            PopupUI.Instance.Init();
+            //PopupUI.Instance.Init();
             await UniTask.Delay(100);
             current.Show();
             
@@ -40,7 +40,7 @@ namespace Packages.UIController.Script.UI
 
         public void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.P))
             {
                 if(MainMenuUI.Instance.IsActive())
                 {
