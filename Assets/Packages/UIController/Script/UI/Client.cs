@@ -26,7 +26,7 @@ namespace Packages.UIController.Script.UI
             HideRoot();
             _joinButton.onClick.AddListener(OnJoinButtonClick);
             _backButton.onClick.AddListener(Back);
-            numberpad.Init();
+//            numberpad.Init();
         }
 
         private void Back()
@@ -37,14 +37,14 @@ namespace Packages.UIController.Script.UI
         private async void OnJoinButtonClick()
         {
             AppUI.Instance.ShowLoading();
-            
+
             var result = await GameManager.Instance.NetworkController.ConnectClient(_addressInput.text);
             if (!result.IsSuccess)
             {
                 AppUI.Instance.ShowMessage(result.ErrorMessage);
                 return;
             }
-            
+
             AppUI.Instance.HideLoading();
             UIManager.Instance.CloseAllPages();
         }

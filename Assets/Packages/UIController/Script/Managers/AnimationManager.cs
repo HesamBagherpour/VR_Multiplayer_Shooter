@@ -16,9 +16,9 @@ namespace Packages.UIController.Script.Managers
                   "</color>");
             if (page == null)
                 return;
-            Debug.Log(componentType);
-            var component = page.animationComponents.Find(t => t.ComponentType == componentType);
-
+            Debug.Log("dddddddddd" + state);
+            var component = page.animationComponents.Find(t => t.Type == state);
+            Debug.Log("dddddddddd" + component.Type);
 
             var failCondition = component == null || state == CurrentAnimationState.None;
 
@@ -27,15 +27,18 @@ namespace Packages.UIController.Script.Managers
 
             if (state == CurrentAnimationState.StartAnimation)
             {
+                print("<color=red> IS GOING TO StartAnimation  ssssssssssss" + page.transform.name + "</color>");
+
                 component.Show();
                 return;
             }
 
-            if (state == CurrentAnimationState.EndAnimation)
+            print("<color=red> IS GOING TO END  state " + state + "</color>");
+
+            if (state == CurrentAnimationState.EndAnimation && component.Type == CurrentAnimationState.EndAnimation)
             {
-                print("<color=red> IS GOING TO END  ssssssssssss" + page.transform.name + "</color>");
-                print("<color=red> IS GOING TO END " + component + "</color>");
-                component.Show();
+                print("<color=red> IS GOING TO END " + component.ComponentType + "</color>");
+                component.Close();
             }
         }
     }
