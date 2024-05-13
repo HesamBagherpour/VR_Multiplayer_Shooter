@@ -889,6 +889,11 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 1979240251394714623, guid: ebece23a6b2e8894db0d0a63fec04e68,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6118004411174855689, guid: ebece23a6b2e8894db0d0a63fec04e68,
         type: 3}
       propertyPath: m_Name
@@ -1016,6 +1021,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 558979897}
     m_Modifications:
+    - target: {fileID: 600115903376435737, guid: 5416979863176704d86ae0cac6385e47,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5399862713875683520, guid: 5416979863176704d86ae0cac6385e47,
         type: 3}
       propertyPath: m_LocalPosition.x
