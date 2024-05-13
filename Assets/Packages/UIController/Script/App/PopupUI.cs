@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace Packages.UIController.Script.UI
+namespace Packages.UIController.Script.App
 {
     public class PopupUI : SingletonMonoBehaviour<PopupUI>
     {
