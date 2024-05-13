@@ -1,9 +1,13 @@
 using FishNet.Object;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class FishNetPlayer : NetworkBehaviour
 {
+    [SerializeField] private Transform _canvas;
+    [SerializeField] private TMP_Text _playerIdText;
     [SerializeField] private Transform _headTransform;
     [SerializeField] private Transform _handRTransform;
     [SerializeField] private Transform _handLTransform;
@@ -15,6 +19,7 @@ public class FishNetPlayer : NetworkBehaviour
     private PlayerTransform _nextTransforms;
     private float _headOffset;
     private float _lerpSpeed;
+    private float _canvasOffset;
 
     private void Awake()
     {
@@ -23,15 +28,20 @@ public class FishNetPlayer : NetworkBehaviour
         var leftHand = _xrInputModalityManager.leftHand;
 
         _headOffset = 0.4f;
+        _canvasOffset = 0.5f;
         _lerpSpeed = 25f;
     }
 
     public override void OnStartClient()
     {
         base.OnStartClient();
-        
+
+        _playerIdText.text = ObjectId.ToString();
+
         if (!IsOwner)
             return;
+
+        _canvas.gameObject.SetActive(false);
 
         _headTransform.gameObject.SetActive(false);
         _handRTransform.gameObject.SetActive(false);
@@ -43,7 +53,7 @@ public class FishNetPlayer : NetworkBehaviour
         var nextTransform = CalculateNextTransform();
 
         SendNextTransforms(nextTransform);
-        
+
         LerpToNextTransform();
     }
 
@@ -88,9 +98,14 @@ public class FishNetPlayer : NetworkBehaviour
                 break;
         }
 
+        var nextHeadPosition = headPosition + (-_camera.transform.forward * _headOffset);
+        var nextCanvasPosition =
+            new Vector3(nextHeadPosition.x, nextHeadPosition.y + _canvasOffset, nextHeadPosition.z);
+
         var transform = new PlayerTransform()
         {
-            HeadPosition = headPosition + (-_camera.transform.forward * _headOffset),
+            CanvasPosition = nextCanvasPosition,
+            HeadPosition = nextHeadPosition,
             HeadRotation = headRotation,
             HandLPosition = handLPosition,
             HandLRotation = handLRotation,
@@ -110,31 +125,42 @@ public class FishNetPlayer : NetworkBehaviour
     [ObserversRpc(ExcludeOwner = true)]
     public void SetNextTransforms(PlayerTransform transform, int objectId)
     {
-        if(ObjectId != objectId)
+        if (ObjectId != objectId)
             return;
-        
+
         _nextTransforms = transform;
     }
 
     // Lerp towards the target position and rotation
     public void LerpToNextTransform()
     {
-        if(_nextTransforms is null)
+        if (_nextTransforms is null)
             return;
 
-        _headTransform.position = Vector3.Lerp(_headTransform.position, _nextTransforms.HeadPosition, _lerpSpeed * Time.deltaTime);
-        _headTransform.rotation = Quaternion.Lerp(_headTransform.rotation, _nextTransforms.HeadRotation, _lerpSpeed * Time.deltaTime);  
+        _canvas.position = Vector3.Lerp(_canvas.position, _nextTransforms.CanvasPosition,
+            _lerpSpeed * Time.deltaTime);
         
-        _handLTransform.position = Vector3.Lerp(_handLTransform.position, _nextTransforms.HandLPosition, _lerpSpeed * Time.deltaTime);
-        _handLTransform.rotation = Quaternion.Lerp(_handLTransform.rotation, _nextTransforms.HandLRotation, _lerpSpeed * Time.deltaTime);   
-        
-        _handRTransform.position = Vector3.Lerp(_handRTransform.position, _nextTransforms.HandRPosition, _lerpSpeed * Time.deltaTime);
-        _handRTransform.rotation = Quaternion.Lerp(_handRTransform.rotation, _nextTransforms.HandRRotation, _lerpSpeed * Time.deltaTime);
+        _headTransform.position = Vector3.Lerp(_headTransform.position, _nextTransforms.HeadPosition,
+            _lerpSpeed * Time.deltaTime);
+        _headTransform.rotation = Quaternion.Lerp(_headTransform.rotation, _nextTransforms.HeadRotation,
+            _lerpSpeed * Time.deltaTime);
+
+        _handLTransform.position = Vector3.Lerp(_handLTransform.position, _nextTransforms.HandLPosition,
+            _lerpSpeed * Time.deltaTime);
+        _handLTransform.rotation = Quaternion.Lerp(_handLTransform.rotation, _nextTransforms.HandLRotation,
+            _lerpSpeed * Time.deltaTime);
+
+        _handRTransform.position = Vector3.Lerp(_handRTransform.position, _nextTransforms.HandRPosition,
+            _lerpSpeed * Time.deltaTime);
+        _handRTransform.rotation = Quaternion.Lerp(_handRTransform.rotation, _nextTransforms.HandRRotation,
+            _lerpSpeed * Time.deltaTime);
     }
 }
 
 public class PlayerTransform
 {
+    public Vector3 CanvasPosition;
+    
     public Vector3 HeadPosition;
     public Quaternion HeadRotation;
 
