@@ -26,7 +26,7 @@ namespace Packages.UIController.Script.UI
             HideRoot();
             _joinButton.onClick.AddListener(OnJoinButtonClick);
             _backButton.onClick.AddListener(Back);
-//            numberpad.Init();
+            numberpad.Init();
         }
 
         private void Back()
