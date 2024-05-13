@@ -27,6 +27,7 @@ namespace Packages.UIController.Script.UI
             _joinButton.onClick.AddListener(OnJoinButtonClick);
             _backButton.onClick.AddListener(Back);
             numberpad.Init();
+            _addressInput.text = "192.168.1.1";
         }
 
         private void Back()
