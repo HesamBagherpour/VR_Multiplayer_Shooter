@@ -213,8 +213,8 @@ MonoBehaviour:
     myClass: {fileID: 11400000, guid: 653e30b1cf1b9f64dbebe371cf2db65e, type: 2}
     aimTarget: {fileID: 0}
     patrolWayPoints:
-    - {fileID: 6619071100716596259, guid: a472eee674078584ea99d4de1cf5af2c, type: 3}
-    - {fileID: 8030833895653404297, guid: 82a0598771542874387531c800bf6319, type: 3}
+    - {fileID: 660136528153044202, guid: dc0700963b0bd9f4b8e0efe57833e3d9, type: 3}
+    - {fileID: 5242999898971381713, guid: 8b1da7c9ca3081b4591c9d3c9c22d95b, type: 3}
     bullets: 30
     viewRadius: 15
     viewAngle: 90

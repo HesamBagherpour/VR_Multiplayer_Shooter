@@ -1,7 +1,7 @@
 ﻿using EnemyAI;
 using UnityEngine;
 
-namespace VR_PROJECT.Scripts.EnemyAI
+namespace EnemyAI
 {
     public class EnemyAnimation : MonoBehaviour
     {
@@ -66,7 +66,7 @@ namespace VR_PROJECT.Scripts.EnemyAI
 			}
 		}
 
-		void Update()
+		 void Update()	
 		{
 			// Check speed and orientation at each frame.
 			NavAnimSetup();
@@ -213,12 +213,8 @@ namespace VR_PROJECT.Scripts.EnemyAI
 		{
 			angle *= Mathf.Deg2Rad;
 			angularSpeed = angle / controller.generalStats.angleResponseTime;
-			/*if (angularSpeed > 5f)
-			{
-				angularSpeed = 0;
-			}*/
 			anim.SetFloat("Speed", speed, controller.generalStats.speedDampTime, Time.deltaTime);
-			anim.SetFloat("AngularSpeed", Mathf.Clamp(angularSpeed, minAngularSpeed, maxAngularSpeed), controller.generalStats.angularSpeedDampTime, Time.deltaTime);
+			anim.SetFloat("AngularSpeed", Mathf.Clamp(angularSpeed, -2.1f, 2.1f), controller.generalStats.angularSpeedDampTime, Time.deltaTime);
 
 			// Set 2D direction for strafing.
 			anim.SetFloat("H", strafeDirection.x, controller.generalStats.speedDampTime, Time.deltaTime);
