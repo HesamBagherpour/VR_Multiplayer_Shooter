@@ -2378,6 +2378,7 @@ GameObject:
   - component: {fileID: 7684904160029257515}
   - component: {fileID: -3806805729451824581}
   - component: {fileID: -3878231546029720069}
+  - component: {fileID: 1845009089154381349}
   m_Layer: 14
   m_Name: Enemy
   m_TagString: Enemy
@@ -2445,7 +2446,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   bullets: 32
-  viewRadius: 6.4
+  viewRadius: 50
   viewAngle: 90
   perceptionRadius: 5
   nearRadius: 0
@@ -3042,6 +3043,19 @@ MonoBehaviour:
     spineStiffness: 0.5
     pullBodyVertical: 0.5
     pullBodyHorizontal: 0
+--- !u!114 &1845009089154381349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959064792741435856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72703ba7894f4229ac855e63ab965c09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateController: {fileID: 0}
 --- !u!1 &8993793897111930392
 GameObject:
   m_ObjectHideFlags: 0
