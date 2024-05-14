@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+﻿using EnemyAI;
+using UnityEngine;
 
-namespace EnemyAI
+namespace VR_PROJECT.Scripts.EnemyAI
 {
-	// EnemyAnimation controls all NPC script controlled animation parameters and post animation adjustments.
-	public class EnemyAnimation : MonoBehaviour
-	{
-		[HideInInspector] public Animator anim;                  // Reference to the NPC Animator component.
+    public class EnemyAnimation : MonoBehaviour
+    {
+        [HideInInspector] public Animator anim;                  // Reference to the NPC Animator component.
 		[HideInInspector] public float currentAimAngleGap;       // Gap between current aim direction and on target aim direction
 		[HideInInspector] public Transform gunMuzzle;            // NPC weapon gun muzzle reference.
 		[HideInInspector] public float angularSpeed;             // NPC angular speed (used to turn).
@@ -20,6 +20,8 @@ namespace EnemyAI
 		private Quaternion lastRotation;                         // Last frame spine rotation.
 		private float timeCountAim, timeCountGuard;              // Timers to rotate the spine to the current desired rotation.
 		private readonly float turnSpeed = 25f;                  // NPC turn speed when strafing (focus movement).
+		private readonly float minAngularSpeed = -2.1f;
+		private readonly float maxAngularSpeed = 2.1f;
 
 		void Awake()
 		{
@@ -191,6 +193,7 @@ namespace EnemyAI
 			direction = direction.normalized;
 			direction = Quaternion.Inverse(transform.rotation) * direction;
 			// Setup values on animator.
+			
 			Setup(speed, angle, direction);
 		}
 		// Set aim animation start as pending (called externally).
@@ -210,13 +213,16 @@ namespace EnemyAI
 		{
 			angle *= Mathf.Deg2Rad;
 			angularSpeed = angle / controller.generalStats.angleResponseTime;
-
+			/*if (angularSpeed > 5f)
+			{
+				angularSpeed = 0;
+			}*/
 			anim.SetFloat("Speed", speed, controller.generalStats.speedDampTime, Time.deltaTime);
-			anim.SetFloat("AngularSpeed", angularSpeed, controller.generalStats.angularSpeedDampTime, Time.deltaTime);
+			anim.SetFloat("AngularSpeed", Mathf.Clamp(angularSpeed, minAngularSpeed, maxAngularSpeed), controller.generalStats.angularSpeedDampTime, Time.deltaTime);
 
 			// Set 2D direction for strafing.
 			anim.SetFloat("H", strafeDirection.x, controller.generalStats.speedDampTime, Time.deltaTime);
 			anim.SetFloat("V", strafeDirection.z, controller.generalStats.speedDampTime, Time.deltaTime);
 		}
-	}
+    }
 }

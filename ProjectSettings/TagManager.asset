@@ -9,6 +9,7 @@ TagManager:
   - LHandAnchor
   - Enemy
   - dummy
+  - SpawnPoints
   layers:
   - Default
   - TransparentFX
