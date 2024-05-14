@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FishNet.Object;
 using UnityEngine;
 
-public class PlayerCanvas : NetworkBehaviour
+public class PlayerCanvas : MonoBehaviour
 {
     private Canvas _canvas;
     private Transform _camera;
