@@ -384,6 +384,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5703540228419029036, guid: 9b84915631d7f08469cecd3324d32577,
         type: 3}
+      propertyPath: _playerPrefab
+      value: 
+      objectReference: {fileID: 7586924591634793608, guid: 7227de500864c534ab4b301071b87b76,
+        type: 3}
+    - target: {fileID: 5703540228419029036, guid: 9b84915631d7f08469cecd3324d32577,
+        type: 3}
       propertyPath: Spawns.Array.size
       value: 0
       objectReference: {fileID: 0}
