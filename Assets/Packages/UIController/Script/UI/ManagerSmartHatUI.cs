@@ -11,19 +11,18 @@ public class ManagerSmartHatUI : MonoBehaviour
 
     public void Awake()
     {
-        _buttonOnAndOff.onClick.AddListener(OffAndOnHat);   
+        //s_buttonOnAndOff.onClick.AddListener(OffAndOnHat);   
         Debug.Log("on");
-
     }
 
     public void OffAndOnHat()
     {
-        if (_canvas.enabled==true)
+        if (_canvas.enabled == true)
         {
-            Debug.Log("ono"+_canvas.enabled);
+            Debug.Log("ono" + _canvas.enabled);
 
-            _canvas.enabled=false;
-return;
+            _canvas.enabled = false;
+            return;
         }
 
         _canvas.enabled = true;
