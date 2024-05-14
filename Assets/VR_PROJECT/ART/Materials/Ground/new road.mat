@@ -144,7 +144,7 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _big_noise_subtracter: -0.06
+    - _big_noise_subtracter: 3.65
     - _floor_normal_cont_1: 9.08
     - _floor_normal_cont_2: -1.68
     - _little_noise: 1.02
@@ -157,7 +157,7 @@ Material:
     - _smooth_step_2: -0.94
     - _step_1: 1.04
     - _step_2: 0.43
-    - _vawes_size: 6.21
+    - _vawes_size: 9.63
     - _water_height_stregth: 0.02
     m_Colors:
     - Color_030647fa97a24f01b05ccfde176f9ccb: {r: 0.29245278, g: 0.26868638, b: 0.26072448,

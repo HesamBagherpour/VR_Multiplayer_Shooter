@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: 2.75
   intensity:
     m_OverrideState: 1
-    m_Value: 4.06
+    m_Value: 8.35
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
@@ -71,17 +71,17 @@ MonoBehaviour:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 0.5529738
-          outSlope: 0.5529738
+          time: 0.00097370986
+          value: 0.0019880533
+          inSlope: 0.2402072
+          outSlope: 0.2402072
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.8169426
-          value: 0.9363817
+          time: 0.7692308
+          value: 0.944334
           inSlope: 0.91008526
           outSlope: 0.91008526
           tangentMode: 0
@@ -260,3 +260,76 @@ MonoBehaviour:
   components:
   - {fileID: -6451782756152003330}
   - {fileID: -8932671425939472153}
+  - {fileID: 8510758689427740119}
+  - {fileID: 1730183708685414223}
+--- !u!114 &1730183708685414223
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 0
+    m_Value: 0
+  gaussianStart:
+    m_OverrideState: 0
+    m_Value: 10
+  gaussianEnd:
+    m_OverrideState: 0
+    m_Value: 30
+  gaussianMaxRadius:
+    m_OverrideState: 0
+    m_Value: 1
+  highQualitySampling:
+    m_OverrideState: 0
+    m_Value: 0
+  focusDistance:
+    m_OverrideState: 0
+    m_Value: 10
+  aperture:
+    m_OverrideState: 0
+    m_Value: 5.6
+  focalLength:
+    m_OverrideState: 0
+    m_Value: 50
+  bladeCount:
+    m_OverrideState: 0
+    m_Value: 5
+  bladeCurvature:
+    m_OverrideState: 0
+    m_Value: 1
+  bladeRotation:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &8510758689427740119
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29fa0085f50d5e54f8144f766051a691, type: 3}
+  m_Name: FilmGrain
+  m_EditorClassIdentifier: 
+  active: 0
+  type:
+    m_OverrideState: 1
+    m_Value: 8
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.251
+  response:
+    m_OverrideState: 1
+    m_Value: 0.299
+  texture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
