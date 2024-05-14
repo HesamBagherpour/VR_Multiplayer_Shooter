@@ -70,3 +70,5 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Packages/FishNet/CodeGenerating/cecil-0.11.4/Mono.Cecil.sln.meta
+Assets/XR/Settings/OpenXR Package Settings.asset

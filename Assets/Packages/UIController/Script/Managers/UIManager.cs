@@ -4,6 +4,7 @@ using Emaj.Patterns;
 using Packages.UIController.Script.Animations;
 using Packages.UIController.Script.Base;
 using Packages.UIController.Script.ScriptableObjects;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -33,11 +34,11 @@ namespace Packages.UIController.Script.UI
         {
             current = firstUI = pages.Find(t => t.Type == type);
             openPages.Add(current);
+
             pages.ForEach(t => t.Init());
             //PopupUI.Instance.Init();
             await UniTask.Delay(100);
             current.Show();
-
 
             MainMenuUI.Instance.Init(target);
         }
@@ -65,11 +66,11 @@ namespace Packages.UIController.Script.UI
                 return;
             current.Hide();
             previous = current;
+            previous.Hide();
             current = page;
             openPages.Add(current);
 
             current.Show();
-
             Debug.Log("open");
         }
 

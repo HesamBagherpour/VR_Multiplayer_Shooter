@@ -23,7 +23,7 @@ public class EnemyController : MonoBehaviour
                 state.viewRadius = enemies.enemies[i].viewRadius;
                 state.viewAngle = enemies.enemies[i].viewAngle;
                 state.perceptionRadius = enemies.enemies[i].perceptionRadius;
-                state.classStats.bulletDamage = enemyInfo.enemies[i].bulletDamage;
+                state.classStats.bulletDamage = enemies.enemies[i].bulletDamage;
                 state.classStats.changeCoverChance = enemies.enemies[i].changeCoverChance;
                 state.classStats.weaponType = enemies.enemies[i].weaponType;
                 state.classStats.shotSound = enemies.enemies[i].shotSound;

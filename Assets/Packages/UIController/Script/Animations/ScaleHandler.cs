@@ -38,22 +38,30 @@ namespace Packages.UIController.Script.Animations
         {
             print("<color=red> AnimationScale here </color>");
             var mySequence = DOTween.Sequence();
+
+
             if (ScaleType.ScaleUp == scaleType)
             {
-                print("parent : " + root.parent.name);
-                print("Target : " + target);
-                print("type : " + Type);
-                mySequence.Append(root.DOScaleX(target, duration));
+                mySequence.Append(root.DOScale(target, duration));
+                print(" isFinished : " + isFinished);
+
                 //   mySequence.AppendCallback(() => ResetAnimation(page));
                 mySequence.OnComplete(() => isFinished = true);
+                print("Target : " + target);
+
+
                 mySequence.Play();
                 return;
             }
 
             mySequence = DOTween.Sequence();
-            mySequence.Append(root.DOScaleX(target, duration));
+            mySequence.Append(root.DOScale(target, duration));
+
             //   mySequence.AppendCallback(() => ResetAnimation(page));
             mySequence.OnComplete(() => isFinished = true);
+            print("parent : " + root.parent.name);
+            print("parent : " + scaleType);
+            print("parent : " + Type);
             mySequence.Play();
         }
     }

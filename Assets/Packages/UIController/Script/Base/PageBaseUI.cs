@@ -43,7 +43,8 @@ namespace Packages.UIController.Script.Base
             }
 
             print(endComponent.ComponentType + "    " + endComponent.Type);
-            AnimationManager.Instance.HandleAnimation(endComponent.ComponentType, endComponent.Type, Type);
+            AnimationManager.Instance.HandleAnimation(endComponent.ComponentType, CurrentAnimationState.EndAnimation,
+                Type);
             await UniTask.WaitUntil(() => endComponent.isFinished);
             endComponent.isFinished = false;
             print("Animation ended");
