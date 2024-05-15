@@ -3157,6 +3157,7 @@ GameObject:
   - component: {fileID: 585798414507105047}
   - component: {fileID: 4008531912769149190}
   - component: {fileID: 18671483006804510}
+  - component: {fileID: 5323412919430280148}
   m_Layer: 5
   m_Name: HelmentCanvas
   m_TagString: Untagged
@@ -3303,6 +3304,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53768a450ecca8a469a6fd8d38247223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5323412919430280148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032179078877131980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6e3f164d59ff340b283ea6b2f1c631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootCanvas: {fileID: 1972478718979374690}
 --- !u!1 &4078826111306830108
 GameObject:
   m_ObjectHideFlags: 0
