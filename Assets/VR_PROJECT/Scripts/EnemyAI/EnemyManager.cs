@@ -35,6 +35,10 @@ namespace VR_PROJECT.Scripts.EnemyAI
         public EnemyInfo enemies;
        private void Init()
         {
+            if (enemies == null)
+            {
+                enemies = Resources.Load<EnemyInfo>("Enemy" + " " + (1));
+            }
             GetComponent<EnemyController>().Spawner(enemies);
         }
              

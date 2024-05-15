@@ -104,13 +104,13 @@ public class FishNetPlayer : NetworkBehaviour
 
         var transform = new PlayerTransform()
         {
-            CanvasPosition = nextCanvasPosition,
-            HeadPosition = nextHeadPosition,
-            HeadRotation = headRotation,
-            HandLPosition = handLPosition,
-            HandLRotation = handLRotation,
-            HandRPosition = handRPosition,
-            HandRRotation = handRRotation
+            // CanvasPosition = nextCanvasPosition,
+            // HeadPosition = nextHeadPosition,
+            // HeadRotation = headRotation,
+            // HandLPosition = handLPosition,
+            // HandLRotation = handLRotation,
+            // HandRPosition = handRPosition,
+            // HandRRotation = handRRotation
         };
 
         return transform;
@@ -137,36 +137,22 @@ public class FishNetPlayer : NetworkBehaviour
         if (_nextTransforms is null)
             return;
 
-        _canvas.position = Vector3.Lerp(_canvas.position, _nextTransforms.CanvasPosition,
-            _lerpSpeed * Time.deltaTime);
-        
-        _headTransform.position = Vector3.Lerp(_headTransform.position, _nextTransforms.HeadPosition,
-            _lerpSpeed * Time.deltaTime);
-        _headTransform.rotation = Quaternion.Lerp(_headTransform.rotation, _nextTransforms.HeadRotation,
-            _lerpSpeed * Time.deltaTime);
-
-        _handLTransform.position = Vector3.Lerp(_handLTransform.position, _nextTransforms.HandLPosition,
-            _lerpSpeed * Time.deltaTime);
-        _handLTransform.rotation = Quaternion.Lerp(_handLTransform.rotation, _nextTransforms.HandLRotation,
-            _lerpSpeed * Time.deltaTime);
-
-        _handRTransform.position = Vector3.Lerp(_handRTransform.position, _nextTransforms.HandRPosition,
-            _lerpSpeed * Time.deltaTime);
-        _handRTransform.rotation = Quaternion.Lerp(_handRTransform.rotation, _nextTransforms.HandRRotation,
-            _lerpSpeed * Time.deltaTime);
+        // _canvas.position = Vector3.Lerp(_canvas.position, _nextTransforms.CanvasPosition,
+        //     _lerpSpeed * Time.deltaTime);
+        //
+        // _headTransform.position = Vector3.Lerp(_headTransform.position, _nextTransforms.HeadPosition,
+        //     _lerpSpeed * Time.deltaTime);
+        // _headTransform.rotation = Quaternion.Lerp(_headTransform.rotation, _nextTransforms.HeadRotation,
+        //     _lerpSpeed * Time.deltaTime);
+        //
+        // _handLTransform.position = Vector3.Lerp(_handLTransform.position, _nextTransforms.HandLPosition,
+        //     _lerpSpeed * Time.deltaTime);
+        // _handLTransform.rotation = Quaternion.Lerp(_handLTransform.rotation, _nextTransforms.HandLRotation,
+        //     _lerpSpeed * Time.deltaTime);
+        //
+        // _handRTransform.position = Vector3.Lerp(_handRTransform.position, _nextTransforms.HandRPosition,
+        //     _lerpSpeed * Time.deltaTime);
+        // _handRTransform.rotation = Quaternion.Lerp(_handRTransform.rotation, _nextTransforms.HandRRotation,
+        //     _lerpSpeed * Time.deltaTime);
     }
-}
-
-public class PlayerTransform
-{
-    public Vector3 CanvasPosition;
-    
-    public Vector3 HeadPosition;
-    public Quaternion HeadRotation;
-
-    public Vector3 HandRPosition;
-    public Quaternion HandRRotation;
-
-    public Vector3 HandLPosition;
-    public Quaternion HandLRotation;
 }
