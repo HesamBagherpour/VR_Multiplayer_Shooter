@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4900774689360411973}
   - component: {fileID: 123433642512867143}
   - component: {fileID: 4858562352911323572}
-  - component: {fileID: 3607900058652052947}
+  - component: {fileID: 2550868063514926422}
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnedEnemies: []
-  enemies: {fileID: 11400000, guid: 4b956c8f119260d469c5ee6a039ab024, type: 2}
+  enemies: {fileID: 0}
 --- !u!114 &123433642512867143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c25da586903b492db8e4dc8ae07da3f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3607900058652052947
+--- !u!114 &2550868063514926422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,6 +85,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73e91dc2a79433a42ae5257de0ebeb53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnTime: 3
   player: {fileID: 41304590135785847, guid: 06ca02ba6578d4344ac3423b2b87a54e, type: 3}
-  hasInit: 0
-  enemy: {fileID: 3900981097194452508, guid: ee15306a07a943b4b818cf774904afb9, type: 3}
+  hasInit: 1
+  spawnPoints: []
+  enemy: {fileID: 0}

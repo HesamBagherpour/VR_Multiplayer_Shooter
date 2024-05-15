@@ -25,7 +25,7 @@ MonoBehaviour:
     - {fileID: 2248091401852066204, guid: a1983e3a060a4f44f86b5ee9a42e4496, type: 3}
     bullets: 30
     viewRadius: 50
-    viewAngle: 90
+    viewAngle: 360
     perceptionRadius: 5
     changeCoverChance: 53
     weaponType: 2
@@ -73,7 +73,7 @@ MonoBehaviour:
     - {fileID: 6619071100716596259, guid: a472eee674078584ea99d4de1cf5af2c, type: 3}
     bullets: 30
     viewRadius: 50
-    viewAngle: 90
+    viewAngle: 360
     perceptionRadius: 5
     changeCoverChance: 46
     weaponType: 2
@@ -121,7 +121,7 @@ MonoBehaviour:
     - {fileID: 8030833895653404297, guid: 82a0598771542874387531c800bf6319, type: 3}
     bullets: 30
     viewRadius: 50
-    viewAngle: 90
+    viewAngle: 360
     perceptionRadius: 5
     changeCoverChance: 53
     weaponType: 2
@@ -169,7 +169,7 @@ MonoBehaviour:
     - {fileID: 660136528153044202, guid: dc0700963b0bd9f4b8e0efe57833e3d9, type: 3}
     bullets: 30
     viewRadius: 50
-    viewAngle: 90
+    viewAngle: 360
     perceptionRadius: 5
     changeCoverChance: 55
     weaponType: 2
@@ -218,7 +218,7 @@ MonoBehaviour:
     - {fileID: 8030833895653404297, guid: 82a0598771542874387531c800bf6319, type: 3}
     bullets: 30
     viewRadius: 50
-    viewAngle: 90
+    viewAngle: 360
     perceptionRadius: 5
     changeCoverChance: 52
     weaponType: 2

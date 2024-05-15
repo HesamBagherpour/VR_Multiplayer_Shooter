@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dead: 0
-  health: 100
+  health: 50
   isDummy: 0
 --- !u!114 &8897723006251021530
 MonoBehaviour:

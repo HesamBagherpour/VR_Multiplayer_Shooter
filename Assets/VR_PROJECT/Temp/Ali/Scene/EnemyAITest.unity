@@ -3946,67 +3946,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4900774689360411973, guid: a9ec7bc3d8d935d4e971abe054163cce,
+    - target: {fileID: 2550868063514926422, guid: a9ec7bc3d8d935d4e971abe054163cce,
         type: 3}
-      propertyPath: enemies
-      value: 
+      propertyPath: hasInit
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4900774689360411973, guid: a9ec7bc3d8d935d4e971abe054163cce,
-        type: 3}
-      propertyPath: enemies.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900774689360411973, guid: a9ec7bc3d8d935d4e971abe054163cce,
-        type: 3}
-      propertyPath: enemies.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: f9cad1e89798162479d7ac308fdfac05,
-        type: 2}
-    - target: {fileID: 4900774689360411973, guid: a9ec7bc3d8d935d4e971abe054163cce,
-        type: 3}
-      propertyPath: enemies.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: f9cad1e89798162479d7ac308fdfac05,
-        type: 2}
-    - target: {fileID: 4900774689360411973, guid: a9ec7bc3d8d935d4e971abe054163cce,
-        type: 3}
-      propertyPath: enemies.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: f9cad1e89798162479d7ac308fdfac05,
-        type: 2}
-    - target: {fileID: 4900774689360411973, guid: a9ec7bc3d8d935d4e971abe054163cce,
-        type: 3}
-      propertyPath: enemies.Array.data[6]
-      value: 
-      objectReference: {fileID: 11400000, guid: f9cad1e89798162479d7ac308fdfac05,
-        type: 2}
-    - target: {fileID: 4900774689360411973, guid: a9ec7bc3d8d935d4e971abe054163cce,
-        type: 3}
-      propertyPath: enemies.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: f9cad1e89798162479d7ac308fdfac05,
-        type: 2}
-    - target: {fileID: 4900774689360411973, guid: a9ec7bc3d8d935d4e971abe054163cce,
-        type: 3}
-      propertyPath: enemies.Array.data[8]
-      value: 
-      objectReference: {fileID: 11400000, guid: f9cad1e89798162479d7ac308fdfac05,
-        type: 2}
     - target: {fileID: 5316082560757411880, guid: a9ec7bc3d8d935d4e971abe054163cce,
         type: 3}
       propertyPath: m_Name
       value: EnemyManager
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3607900058652052947, guid: a9ec7bc3d8d935d4e971abe054163cce, type: 3}
-    - {fileID: 3948264059175709028, guid: a9ec7bc3d8d935d4e971abe054163cce, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5316082560757411880, guid: a9ec7bc3d8d935d4e971abe054163cce,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1584847842}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9ec7bc3d8d935d4e971abe054163cce, type: 3}
 --- !u!1 &1490929525 stripped
 GameObject:
@@ -4452,29 +4405,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1584847837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5316082560757411880, guid: a9ec7bc3d8d935d4e971abe054163cce,
-    type: 3}
-  m_PrefabInstance: {fileID: 1489682160}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1584847842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584847837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e91dc2a79433a42ae5257de0ebeb53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnTime: 3
-  player: {fileID: 41304590135785847, guid: 06ca02ba6578d4344ac3423b2b87a54e, type: 3}
-  hasInit: 1
-  spawnPoints: []
-  enemy: {fileID: 0}
 --- !u!1 &1594669507 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4563458624896254852, guid: e27a64bd03b74ab43a7d63828b448843,
@@ -5744,32 +5674,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NavMesh Surface
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413488615173526152, guid: e7616d53d981432468dd996e2f9c08cb,
-        type: 3}
-      propertyPath: m_DefaultArea
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413488615173526152, guid: e7616d53d981432468dd996e2f9c08cb,
-        type: 3}
-      propertyPath: m_NavMeshData
-      value: 
-      objectReference: {fileID: 23800000, guid: fae1ca2346817a54f9a0594ff3a424d8,
-        type: 2}
-    - target: {fileID: 6413488615173526152, guid: e7616d53d981432468dd996e2f9c08cb,
-        type: 3}
-      propertyPath: m_UseGeometry
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413488615173526152, guid: e7616d53d981432468dd996e2f9c08cb,
-        type: 3}
-      propertyPath: m_GenerateLinks
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413488615173526152, guid: e7616d53d981432468dd996e2f9c08cb,
-        type: 3}
-      propertyPath: m_LayerMask.m_Bits
-      value: 1900544
       objectReference: {fileID: 0}
     - target: {fileID: 7905193344007302773, guid: e7616d53d981432468dd996e2f9c08cb,
         type: 3}
