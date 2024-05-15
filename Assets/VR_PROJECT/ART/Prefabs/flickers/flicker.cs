@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal.Internal;
-using DG.Tweening;
 using TMPro;
 
 public class flicker : MonoBehaviour
@@ -68,7 +67,6 @@ public class flicker : MonoBehaviour
         timer = Random.Range(mintime, maxtime);
         thresholdMin = Random.Range(0, 10);
         thresholdMax = Random.Range(11, 30);  
-        
         
         
         
