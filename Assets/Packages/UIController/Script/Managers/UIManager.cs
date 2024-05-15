@@ -6,7 +6,6 @@ using Packages.UIController.Script.Base;
 using Packages.UIController.Script.ScriptableObjects;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 
@@ -55,13 +54,6 @@ namespace Packages.UIController.Script.UI
                 }
 
                 MainMenuUI.Instance.Show();
-            }
-
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Debug.Log("11");
-                if (openPages.Count <= 0)
-                    OpenPage(PageType.MainMenu);
             }
         }
 
