@@ -90,9 +90,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -706.63226, y: -0.00000025423287, z: 0.000113830436}
+  savedPos: {x: -688.72723, y: 0, z: -0.007080078}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 125.7353, y: 769}
+  savedRectSize: {x: 122.54902, y: 600}
   savedColor: {r: 0, g: 0.4913793, b: 0.83823526, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -585,9 +585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -321.88205, y: -0.00000025423287, z: 0.000009017793}
+  savedPos: {x: -313.7207, y: 0, z: -0.007080078}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 643.7647, y: 769}
+  savedRectSize: {x: 627.451, y: 600}
   savedColor: {r: 0, g: 0.4913793, b: 0.83823526, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -2445,9 +2445,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -706.63226, y: -0.00000025423287, z: 0.000113830436}
+  savedPos: {x: -688.72723, y: 0, z: -0.007080078}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 125.7353, y: 769}
+  savedRectSize: {x: 122.54902, y: 600}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -3037,9 +3037,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 321.88245, y: -0.00000025423287, z: -0.000045946857}
+  savedPos: {x: 313.7207, y: 0, z: -0.007080078}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 643.7647, y: 769}
+  savedRectSize: {x: 627.451, y: 600}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -3159,7 +3159,7 @@ GameObject:
   - component: {fileID: 18671483006804510}
   - component: {fileID: 5323412919430280148}
   m_Layer: 5
-  m_Name: HelmentCanvas
+  m_Name: Canvas-Hekmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4509,9 +4509,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 706.6324, y: -0.00000025423287, z: 0.000024107809}
+  savedPos: {x: 688.72723, y: 0, z: -0.007080078}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 125.7353, y: 769}
+  savedRectSize: {x: 122.54902, y: 600}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -4721,9 +4721,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 706.6324, y: -0.00000025423287, z: 0.000024107809}
+  savedPos: {x: 688.72723, y: 0, z: -0.007080078}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 125.7353, y: 769}
+  savedRectSize: {x: 122.54902, y: 600}
   savedColor: {r: 0, g: 0.4913793, b: 0.83823526, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -5560,9 +5560,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -321.88205, y: -0.00000025423287, z: 0.000009017793}
+  savedPos: {x: -313.7207, y: 0, z: -0.007080078}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 643.7647, y: 769}
+  savedRectSize: {x: 627.451, y: 600}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -6365,9 +6365,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 321.88245, y: -0.00000025423287, z: -0.000045946857}
+  savedPos: {x: 313.7207, y: 0, z: -0.007080078}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 643.7647, y: 769}
+  savedRectSize: {x: 627.451, y: 600}
   savedColor: {r: 0, g: 0.4913793, b: 0.83823526, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
