@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/VR_PROJECT/ART/Prefabs/flickers/Point Light (3).prefab.meta
 guid: 8999b28c38acb6149a765a1ce5405cbe
+========
+guid: 4196cc8f45d84844381be7f5ac9e5c59
+>>>>>>>> development:Assets/VR_PROJECT/ART/Prefabs/flickers/Point Light (1).prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

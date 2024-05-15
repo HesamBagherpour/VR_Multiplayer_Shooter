@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Packages/UniTask/Runtime/Linq.meta
 guid: fc7c7eea44b1170499ea69ab6bd48e90
+========
+guid: d842c747d5fccb9459ef325ce16e5426
+>>>>>>>> development:Assets/VR_PROJECT/ART/Prefabs/flickers.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
