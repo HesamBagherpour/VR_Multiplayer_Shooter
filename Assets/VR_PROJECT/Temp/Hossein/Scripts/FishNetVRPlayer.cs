@@ -6,7 +6,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
-[RequireComponent(typeof(VRIK))]
 public class FishNetVRPlayer : NetworkBehaviour
 {
     [SerializeField] private TMP_Text _playerIdText;

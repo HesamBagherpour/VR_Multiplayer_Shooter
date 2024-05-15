@@ -1706,8 +1706,8 @@ GameObject:
   - component: {fileID: 7586924591634793608}
   - component: {fileID: 6896938762876549196}
   - component: {fileID: 6795659997728875142}
-  - component: {fileID: 4315457083251108082}
   - component: {fileID: 8939428060060374368}
+  - component: {fileID: 2707873237356124353}
   m_Layer: 8
   m_Name: PlayerVRArmatureTemp
   m_TagString: Player
@@ -1923,7 +1923,27 @@ MonoBehaviour:
   _interpolation: 2
   _clientAuthoritative: 1
   _sendToOwner: 0
---- !u!114 &4315457083251108082
+--- !u!114 &8939428060060374368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071790164645918096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ea8698fb31ff48a52e89389c5abc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 2
+  _addedNetworkObject: {fileID: 7586924591634793608}
+  _networkObjectCache: {fileID: 7586924591634793608}
+  _playerIdText: {fileID: 804723132412903924}
+  _canvas: {fileID: 1358925789759204420}
+  _headTargetIK: {fileID: 1286650996938908452}
+  _handLTargetIK: {fileID: 5589584586814019935}
+  _handRTargetIK: {fileID: 1296591793240019269}
+--- !u!114 &2707873237356124353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2179,26 +2199,6 @@ MonoBehaviour:
       onRightFootstep:
         m_PersistentCalls:
           m_Calls: []
---- !u!114 &8939428060060374368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5071790164645918096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d1ea8698fb31ff48a52e89389c5abc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _componentIndexCache: 2
-  _addedNetworkObject: {fileID: 7586924591634793608}
-  _networkObjectCache: {fileID: 7586924591634793608}
-  _canvas: {fileID: 1358925789759204420}
-  _playerIdText: {fileID: 804723132412903924}
-  _headTargetIK: {fileID: 1286650996938908452}
-  _handLTargetIK: {fileID: 5589584586814019935}
-  _handRTargetIK: {fileID: 1296591793240019269}
 --- !u!1 &5266517081110184946
 GameObject:
   m_ObjectHideFlags: 0
