@@ -300,7 +300,7 @@ SkinnedMeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466858242892655828}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1704,7 +1704,6 @@ GameObject:
   - component: {fileID: 1503699777223802591}
   - component: {fileID: 6116367588903007532}
   - component: {fileID: 7586924591634793608}
-  - component: {fileID: 6896938762876549196}
   - component: {fileID: 6795659997728875142}
   - component: {fileID: 8939428060060374368}
   - component: {fileID: 2707873237356124353}
@@ -1829,9 +1828,9 @@ MonoBehaviour:
   <ComponentIndex>k__BackingField: 0
   <PredictedSpawn>k__BackingField: {fileID: 0}
   _networkBehaviours:
-  - {fileID: 6896938762876549196}
   - {fileID: 6795659997728875142}
   - {fileID: 8939428060060374368}
+  - {fileID: 6775037269110517166}
   <SerializedRootNetworkBehaviour>k__BackingField: {fileID: 0}
   <NestedRootNetworkBehaviours>k__BackingField: []
   SerializedTransformProperties:
@@ -1852,56 +1851,11 @@ MonoBehaviour:
   _ownerInterpolation: 1
   _enableTeleport: 0
   _teleportThreshold: 1
-  <PrefabId>k__BackingField: 5
+  <PrefabId>k__BackingField: 8
   <SpawnableCollectionId>k__BackingField: 0
   _scenePathHash: 0
   <SceneId>k__BackingField: 0
   <AssetPathHash>k__BackingField: 14032402499262863651
---- !u!114 &6896938762876549196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5071790164645918096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _componentIndexCache: 0
-  _addedNetworkObject: {fileID: 7586924591634793608}
-  _networkObjectCache: {fileID: 7586924591634793608}
-  _componentConfiguration: 0
-  _synchronizeParent: 0
-  _packing:
-    Position: 1
-    Rotation: 1
-    Scale: 0
-  _interpolation: 2
-  _extrapolation: 2
-  _enableTeleport: 0
-  _teleportThreshold: 1
-  _scaleThreshold: 1
-  _clientAuthoritative: 1
-  _sendToOwner: 1
-  _enableNetworkLod: 1
-  _interval: 1
-  _synchronizePosition: 1
-  _positionSnapping:
-    X: 0
-    Y: 0
-    Z: 0
-  _synchronizeRotation: 1
-  _rotationSnapping:
-    X: 0
-    Y: 0
-    Z: 0
-  _synchronizeScale: 1
-  _scaleSnapping:
-    X: 0
-    Y: 0
-    Z: 0
 --- !u!114 &6795659997728875142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1914,7 +1868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cac635f24954048aad3a6ff9110beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 1
+  _componentIndexCache: 0
   _addedNetworkObject: {fileID: 7586924591634793608}
   _networkObjectCache: {fileID: 7586924591634793608}
   IgnoredParameters: []
@@ -1935,9 +1889,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1ea8698fb31ff48a52e89389c5abc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 2
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 7586924591634793608}
   _networkObjectCache: {fileID: 7586924591634793608}
+  _meshRenderer: {fileID: 1086923474223453406}
   _playerIdText: {fileID: 804723132412903924}
   _canvas: {fileID: 1358925789759204420}
   _headTargetIK: {fileID: 1286650996938908452}
@@ -2360,8 +2315,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a2778548e190834292c88395963e911, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 6a2778548e190834292c88395963e911, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3087,7 +3042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1358925789759204420
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3183,6 +3138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7eeae0580227e542a85c8384dcc5101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentIndexCache: 2
+  _addedNetworkObject: {fileID: 7586924591634793608}
+  _networkObjectCache: {fileID: 7586924591634793608}
 --- !u!1 &8760426267997084419
 GameObject:
   m_ObjectHideFlags: 0
