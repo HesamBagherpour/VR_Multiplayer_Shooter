@@ -1,0 +1,54 @@
+{
+    "name": "VRInputAction",
+    "maps": [
+        {
+            "name": "Weapon",
+            "id": "6e848cd0-b187-442d-8906-7c6159f96c25",
+            "actions": [
+                {
+                    "name": "triggerAndFire",
+                    "type": "Button",
+                    "id": "b9283ae1-ffee-4456-8286-cc89b0f33f71",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MagOutWithButton",
+                    "type": "Button",
+                    "id": "509fe476-4d77-490b-9ec6-43579e8468a2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ccce2534-50d3-4231-b58c-b8556611a423",
+                    "path": "<XRSimulatedController>/triggerButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "triggerAndFire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0b31f1bc-3aaf-4103-8fd7-0f35d8f0d9c6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MagOutWithButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
