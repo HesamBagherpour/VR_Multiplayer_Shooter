@@ -358,6 +358,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2550868063514926422, guid: a9ec7bc3d8d935d4e971abe054163cce,
+        type: 3}
+      propertyPath: hasInit
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5316082560757411880, guid: a9ec7bc3d8d935d4e971abe054163cce,
         type: 3}
       propertyPath: m_Name
@@ -3433,6 +3438,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NavMesh Surface
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881952364708692410, guid: 6bf0583b1296208449fc85b52e5be4f7,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 0403b3992f2ac304c83f637fdbd2aaa2,
+        type: 2}
+    - target: {fileID: 4881952364708692410, guid: 6bf0583b1296208449fc85b52e5be4f7,
+        type: 3}
+      propertyPath: m_LayerMask.m_Bits
+      value: 2096638
       objectReference: {fileID: 0}
     - target: {fileID: 5143877093400930285, guid: 6bf0583b1296208449fc85b52e5be4f7,
         type: 3}
