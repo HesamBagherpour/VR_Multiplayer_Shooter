@@ -476,55 +476,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.02, z: 0.0020000082}
   m_Center: {x: -0.000036255457, y: -0.00001600108, z: -0.0010000045}
---- !u!1 &171189059
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 171189061}
-  - component: {fileID: 171189060}
-  m_Layer: 0
-  m_Name: alarm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &171189060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171189059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a06c2048f61fad45b0b270909c4f561, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alertRadius: 50
-  extraWaves: 0
-  alertMask:
-    serializedVersion: 2
-    m_Bits: 16384
---- !u!4 &171189061
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171189059}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.0346365, y: 7.0834517, z: -4.1648483}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &176621246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5187805222208222697, guid: e27a64bd03b74ab43a7d63828b448843,
@@ -5751,6 +5702,74 @@ Transform:
   - {fileID: 6618284331198019943}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6226912431563435949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.0346365
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.0834517
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.1648483
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988406652329174486, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511130705964470676, guid: 40691e24b6e253f42b87dedb9adfcac9,
+        type: 3}
+      propertyPath: m_Name
+      value: Alarm Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40691e24b6e253f42b87dedb9adfcac9, type: 3}
 --- !u!4 &6482797665713287320 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6619071100716596259, guid: a472eee674078584ea99d4de1cf5af2c,
@@ -7072,7 +7091,7 @@ SceneRoots:
   - {fileID: 1501291851}
   - {fileID: 656965442}
   - {fileID: 5891805727479934220}
-  - {fileID: 171189061}
+  - {fileID: 6226912431563435949}
   - {fileID: 1557568427}
   - {fileID: 1489682160}
   - {fileID: 2104982550}
