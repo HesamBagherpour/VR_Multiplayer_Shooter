@@ -48,6 +48,94 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Player",
+            "id": "ee685fc6-5b4f-4a29-8983-c31cf5159d8c",
+            "actions": [
+                {
+                    "name": "RightTriggerValue",
+                    "type": "Value",
+                    "id": "20c34a55-7b2f-4418-afa9-c65501ba082f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftTriggerValue",
+                    "type": "Value",
+                    "id": "bd929bf0-eed8-4ab9-b69c-ad0bde1c4ec5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RightGripValue",
+                    "type": "Value",
+                    "id": "13ebdb65-24f3-42f0-be0a-2bfd393b2196",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftGripValue",
+                    "type": "Value",
+                    "id": "a2b9fa3f-1c3f-4146-85be-6dae02fdf413",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "88ade51c-9fff-4863-8169-ba5aecee3d46",
+                    "path": "<XRController>{RightHand}/trigger",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightTriggerValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9e20b65-a4bc-45b7-896d-8bfa1487c724",
+                    "path": "<XRController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftTriggerValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8faac4ff-dfc1-493e-a05c-8ea98651006c",
+                    "path": "<XRController>{RightHand}/grip",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightGripValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1541238b-3068-49c4-bc35-5a1f327b4c7f",
+                    "path": "<XRController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftGripValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
