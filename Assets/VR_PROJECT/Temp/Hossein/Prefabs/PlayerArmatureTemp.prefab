@@ -1509,6 +1509,7 @@ MonoBehaviour:
   _networkBehaviours:
   - {fileID: 6686175664013194191}
   - {fileID: -3121488219990144379}
+  - {fileID: 1420119832420879730}
   <SerializedRootNetworkBehaviour>k__BackingField: {fileID: 0}
   <NestedRootNetworkBehaviours>k__BackingField: []
   SerializedTransformProperties:
@@ -1529,7 +1530,7 @@ MonoBehaviour:
   _ownerInterpolation: 1
   _enableTeleport: 0
   _teleportThreshold: 1
-  <PrefabId>k__BackingField: 5
+  <PrefabId>k__BackingField: 7
   <SpawnableCollectionId>k__BackingField: 0
   _scenePathHash: 0
   <SceneId>k__BackingField: 0
@@ -1591,9 +1592,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cac635f24954048aad3a6ff9110beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 255
+  _componentIndexCache: 2
   _addedNetworkObject: {fileID: 3166105234865835285}
-  _networkObjectCache: {fileID: 0}
+  _networkObjectCache: {fileID: 3166105234865835285}
   IgnoredParameters: []
   _animator: {fileID: 8836648484567279150}
   _smoothFloats: 1

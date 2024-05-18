@@ -8,6 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class FishNetVRPlayer : NetworkBehaviour
 {
+    [SerializeField] private Renderer _meshRenderer;
     [SerializeField] private TMP_Text _playerIdText;
 
     [SerializeField] private Transform _canvas;
@@ -43,10 +44,8 @@ public class FishNetVRPlayer : NetworkBehaviour
 
         _playerIdText.text = ObjectId.ToString();
 
-        if (!IsOwner)
-            return;
-
-        _canvas.gameObject.SetActive(false);
+        _canvas.gameObject.SetActive(!IsOwner);
+        _meshRenderer.enabled = !IsOwner;
     }
 
     // Update is called once per frame
