@@ -1,10 +1,12 @@
 using System;
-using System.Collections.Generic;
 using FishNet.Object;
 using RootMotion.FinalIK;
 using TMPro;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
+using VR_PROJECT;
+using VR_PROJECT.Inputs;
 
 public class FishNetVRPlayer : NetworkBehaviour
 {
@@ -16,10 +18,13 @@ public class FishNetVRPlayer : NetworkBehaviour
     [SerializeField] private Transform _handLTargetIK;
     [SerializeField] private Transform _handRTargetIK;
 
+    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _sprintSpeedOffset;
 
     private VRIK _vrik;
     private XRInputModalityManager _xrInputModalityManager;
     private PlayerTransformData _nextTransform;
+    private DynamicMoveProvider _moveProvider;
 
     private Transform _camera;
     private Transform _handRAnchor;
@@ -27,15 +32,21 @@ public class FishNetVRPlayer : NetworkBehaviour
     private float _canvasOffset;
     private float _lerpSpeed;
 
+    private IInputManager _inputManager;
+
     private void Awake()
     {
         _vrik = GetComponent<VRIK>();
         _xrInputModalityManager = FindObjectOfType<XRInputModalityManager>();
+        _moveProvider = FindObjectOfType<DynamicMoveProvider>();
+        _inputManager = GameManager.Instance.InputManager;
 
+        _moveSpeed = _moveProvider.moveSpeed;
         _nextTransform = new PlayerTransformData();
         _camera = Camera.main.transform;
+        _sprintSpeedOffset = 4f;
         _canvasOffset = 0.5f;
-        _lerpSpeed = 20f;
+        _lerpSpeed = 25f;
     }
 
     public override void OnStartClient()
@@ -49,13 +60,14 @@ public class FishNetVRPlayer : NetworkBehaviour
     }
 
     // Update is called once per frame
-     void Update()
+    void Update()
     {
-        if(!IsClientInitialized)
+        if (!IsClientInitialized)
             return;
-        
+
         if (IsOwner)
         {
+            SetMoveSpeed();
             var transform = GetLocalTransforms();
             SetLocalTransforms(transform);
             SendNextTransforms(transform);
@@ -64,6 +76,11 @@ public class FishNetVRPlayer : NetworkBehaviour
         {
             LerpToNextTransform();
         }
+    }
+
+    private void SetMoveSpeed()
+    {
+        _moveProvider.moveSpeed = _inputManager.Sprint ? _moveSpeed * _sprintSpeedOffset : _moveSpeed;
     }
 
     [ServerRpc(RequireOwnership = true)]
@@ -88,33 +105,33 @@ public class FishNetVRPlayer : NetworkBehaviour
             return;
 
         var headTransform = _nextTransform.Get(PlayerTransformType.Head).Transform;
-        
+
         _headTargetIK.position = Vector3.Lerp(_headTargetIK.position, headTransform.Position,
             _lerpSpeed * Time.deltaTime);
         _headTargetIK.rotation = Quaternion.Lerp(_headTargetIK.rotation, headTransform.Rotation,
             _lerpSpeed * Time.deltaTime);
-        
+
         var handLTransform = _nextTransform.Get(PlayerTransformType.LHand).Transform;
 
         _handLTargetIK.position = Vector3.Lerp(_handLTargetIK.position, handLTransform.Position,
             _lerpSpeed * Time.deltaTime);
         _handLTargetIK.rotation = Quaternion.Lerp(_handLTargetIK.rotation, handLTransform.Rotation,
             _lerpSpeed * Time.deltaTime);
-        
+
         var handRTransform = _nextTransform.Get(PlayerTransformType.RHand).Transform;
-        
+
         _handRTargetIK.position = Vector3.Lerp(_handRTargetIK.position, handRTransform.Position,
             _lerpSpeed * Time.deltaTime);
         _handRTargetIK.rotation = Quaternion.Lerp(_handRTargetIK.rotation, handRTransform.Rotation,
             _lerpSpeed * Time.deltaTime);
 
-        
+
         var canvasTransform = _nextTransform.Get(PlayerTransformType.Canvas);
 
         _canvas.position = Vector3.Lerp(_canvas.position, canvasTransform.Transform.Position,
             _lerpSpeed * Time.deltaTime);
-        
     }
+
 
     private PlayerTransformData GetLocalTransforms()
     {
@@ -128,7 +145,7 @@ public class FishNetVRPlayer : NetworkBehaviour
 
                 if (_handRAnchor is null)
                     _handRAnchor = GameObject.FindGameObjectWithTag("RHandAnchor").transform;
-                
+
                 transform.Set(PlayerTransformType.RHand, _handRAnchor);
 
                 if (_handLAnchor is null)
@@ -148,7 +165,7 @@ public class FishNetVRPlayer : NetworkBehaviour
         }
 
         var nextHeadPosition = _camera.transform.position;
-        
+
         var nextCanvasPosition =
             new Vector3(nextHeadPosition.x, nextHeadPosition.y + _canvasOffset, nextHeadPosition.z);
 
@@ -156,7 +173,7 @@ public class FishNetVRPlayer : NetworkBehaviour
 
         var canvasTransform = new PlayerTransform()
             { Type = PlayerTransformType.Canvas, Transform = new CustomTransform() { Position = nextCanvasPosition } };
-        
+
         transform.Set(canvasTransform);
 
         return transform;
@@ -164,19 +181,19 @@ public class FishNetVRPlayer : NetworkBehaviour
 
     private void SetLocalTransforms(PlayerTransformData transformData)
     {
-        if(transformData is null)
+        if (transformData is null)
             return;
-        
+
         var headTransform = transformData.Get(PlayerTransformType.Head).Transform;
 
         _headTargetIK.position = headTransform.Position;
         _headTargetIK.rotation = headTransform.Rotation;
-        
+
         var handRTransform = transformData.Get(PlayerTransformType.RHand).Transform;
 
         _handRTargetIK.position = handRTransform.Position;
         _handRTargetIK.rotation = handRTransform.Rotation;
-        
+
         var handLTransform = transformData.Get(PlayerTransformType.LHand).Transform;
 
         _handLTargetIK.position = handLTransform.Position;
