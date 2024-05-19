@@ -1,6 +1,7 @@
 using Cysharp.Threading.Tasks;
 using Emaj.Patterns;
 using UnityEngine;
+using VR_PROJECT.Inputs;
 using VR_PROJECT.Network.Core;
 using VR_PROJECT.Network.Modules.FishNet;
 
@@ -10,6 +11,8 @@ namespace VR_PROJECT
     {
         #region Fields
 
+        [SerializeField] private InputManager _inputManager;
+        
         private NetworkController _networkController;
         
         #endregion
@@ -17,6 +20,7 @@ namespace VR_PROJECT
         #region Properties
 
         public INetworkController NetworkController => _networkController;
+        public IInputManager InputManager => _inputManager;
 
         #endregion
 
@@ -34,12 +38,7 @@ namespace VR_PROJECT
         private async UniTask Init()
         {
            await _networkController.Init();
-        }
-
-        // Update is called once per frame
-        private void Update()
-        {
-            
+           await _inputManager.Init();
         }
     }
 }
