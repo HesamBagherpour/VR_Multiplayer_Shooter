@@ -11,7 +11,7 @@ using UnityEngine.XR.Interaction.Toolkit.Transformers;
 public class FishNetGrabItem : NetworkBehaviour
 {
     private XRGrabInteractable _xrGrabInteractable;
-    private XRGeneralGrabTransformer _xrGrabTransformer;
+    //private XRGeneralGrabTransformer _xrGrabTransformer;
     private Rigidbody _rigidbody;
 
     // SyncVar to synchronize selection data across the network
@@ -25,7 +25,7 @@ public class FishNetGrabItem : NetworkBehaviour
     {
         // Get necessary components from the GameObject
         _xrGrabInteractable = GetComponent<XRGrabInteractable>();
-        _xrGrabTransformer = GetComponent<XRGeneralGrabTransformer>();
+        //_xrGrabTransformer = GetComponent<XRGeneralGrabTransformer>();
         _rigidbody = GetComponent<Rigidbody>();
 
         // Add event listeners for grab and release actions
@@ -35,7 +35,7 @@ public class FishNetGrabItem : NetworkBehaviour
 
     // Called when the object is grabbed
     // Method called when the object is grabbed
-    public void SelectEnterEvent(SelectEnterEventArgs args)
+    private void SelectEnterEvent(SelectEnterEventArgs args)
     {
         // Set the object as selected by the current client using the client ID
         SetIsSelected(ClientManager.Connection.ClientId, true);
@@ -49,6 +49,7 @@ public class FishNetGrabItem : NetworkBehaviour
     }
 
     // Server-side method to update the selection status
+    // not owner mandatory 
     [ServerRpc(RequireOwnership = false)]
     private void SetIsSelected(int ownerId, bool isSelected) =>
         // Update the selection data with the new owner ID and selection status
@@ -63,9 +64,11 @@ public class FishNetGrabItem : NetworkBehaviour
 
         // Update the grab status if necessary
         ChangeActiveGrab();
+        
         // Check if a reset is needed
         CheckForResetRequest();
     }
+
 
     // Update grab-related components based on selection status
     private void ChangeActiveGrab()
@@ -73,7 +76,8 @@ public class FishNetGrabItem : NetworkBehaviour
         // Skip if there is no selection data
         if (_selectData.Value is null)
             return;
-
+        
+        //GiveOwnership(localConnection);
         // Skip if the object is selected by the local client
         if (_selectData.Value._ownerId == ClientManager.Connection.ClientId)
             return;
@@ -83,7 +87,7 @@ public class FishNetGrabItem : NetworkBehaviour
         
         // Disable the XRGrabInteractable and XRGeneralGrabTransformer component if selected
         _xrGrabInteractable.enabled = !_selectData.Value._isSelected;
-        _xrGrabTransformer.enabled = !_selectData.Value._isSelected;
+        //_xrGrabTransformer.enabled = !_selectData.Value._isSelected;
     }
 
     // Server-side method to check and reset selection if needed
