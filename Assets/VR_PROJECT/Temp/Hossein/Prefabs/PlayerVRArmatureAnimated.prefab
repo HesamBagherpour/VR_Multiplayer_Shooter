@@ -1797,6 +1797,7 @@ MonoBehaviour:
   <PredictedSpawn>k__BackingField: {fileID: 0}
   _networkBehaviours:
   - {fileID: 8939428060060374368}
+  - {fileID: 0}
   - {fileID: 6775037269110517166}
   <SerializedRootNetworkBehaviour>k__BackingField: {fileID: 0}
   <NestedRootNetworkBehaviours>k__BackingField: []
@@ -2007,7 +2008,7 @@ MonoBehaviour:
       weight: 1
       moveThreshold: 0.3
       animationHeader: 0
-      minAnimationSpeed: 0.6
+      minAnimationSpeed: 0.7
       maxAnimationSpeed: 3
       animationSmoothTime: 0.1
       rootPositionHeader: 0
@@ -3096,7 +3097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7eeae0580227e542a85c8384dcc5101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 1
+  _componentIndexCache: 2
   _addedNetworkObject: {fileID: 7586924591634793608}
   _networkObjectCache: {fileID: 7586924591634793608}
 --- !u!1 &8760426267997084419
