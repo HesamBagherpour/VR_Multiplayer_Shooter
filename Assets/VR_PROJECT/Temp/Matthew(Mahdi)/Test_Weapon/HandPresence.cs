@@ -26,6 +26,7 @@ public class HandPresence : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("1");
         rightHandTrigger.action.started += SetrightHandTrigger;
         rightHandTrigger.action.canceled += SetrightHandTrigger;
         
@@ -37,11 +38,13 @@ public class HandPresence : MonoBehaviour
         
         leftHandGrip.action.started += SetLeftHandGrip;
         leftHandGrip.action.canceled += SetLeftHandGrip;
+        Debug.Log("2");
     }
 
     private void SetrightHandTrigger(InputAction.CallbackContext context)
     {
         rightHandAnimator.SetFloat("Trigger", context.ReadValue<float>());
+        Debug.Log("3");
     }    
     private void SetLeftHandTrigger(InputAction.CallbackContext context)
     {
