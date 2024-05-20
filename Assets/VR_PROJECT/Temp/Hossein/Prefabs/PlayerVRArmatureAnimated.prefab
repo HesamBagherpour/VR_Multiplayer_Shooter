@@ -1703,6 +1703,7 @@ GameObject:
   - component: {fileID: 2005838952117971897}
   - component: {fileID: 1503699777223802591}
   - component: {fileID: 7586924591634793608}
+  - component: {fileID: 6574724611576290553}
   - component: {fileID: 8939428060060374368}
   - component: {fileID: 2707873237356124353}
   m_Layer: 8
@@ -1823,6 +1824,24 @@ MonoBehaviour:
   _scenePathHash: 0
   <SceneId>k__BackingField: 0
   <AssetPathHash>k__BackingField: 5891138440228658661
+--- !u!114 &6574724611576290553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071790164645918096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95f7054b8794a6cad6c919f52f11a79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 1086923474223453406}
+  playerIdText: {fileID: 804723132412903924}
+  canvas: {fileID: 1358925789759204420}
+  headTargetIK: {fileID: 1286650996938908452}
+  handLTargetIK: {fileID: 5589584586814019935}
+  handRTargetIK: {fileID: 1296591793240019269}
 --- !u!114 &8939428060060374368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1838,14 +1857,6 @@ MonoBehaviour:
   _componentIndexCache: 0
   _addedNetworkObject: {fileID: 7586924591634793608}
   _networkObjectCache: {fileID: 7586924591634793608}
-  _meshRenderer: {fileID: 1086923474223453406}
-  _playerIdText: {fileID: 804723132412903924}
-  _canvas: {fileID: 1358925789759204420}
-  _headTargetIK: {fileID: 1286650996938908452}
-  _handLTargetIK: {fileID: 5589584586814019935}
-  _handRTargetIK: {fileID: 1296591793240019269}
-  _moveSpeed: 0
-  _sprintSpeedOffset: 0
 --- !u!114 &2707873237356124353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1997,7 +2008,7 @@ MonoBehaviour:
       weight: 1
       moveThreshold: 0.3
       animationHeader: 0
-      minAnimationSpeed: 0.6
+      minAnimationSpeed: 0.7
       maxAnimationSpeed: 3
       animationSmoothTime: 0.1
       rootPositionHeader: 0
