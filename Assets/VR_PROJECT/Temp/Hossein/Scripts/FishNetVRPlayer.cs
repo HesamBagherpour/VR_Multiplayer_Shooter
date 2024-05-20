@@ -21,9 +21,8 @@ public class FishNetVRPlayer : NetworkBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _sprintSpeedOffset;
 
-    private VRIK _vrik;
     private XRInputModalityManager _xrInputModalityManager;
-    private PlayerTransformData _nextTransform;
+    private IKTransforms _nextTransform;
     private DynamicMoveProvider _moveProvider;
 
     private Transform _camera;
@@ -36,13 +35,12 @@ public class FishNetVRPlayer : NetworkBehaviour
 
     private void Awake()
     {
-        _vrik = GetComponent<VRIK>();
         _xrInputModalityManager = FindObjectOfType<XRInputModalityManager>();
         _moveProvider = FindObjectOfType<DynamicMoveProvider>();
         _inputManager = GameManager.Instance.InputManager;
 
         _moveSpeed = _moveProvider.moveSpeed;
-        _nextTransform = new PlayerTransformData();
+        _nextTransform = new IKTransforms();
         _camera = Camera.main.transform;
         _sprintSpeedOffset = 4f;
         _canvasOffset = 0.5f;
@@ -62,18 +60,19 @@ public class FishNetVRPlayer : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!IsClientInitialized)
+        if (!IsClientInitialized) // before clint init 
             return;
 
-        if (IsOwner)
+        if (IsOwner) // local player 
         {
             SetMoveSpeed();
             var transform = GetLocalTransforms();
-            SetLocalTransforms(transform);
-            SendNextTransforms(transform);
+            SetLocalTransforms(transform); // set player transform || position and rotation 
+            SendNextTransforms(transform);  // send player transform data to server and other clint 
         }
-        else
+        else // remote players
         {
+            
             LerpToNextTransform();
         }
     }
@@ -83,14 +82,18 @@ public class FishNetVRPlayer : NetworkBehaviour
         _moveProvider.moveSpeed = _inputManager.Sprint ? _moveSpeed * _sprintSpeedOffset : _moveSpeed;
     }
 
-    [ServerRpc(RequireOwnership = true)]
-    public void SendNextTransforms(PlayerTransformData playerTransform)
+    [ServerRpc(RequireOwnership = true)] 
+    // Check if owner ( Player )  can only send data 
+    // This function only owner send data to server 
+    // This methode all in server side
+     private  void SendNextTransforms(IKTransforms playerTransform)
     {
-        SetNextTransforms(playerTransform, ObjectId);
+       SetNextTransforms(playerTransform, ObjectId);
     }
-
-    [ObserversRpc(ExcludeOwner = true)]
-    public void SetNextTransforms(PlayerTransformData playerTransform, int objectId)
+    // This method run in client side only 
+    // all the players receive  data  except  local player 
+    [ObserversRpc(ExcludeOwner = true)] 
+    private void SetNextTransforms(IKTransforms playerTransform, int objectId)
     {
         if (ObjectId != objectId)
             return;
@@ -104,60 +107,67 @@ public class FishNetVRPlayer : NetworkBehaviour
         if (_nextTransform is null)
             return;
 
-        var headTransform = _nextTransform.Get(PlayerTransformType.Head).Transform;
 
-        _headTargetIK.position = Vector3.Lerp(_headTargetIK.position, headTransform.Position,
-            _lerpSpeed * Time.deltaTime);
-        _headTargetIK.rotation = Quaternion.Lerp(_headTargetIK.rotation, headTransform.Rotation,
-            _lerpSpeed * Time.deltaTime);
 
-        var handLTransform = _nextTransform.Get(PlayerTransformType.LHand).Transform;
-
-        _handLTargetIK.position = Vector3.Lerp(_handLTargetIK.position, handLTransform.Position,
+        _headTargetIK.position = Vector3.Lerp(_headTargetIK.position, _nextTransform.HeadPosition,
             _lerpSpeed * Time.deltaTime);
-        _handLTargetIK.rotation = Quaternion.Lerp(_handLTargetIK.rotation, handLTransform.Rotation,
+        _headTargetIK.rotation = Quaternion.Lerp(_headTargetIK.rotation, _nextTransform.HeadRotation,
             _lerpSpeed * Time.deltaTime);
 
-        var handRTransform = _nextTransform.Get(PlayerTransformType.RHand).Transform;
-
-        _handRTargetIK.position = Vector3.Lerp(_handRTargetIK.position, handRTransform.Position,
+        
+        _handLTargetIK.position = Vector3.Lerp(_handLTargetIK.position, _nextTransform.HandLPosition,
             _lerpSpeed * Time.deltaTime);
-        _handRTargetIK.rotation = Quaternion.Lerp(_handRTargetIK.rotation, handRTransform.Rotation,
+        _handLTargetIK.rotation = Quaternion.Lerp(_handLTargetIK.rotation, _nextTransform.HandLRotation,
             _lerpSpeed * Time.deltaTime);
 
 
-        var canvasTransform = _nextTransform.Get(PlayerTransformType.Canvas);
+        _handRTargetIK.position = Vector3.Lerp(_handRTargetIK.position, _nextTransform.HandRPosition,
+            _lerpSpeed * Time.deltaTime);
+        _handRTargetIK.rotation = Quaternion.Lerp(_handRTargetIK.rotation, _nextTransform.HandRRotation,
+            _lerpSpeed * Time.deltaTime);
 
-        _canvas.position = Vector3.Lerp(_canvas.position, canvasTransform.Transform.Position,
+        
+        _canvas.position = Vector3.Lerp(_canvas.position, _nextTransform.CanvasPosition,
             _lerpSpeed * Time.deltaTime);
     }
 
 
-    private PlayerTransformData GetLocalTransforms()
+    
+    // This function is  get XR transform 
+
+    // check if it is TrackedHand or MotionController 
+    
+    private IKTransforms GetLocalTransforms()
     {
-        var transform = new PlayerTransformData();
+        var transform = new IKTransforms();
 
         switch (XRInputModalityManager.currentInputMode.Value)
         {
             case XRInputModalityManager.InputMode.None:
                 break;
-            case XRInputModalityManager.InputMode.TrackedHand:
+            case XRInputModalityManager.InputMode.TrackedHand:  
 
                 if (_handRAnchor is null)
                     _handRAnchor = GameObject.FindGameObjectWithTag("RHandAnchor").transform;
 
-                transform.Set(PlayerTransformType.RHand, _handRAnchor);
+                transform.HandRPosition = _handRAnchor.position;
+                transform.HandRRotation = _handRAnchor.rotation;
 
                 if (_handLAnchor is null)
                     _handLAnchor = GameObject.FindGameObjectWithTag("LHandAnchor").transform;
 
-                transform.Set(PlayerTransformType.LHand, _handLAnchor);
+                transform.HandLPosition = _handLAnchor.position;
+                transform.HandLRotation = _handLAnchor.rotation;
 
                 break;
-            case XRInputModalityManager.InputMode.MotionController:
+            case XRInputModalityManager.InputMode.MotionController:  
 
-                transform.Set(PlayerTransformType.RHand, _xrInputModalityManager.rightController.transform);
-                transform.Set(PlayerTransformType.LHand, _xrInputModalityManager.leftController.transform);
+
+                transform.HandRPosition = _xrInputModalityManager.rightController.transform.position;
+                transform.HandRRotation = _xrInputModalityManager.rightController.transform.rotation;
+                
+                transform.HandLPosition = _xrInputModalityManager.leftController.transform.position;
+                transform.HandLRotation = _xrInputModalityManager.leftController.transform.rotation;
 
                 break;
             default:
@@ -165,42 +175,55 @@ public class FishNetVRPlayer : NetworkBehaviour
         }
 
         var nextHeadPosition = _camera.transform.position;
+        var nextHeadRotation = _camera.transform.rotation;
 
+        transform.HeadPosition = nextHeadPosition;
+        transform.HeadRotation = nextHeadRotation;
+
+        
+        
         var nextCanvasPosition =
             new Vector3(nextHeadPosition.x, nextHeadPosition.y + _canvasOffset, nextHeadPosition.z);
 
-        transform.Set(PlayerTransformType.Head, _camera.transform);
 
-        var canvasTransform = new PlayerTransform()
-            { Type = PlayerTransformType.Canvas, Transform = new CustomTransform() { Position = nextCanvasPosition } };
-
-        transform.Set(canvasTransform);
+        transform.CanvasPosition = nextCanvasPosition;
 
         return transform;
     }
 
-    private void SetLocalTransforms(PlayerTransformData transformData)
+    
+    
+    
+    
+    // This function set transform  from XR  into  FinalIK  Target  Transform
+    
+    
+    //TODO
+    //must be change
+    //if it is local player set data directly
+    // create separate  class to make remote player and local player 
+
+    
+    private void SetLocalTransforms(IKTransforms transformData)
     {
         if (transformData is null)
             return;
 
-        var headTransform = transformData.Get(PlayerTransformType.Head).Transform;
 
-        _headTargetIK.position = headTransform.Position;
-        _headTargetIK.rotation = headTransform.Rotation;
+        _headTargetIK.position =transformData.HeadPosition;
+        _headTargetIK.rotation =transformData.HeadRotation;
 
-        var handRTransform = transformData.Get(PlayerTransformType.RHand).Transform;
 
-        _handRTargetIK.position = handRTransform.Position;
-        _handRTargetIK.rotation = handRTransform.Rotation;
 
-        var handLTransform = transformData.Get(PlayerTransformType.LHand).Transform;
+        _handRTargetIK.position = transformData.HandRPosition;
+        _handRTargetIK.rotation = transformData.HandRRotation;
 
-        _handLTargetIK.position = handLTransform.Position;
-        _handLTargetIK.rotation = handLTransform.Rotation;
 
-        var canvasTransform = transformData.Get(PlayerTransformType.Canvas).Transform;
 
-        _canvas.position = canvasTransform.Position;
+        _handLTargetIK.position = transformData.HandLPosition;
+        _handLTargetIK.rotation = transformData.HandLRotation;
+
+
+        _canvas.position = transformData.CanvasPosition;
     }
 }
